@@ -1,0 +1,36 @@
+/* Intraface.css V.0.1 */
+@import url('https://api.fontshare.com/v2/css?f[]=supreme@501,800,400,401,300,301,500,801,701,700&display=swap');
+/* Reset */
+a,button,input,select,textarea{background:0 0;border:none;padding:0;cursor:pointer}*,::after,::before,html{box-sizing:border-box}*,::after,::before{margin:0;padding:0;border:0}ol,ul{list-style:none}blockquote,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}a,button,input,select,textarea{margin:0;text-decoration:none}body{font-family:Arial,Helvetica,sans-serif;line-height:1.5}a{text-decoration:none}table{border-collapse:collapse;border-spacing:0}input,select,textarea{outline:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}img{max-width:100%;height:auto}sub,sup{vertical-align:baseline}:after,:before,html *{box-sizing:inherit}
+/* Global */
+body {
+  font-family: 'Supreme', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* Attributes */
+[if-header="fixed-full"] {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+[if-header="sticky-full"] {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+[if-sidebar="fixed-wide"] {
+  position: fixed;
+  top: 0;
+  width: 16rem;
+}
+[if-icon] {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+[if-icon="square"] { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' rx='4' fill='currentColor'/%3E%3C/svg%3E") }
+/* Utilities */
+.w1 { width: 1rem }
+.h1 { height: 1rem }
+.t4 { top: 4rem }
