@@ -23,6 +23,8 @@ body {
   position: fixed;
   top: 0;
   width: 16rem;
+  height: 100vh;
+  overflow-y: auto;
 }
 [if-icon] {
   background-size: contain;
