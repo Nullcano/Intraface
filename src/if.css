@@ -1,5 +1,17 @@
 /* Intraface.css V.0.1 */
 @import url('https://api.fontshare.com/v2/css?f[]=supreme@501,800,400,401,300,301,500,801,701,700&display=swap');
+/* Variables */
+:where(html) {
+  --black-1: hsla(0, 0%, 0%);
+  --blue-1: hsl(240, 50%, 50%);
+  --green-1: hsl(120, 100%, 25%);
+  --orange-1: hsl(30, 100%, 50%);
+  --pink-1: hsl(335, 50%, 50%);
+  --purple-1: hsl(260, 50%, 50%);
+  --red-1: hsl(0, 50%, 50%);
+  --white-1: hsl(0, 0%, 100%);
+  --yellow-1: hsl(60, 100%, 50%);
+}
 /* Reset */
 a,button,input,select,textarea{background:0 0;border:none;padding:0;cursor:pointer}*,::after,::before,html{box-sizing:border-box}*,::after,::before{margin:0;padding:0;border:0}ol,ul{list-style:none}blockquote,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}a,button,input,select,textarea{margin:0;text-decoration:none}body{font-family:Arial,Helvetica,sans-serif;line-height:1.5}a{text-decoration:none}table{border-collapse:collapse;border-spacing:0}input,select,textarea{outline:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}img{max-width:100%;height:auto}sub,sup{vertical-align:baseline}:after,:before,html *{box-sizing:inherit}
 /* Global */
@@ -8,31 +20,87 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+a {
+  color: inherit;
+}
 /* Attributes */
-[if-header="fixed-full"] {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-[if-header="sticky-full"] {
-  position: sticky;
-  top: 0;
-  width: 100%;
-}
-[if-sidebar="fixed-wide"] {
-  position: fixed;
-  top: 0;
-  width: 16rem;
-  height: 100vh;
-  overflow-y: auto;
-}
-[if-icon] {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-[if-icon="square"] { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' rx='4' fill='currentColor'/%3E%3C/svg%3E") }
-/* Utilities */
-.w1 { width: 1rem }
-.h1 { height: 1rem }
-.t4 { top: 4rem }
+.ar, .pos-rel { position: relative }
+.ar::before { height: 0px; content: ""; display: block }
+.ar > :not(style) { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden }
+.ar-1x1::before { padding-bottom: 100% }
+.ar-4x3::before { padding-bottom: 75% }
+.ar-16x9::before { padding-bottom: 56.25% }
+.bg-center { background-position: center }
+.bg-contain { background-size: contain }
+.bg-cover { background-size: cover }
+.bg-purple-1 { background-color: var(--purple-1) }
+.bg-red-1 { background-color: var(--red-1) }
+.col-1 { grid-template-columns: 1fr }
+.col-2 { grid-template-columns: repeat(2, 1fr) }
+.col-3 { grid-template-columns: repeat(3, 1fr) }
+.col-4 { grid-template-columns: repeat(4, 1fr) }
+.col-5 { grid-template-columns: repeat(5, 1fr) }
+.col-6 { grid-template-columns: repeat(6, 1fr) }
+.flex { display: flex }
+.flex-col { flex-direction: column }
+.flex-row { flex-direction: row }
+.flex-wrap { flex-wrap: wrap }
+.grid { display: grid }
+.auto-fill { grid-template-columns: auto 1fr }
+.fill-auto { grid-template-columns: 1fr auto }
+.gap-0 { gap: 0 }
+.gap-1 { gap: .5rem }
+.gap-2 { gap: 1rem }
+.h-0 { height: 0 }
+.h-1 { height: 1rem }
+.h-2 { height: 2rem }
+.h-3 { height: 3rem }
+.h-4 { height: 4rem }
+.mi-auto { margin-inline: auto }
+.mw-0 { max-width: 0 }
+.mw-1 { max-width: 1rem }
+.mw-2 { max-width: 2rem }
+.mw-3 { max-width: 3rem }
+.mw-4 { max-width: 4rem }
+.mw-5 { max-width: 6rem }
+.mw-6 { max-width: 8rem }
+.mw-7 { max-width: 10rem }
+.mw-8 { max-width: 12rem }
+.mw-9 { max-width: 14rem }
+.mw-10 { max-width: 16rem }
+.mw-11 { max-width: 20rem }
+.mw-12 { max-width: 24rem }
+.mw-13 { max-width: 30rem }
+.mw-14 { max-width: 60rem }
+.mw-15 { max-width: 90rem }
+.obj-contain { object-fit: contain }
+.obj-cover { object-fit: cover }
+.place-center { place-content: center }
+.w-0 { width: 0 }
+.w-1 { width: 1rem }
+.w-2 { width: 2rem }
+.w-3 { width: 3rem }
+.w-4 { width: 4rem }
+.w-5 { width: 6rem }
+.w-6 { width: 8rem }
+.w-7 { width: 10rem }
+.w-8 { width: 12rem }
+.w-9 { width: 14rem }
+.w-10 { width: 16rem }
+.w-11 { width: 20rem }
+.w-12 { width: 24rem }
+.top-4 { top: 4rem }
+.z-0 { z-index: 0 }
+.z-1 { z-index: 1 }
+.z-2 { z-index: 2 }
+.z-3 { z-index: 3 }
+.z-4 { z-index: 4 }
+.z-5 { z-index: 5 }
+.z-6 { z-index: 6 }
+.z-7 { z-index: 7 }
+.z-8 { z-index: 8 }
+.z-9 { z-index: 9 }
+.z-10 { z-index: 99 }
+.z-11 { z-index: 999 }
+.z-12 { z-index: 9999 }
+.z-max { z-index: 2147483647 }
