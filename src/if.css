@@ -32,7 +32,7 @@ h4 { font-size: 1.25rem }
 h5 { font-size: 1rem }
 h6 { font-size: .75rem }
 th, td { padding: .5rem }
-button,input,textarea{padding:.5rem;border-radius:.5rem;border:1px solid rgba(255,255,255,.1)}
+button,input,textarea{padding:.5rem;border-radius:.5rem;border:1px solid rgba(255,255,255,.1);font-size:inherit;}
 /* Attributes */
 .ar, .pos-rel { position: relative }
 .ar::before { height: 0px; content: ""; display: block }
@@ -66,6 +66,7 @@ button,input,textarea{padding:.5rem;border-radius:.5rem;border:1px solid rgba(25
 .flex-col { flex-direction: column }
 .flex-row { flex-direction: row }
 .flex-wrap { flex-wrap: wrap }
+.ai-center { align-items: center }
 .spacer { flex: 1 1 0%; place-self: stretch }
 .grid { display: grid }
 .auto-fill { grid-template-columns: auto 1fr }
@@ -150,5 +151,13 @@ button,input,textarea{padding:.5rem;border-radius:.5rem;border:1px solid rgba(25
 .infinite { animation-iteration-count: infinite }
 .fade-in { animation-name: fade-in; animation-duration: .5s; animation-timing-function: linear }
 .fade-out { animation-name: fade-out; animation-duration: .5s; animation-timing-function: linear }
+.grow { animation-name: grow; animation-duration: .5s; animation-timing-function: linear }
+.shrink { animation-name: shrink; animation-duration: .5s; animation-timing-function: linear }
+.ascend { animation-name: ascend; animation-duration: .5s; animation-timing-function: linear }
+.descend { animation-name: descend; animation-duration: .5s; animation-timing-function: linear }
 @keyframes fade-in { from { opacity: 0 } to { opacity: 1 } }
 @keyframes fade-out { from { opacity: 1 } to { opacity: 0 } }
+@keyframes grow { from { transform: scale(0) } to { transform: scale(1) } }
+@keyframes shrink { from { transform: scale(1) } to { transform: scale(0) } }
+@keyframes ascend { from { transform: translateY(100%) } to { transform: translateY(0) } }
+@keyframes descend { from { transform: translateY(-100%) } to { transform: translateY(0) } }

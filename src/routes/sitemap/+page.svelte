@@ -62,7 +62,7 @@
               <div class="flex flex-wrap gap-1">
                 {#each searchResults[section][category] as item}
                   <div class="bg-white-4">
-                    <a class="p-1 flex" href="{section.toLowerCase()}/{item.slug ?? item.name}">
+                    <a class="p-1" href="{section.toLowerCase()}/{item.slug ?? item.name}">
                       {item.name}
                     </a>
                   </div>
@@ -81,7 +81,9 @@
     position: relative;
     justify-self: flex-start;
   }
-
+  a {
+    display: block;
+  }
   a::before {
     content: '';
     position: absolute;

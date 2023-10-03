@@ -15,15 +15,15 @@ export const data = [
               {
                 name: '1x1',
                 desc: '',
-                code: `<div class="ar ar-1x1 mw-10">\n    <img class="of-cov" src="https://random.imagecdn.app/100/200">\n</div>`
+                code: `<div class="ar ar-1x1 mw-10">\n    <img class="of-cov" src="https://picsum.photos/100/200">\n</div>`
               }, {
                 name: '4x3',
                 desc: '',
-                code: `<div class="ar ar-4x3 mw-11">\n    <img class="of-cov" src="https://random.imagecdn.app/200/200">\n</div>`
+                code: `<div class="ar ar-4x3 mw-11">\n    <img class="of-cov" src="https://picsum.photos/200/200">\n</div>`
               }, {
                 name: '16x9',
                 desc: '',
-                code: `<div class="ar ar-16x9 mw-12">\n    <img class="of-cov" src="https://random.imagecdn.app/300/200">\n</div>`
+                code: `<div class="ar ar-16x9 mw-12">\n    <img class="of-cov" src="https://picsum.photos/300/200">\n</div>`
               }
             ]
           }, {
@@ -34,7 +34,7 @@ export const data = [
               {
                 name: 'Centered text content',
                 desc: '',
-                code: `<div class="grid place-center h-4 bg-purple-1">The center of the universe</div>`
+                code: `<div class="grid place-center h-5 bg-white-4">The center of the universe</div>`
               }, {
                 name: 'Centered icon',
                 desc: 'Centering an icon',
@@ -49,11 +49,11 @@ export const data = [
               {
                 name: 'Contain Page',
                 desc: 'Contain a section with a max width.',
-                code: `<div>\n    <div class="mw-14 mi-auto p-4 bg-black-1">\n        <h1>Welcome to this contained page.</h1>\n    </div>\n</div>`
+                code: `<div>\n    <div class="mw-14 mi-auto p-4 bg-white-4">\n        <h1>Welcome to this contained page.</h1>\n    </div>\n</div>`
               }, {
                 name: 'Contain Elements',
                 desc: 'Contain a section with a max width.',
-                code: `<div class="p-4 bg-black-1">\n    <div class="mw-13 mi-auto">\n        <img class="w-fill" src="https://random.imagecdn.app/300/200">\n    </div>\n    <div class="mw-12 mi-auto">\n        <p>There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production.</p>\n    </div>\n</div>`
+                code: `<div class="p-4 bg-white-4">\n    <div class="mw-13 mi-auto">\n        <img class="w-fill" src="https://picsum.photos/300/200">\n    </div>\n    <div class="mw-12 mi-auto">\n        <p>There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production.</p>\n    </div>\n</div>`
               }, 
             ],
             refLibrary: [ { name: 'Width', slug: 'width' }, { name: 'Margin', slug: 'margin' }, { name: 'Padding', slug: 'padding' }, { name: 'Background', slug: 'background' } ],
@@ -66,15 +66,15 @@ export const data = [
               {
                 name: 'Column',
                 desc: 'Stack the children.',
-                code: `<div class="flex flex-col gap-2">\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n</div>`
+                code: `<div class="flex flex-col gap-2">\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n</div>`
               }, {
                 name: 'Row',
                 desc: 'Row is the default flex direction but you may also use the class "flex-row" in some circumstances.',
-                code: `<div class="flex gap-2 mw-8">\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n</div>`
+                code: `<div class="flex gap-2 mw-8">\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n</div>`
               }, {
                 name: 'Wrap',
                 desc: 'Starts a new row when the children overflows the flexbox width.',
-                code: `<div class="flex flex-wrap gap-2 mw-8">\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n    <div class="h-2 w-2 bg-red-1"></div>\n</div>`
+                code: `<div class="flex flex-wrap gap-2 mw-8">\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n</div>`
               }
             ]
           }, {
@@ -85,35 +85,35 @@ export const data = [
               {
                 name: '1 column',
                 desc: '',
-                code: `<div class="grid col-1">\n    <div class="bg-red-1">Item 1</div>\n    <div class="bg-purple-1">Item 2</div>\n    <div class="bg-red-1">Item 3</div>\n    <div class="bg-purple-1">Item 4</div>\n    <div class="bg-red-1">Item 5</div>\n    <div class="bg-purple-1">Item 6</div>\n</div>`
+                code: `<div class="grid col-1">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
               }, {
                 name: '2 columns',
                 desc: '',
-                code: `<div class="grid col-2">\n    <div class="bg-red-1">Item 1</div>\n    <div class="bg-purple-1">Item 2</div>\n    <div class="bg-red-1">Item 3</div>\n    <div class="bg-purple-1">Item 4</div>\n    <div class="bg-red-1">Item 5</div>\n    <div class="bg-purple-1">Item 6</div>\n</div>`
+                code: `<div class="grid col-2">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
               }, {
                 name: '3 columns',
                 desc: '',
-                code: `<div class="grid col-3">\n    <div class="bg-red-1">Item 1</div>\n    <div class="bg-purple-1">Item 2</div>\n    <div class="bg-red-1">Item 3</div>\n    <div class="bg-purple-1">Item 4</div>\n    <div class="bg-red-1">Item 5</div>\n    <div class="bg-purple-1">Item 6</div>\n</div>`
+                code: `<div class="grid col-3">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
               }, {
                 name: '4 columns',
                 desc: '',
-                code: `<div class="grid col-4">\n    <div class="bg-red-1">Item 1</div>\n    <div class="bg-purple-1">Item 2</div>\n    <div class="bg-red-1">Item 3</div>\n    <div class="bg-purple-1">Item 4</div>\n    <div class="bg-red-1">Item 5</div>\n    <div class="bg-purple-1">Item 6</div>\n</div>`
+                code: `<div class="grid col-4">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
               }, {
                 name: '5 columns',
                 desc: '',
-                code: `<div class="grid col-5">\n    <div class="bg-red-1">Item 1</div>\n    <div class="bg-purple-1">Item 2</div>\n    <div class="bg-red-1">Item 3</div>\n    <div class="bg-purple-1">Item 4</div>\n    <div class="bg-red-1">Item 5</div>\n    <div class="bg-purple-1">Item 6</div>\n</div>`
+                code: `<div class="grid col-5">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
               }, {
                 name: '6 columns',
                 desc: '',
-                code: `<div class="grid col-6">\n    <div class="bg-red-1">Item 1</div>\n    <div class="bg-purple-1">Item 2</div>\n    <div class="bg-red-1">Item 3</div>\n    <div class="bg-purple-1">Item 4</div>\n    <div class="bg-red-1">Item 5</div>\n    <div class="bg-purple-1">Item 6</div>\n</div>`
+                code: `<div class="grid col-6">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
               }, {
                 name: 'Auto - fill',
                 desc: 'First child will take up its own width and give the rest of the width to last child.',
-                code: `<div class="grid auto-fill">\n    <div class="w-10 bg-red-1">Item 1</div>\n    <div class="bg-purple-1">Item 2</div>\n</div>`
+                code: `<div class="grid auto-fill">\n    <div class="w-10 bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n</div>`
               }, {
                 name: 'Fill - auto',
                 desc: 'Last child will take up its own width and give the rest of the width to first child.',
-                code: `<div class="grid fill-auto">\n    <div class="bg-red-1">Item 1</div>\n    <div class="w-10 bg-purple-1">Item 2</div>\n</div>`
+                code: `<div class="grid fill-auto">\n    <div class="bg-white-3">Item 1</div>\n    <div class="w-10 bg-white-1">Item 2</div>\n</div>`
               }
             ]
           },
@@ -125,23 +125,54 @@ export const data = [
           {
             name: 'Button',
             slug: 'button',
-            desc: '',
+            desc: 'Buttons.',
             variants: [
               {
-                name: '',
+                name: 'Text Button',
                 desc: '',
-                code: ``
+                code: `<button class="p-2 bg-white-4">Intraface</button>`
+              }, {
+                name: 'Icon Button',
+                desc: '',
+                code: `<button class="w-3 h-3 grid place-center bg-white-4">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="black" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n</button>`
+              }, {
+                name: 'Icon + Text Button',
+                desc: '',
+                code: `<button class="p-2 grid auto-fill ai-center gap-1 bg-white-4">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="black" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n    <span>Intraface</span>\n</button>`
               }
             ]
           }, {
             name: 'Checkbox',
             slug: 'checkbox',
-            desc: 'Checkbox',
+            desc: 'Checkboxes.',
             variants: [
               {
-                name: '',
+                name: 'Checkbox',
                 desc: '',
-                code: ``
+                code: `<label><input type="checkbox"> I have read the documentation</label>`
+              }
+            ]
+          }, {
+            name: 'Input',
+            slug: 'input',
+            desc: 'Inputs.',
+            variants: [
+              {
+                name: 'Basic Input',
+                desc: '',
+                code: `<input type="text" placeholder="Type something...">`
+              }, {
+                name: 'Date Input',
+                desc: '',
+                code: `<input type="date" placeholder="Select Date">`
+              }, {
+                name: 'Time Input',
+                desc: '',
+                code: `<input type="time" placeholder="Select Time">`
+              }, {
+                name: 'Date + Time Input',
+                desc: '',
+                code: `<input type="datetime-local" placeholder="Select Date and Time">`
               }
             ]
           }
@@ -416,10 +447,25 @@ export const data = [
             desc: 'Scale animations.',
             variants: [
               {
-                name: 'Border Width',
+                name: 'grow',
+                desc: '',
+                code: `<div class="grow infinite w-5 h-5 bg-white-1"></div>`
+              }, {
+                name: 'shrink',
+                desc: '',
+                code: `<div class="shrink infinite w-5 h-5 bg-white-1"></div>`
+              },
+            ]
+          }, {
+            name: 'Transition',
+            slug: 'transition',
+            desc: 'Transitions for when properties change.',
+            variants: [
+              {
+                name: 't-all',
                 desc: '',
                 code: ``
-              },
+              }
             ]
           }, {
             name: 'Translate',
@@ -427,10 +473,14 @@ export const data = [
             desc: 'Translate animations.',
             variants: [
               {
-                name: 'Absolute',
+                name: 'ascend',
                 desc: '',
-                code: ``
-              },
+                code: `<div class="ascend infinite w-5 h-5 bg-white-1"></div>`
+              }, {
+                name: 'descend',
+                desc: '',
+                code: `<div class="descend infinite w-5 h-5 bg-white-1"></div>`
+              }, 
             ]
           }
         ]
@@ -440,22 +490,22 @@ export const data = [
         items: [
           {
             name: 'Attachment',
-            slug: 'border',
-            desc: 'Borders.',
+            slug: 'attachment',
+            desc: 'Background attachments.',
             variants: [
               {
-                name: 'Border Width',
+                name: 'bg-fixed',
                 desc: '',
                 code: ``
               },
             ]
           }, {
             name: 'Color',
-            slug: 'height',
-            desc: 'Heights.',
+            slug: 'background-color',
+            desc: 'Background colors.',
             variants: [
               {
-                name: 'h-0',
+                name: 'bg-black-1',
                 desc: '',
                 code: ``
               },
@@ -690,29 +740,12 @@ export const data = [
           }
         ]
       }, {
-        name: 'Transition',
-        slug: 'transition',
-        items: [
-          {
-            name: 'All Linear',
-            slug: 'all-linear',
-            desc: 'Linear transition for all properties.',
-            variants: [
-              {
-                name: '0.25 Seconds',
-                desc: '',
-                code: ``
-              }
-            ]
-          }
-        ]
-      }, {
         name: 'Typography',
         slug: 'typography',
         items: [
           {
             name: 'Color',
-            slug: 'color',
+            slug: 'text-color',
             desc: 'Text colors.',
             variants: [
               {
@@ -851,37 +884,53 @@ export const data = [
     slug: 'reference',
     categories: [
       {
-        name: 'Lists',
-        slug: 'lists',
+        name: 'Embedding',
+        slug: 'embedding',
         items: [
           {
-            name: 'datalist',
-            desc: 'Defines a list of autocomplete options when using a text <input>.',
-            code: `<label>South American countries</label>\n<input list="countries" placeholder="Type a country">\n\n<datalist id="countries">\n    <option value="Argentina">\n    <option value="Bolivia">\n    <option value="Brazil">\n    <option value="Chile">\n    <option value="Colombia">\n    <option value="Ecuador">\n    <option value="Guyana">\n    <option value="Paraguay">\n    <option value="Peru">\n    <option value="Suriname">\n    <option value="Uruguay">\n    <option value="Venezuela">\n</datalist>`
+            name: 'area',
+            desc: 'Defines an interactive area within a map.',
+            code: `<img src="https://htmlreference.io/images/world-continents.png" width="320" height="160" orgwidth="320" orgheight="160" usemap="#world-continents">\n<map name="world-continents">\n    <area title="North America" href="https://en.wikipedia.org/wiki/North_America" shape="poly" coords="48,89,67,69,77,49,140,0,68,0,6,10,4,31,16,69">\n    <area title="South America" href="https://en.wikipedia.org/wiki/South_America" shape="poly" coords="48,88,61,74,119,99,95,160,66,159">\n    <area title="Europe" href="https://en.wikipedia.org/wiki/Europe" shape="poly" coords="124,49,145,46,158,50,187,43,198,6,146,1,115,21">\n    <area title="Africa" href="https://en.wikipedia.org/wiki/Africa" shape="poly" coords="121,53,140,47,169,51,186,77,196,80,188,137,156,136,138,97,118,86">\n    <area title="Asia" href="https://en.wikipedia.org/wiki/Asia" shape="poly" coords="166,50,184,77,201,74,215,91,258,108,263,87,283,74,297,8,192,3,191,29,187,46,170,42">\n    <area title="Australia" href="https://en.wikipedia.org/wiki/Australia_(continent)" shape="poly" coords="257,107,263,85,314,89,316,137,294,151,249,132,248,114">\n</map>`
           }, {
-            name: 'dd',
-            desc: 'Defines an item in a definition list.',
-            code: `<dl>\n    <dt>Web</dt>\n    <dd>The part of the Internet that contains websites and web pages</dd>\n    <dt>HTML</dt>\n    <dd>A markup language for creating web pages</dd>\n    <dt>CSS</dt>\n    <dd>A technology to make HTML look better</dd>\n</dl>`
+            name: 'audio',
+            desc: 'Allows to embed an audio clip into a web page.',
+            code: `<audio src="https://htmlreference.io/assets/Hal.mp3" controls></audio>`
           }, {
-            name: 'dl',
-            desc: 'Defines a definition list.',
-            code: `<dl>\n    <dt>Web</dt>\n    <dd>The part of the Internet that contains websites and web pages</dd>\n    <dt>HTML</dt>\n    <dd>A markup language for creating web pages</dd>\n    <dt>CSS</dt>\n    <dd>A technology to make HTML look better</dd>\n</dl>`
+            name: 'canvas',
+            desc: 'Defines an element where you can draw graphics.',
+            code: `<canvas>\n    Fallback text for non-supported browsers\n</canvas>`
           }, {
-            name: 'dt',
-            desc: 'Defines a definition term.',
-            code: `<dl>\n    <dt>Web</dt>\n    <dd>The part of the Internet that contains websites and web pages</dd>\n    <dt>HTML</dt>\n    <dd>A markup language for creating web pages</dd>\n    <dt>CSS</dt>\n    <dd>A technology to make HTML look better</dd>\n</dl>`
+            name: 'embed',
+            desc: 'Defines a container for external application.',
+            code: `<embed src="https://www.youtube.com/embed/8dVQ0813KVM" width="640" height="320">`
           }, {
-            name: 'li',
-            desc: 'Defines a list item within an ordered list <ol> or unordered list <ul>.',
-            code: `<ol>\n    <li>Step one</li>\n    <li>Step two</li>\n</ol>\n\n<br>\n\n<ul>\n    <li>Milk</li>\n    <li>Eggs</li>\n</ul>`
+            name: 'iframe',
+            desc: 'Defines a container for a nested browsing context: you can include a web page within another web page.',
+            code: `<iframe src="https://theuselessweb.com" width="480" height="640">\n    Fallback text for non-supported browsers\n</iframe>`
           }, {
-            name: 'ol',
-            desc: 'Defines an ordered list.',
-            code: `<ol>\n    <li>Step one</li>\n    <li>Step two</li>\n</ol>`
+            name: 'img',
+            desc: '',
+            code: `<img src="https://picsum.photos/200/200" alt="Random image">`
           }, {
-            name: 'ul',
-            desc: 'Defines an unordered list.',
-            code: `<ul>\n    <li>Milk</li>\n    <li>Eggs</li>\n</ul>`
+            name: 'map',
+            desc: '',
+            code: ``
+          }, {
+            name: 'object',
+            desc: '',
+            code: ``
+          }, {
+            name: 'param',
+            desc: '',
+            code: ``
+          }, {
+            name: 'source',
+            desc: '',
+            code: ``
+          }, {
+            name: 'video',
+            desc: 'Allows to embed an video clip into a web page.',
+            code: `<video src="https://htmlreference.io/assets/HTML%205%20Video.mp4" controls></video>`
           }
         ]
       }, {
@@ -893,6 +942,10 @@ export const data = [
             desc: 'Defines a clickable button.',
             code: `<button>\n    Submit form\n</button>`
           }, {
+            name: 'datalist',
+            desc: 'Defines a list of autocomplete options when using a text <input>.',
+            code: `<label>South American countries</label>\n<input list="countries" placeholder="Type a country">\n\n<datalist id="countries">\n    <option value="Argentina">\n    <option value="Bolivia">\n    <option value="Brazil">\n    <option value="Chile">\n    <option value="Colombia">\n    <option value="Ecuador">\n    <option value="Guyana">\n    <option value="Paraguay">\n    <option value="Peru">\n    <option value="Suriname">\n    <option value="Uruguay">\n    <option value="Venezuela">\n</datalist>`
+          }, {
             name: 'fieldset',
             desc: 'Defines a group of controls within a form.',
             code: `<form action="/reference/fieldset">\n    <fieldset>\n        <legend>Subscribe to nothing</legend>\n        <input type="email" name="email">\n        <button>Ok</button>\n    </fieldset>\n</form>`
@@ -903,11 +956,39 @@ export const data = [
           }, {
             name: 'input',
             desc: 'Defines an interactive control within a web form.',
-            code: `<input type="text" />`
+            code: `<input type="text" placeholder="Type something..."><br>\n<input type="date" placeholder="Select Date"><br>\n<input type="time" placeholder="Select Time"><br>\n<input type="datetime-local" placeholder="Select Date and Time">`
+          }, {
+            name: 'label',
+            desc: '',
+            code: ``
           }, {
             name: 'legend',
             desc: 'Defines a caption for a parent\'s content.',
-            code: `<legend></legend>`
+            code: `<fieldset>\n    <legend>Personal details</legend>\n    <input type="text" placeholder="Full name">\n</fieldset>`
+          }, {
+            name: 'meter',
+            desc: 'Defines a horizontal meter.',
+            code: `<meter min="0" low="16" value="71" high="92" max="100">Alex</meter>\n<meter min="0" low="16" value="16" high="92" max="100">Brandon</meter>\n<meter min="0" low="16" value="40" high="92" max="100">Charlotte</meter>\n<meter min="0" low="16" value="92" high="92" max="100">Sam</meter>`
+          }, {
+            name: 'optgroup',
+            desc: '',
+            code: ``
+          }, {
+            name: 'option',
+            desc: '',
+            code: ``
+          }, {
+            name: 'output',
+            desc: '',
+            code: ``
+          }, {
+            name: 'progress',
+            desc: '',
+            code: ``
+          }, {
+            name: 'select',
+            desc: '',
+            code: ``
           }, {
             name: 'textarea',
             desc: 'Defines a multi-line text control within a web form.',
@@ -915,49 +996,83 @@ export const data = [
           }
         ]
       }, {
-        name: 'Embedding',
-        slug: 'embedding',
+        name: 'Grouping',
+        slug: 'grouping',
         items: [
           {
-            name: 'area',
-            desc: '',
-            code: ``
+            name: 'blockquote',
+            desc: 'Defines a long quotation.',
+            code: `<blockquote cite="https://en.wikiquote.org/wiki/Marie_Curie">\n    Be less curious about people and more curious about ideas.\n</blockquote>`
           }, {
-            name: 'audio',
-            desc: '',
-            code: ``
+            name: 'dd',
+            desc: 'Defines an item in a definition list.',
+            code: `<dl>\n    <dt>Web</dt>\n    <dd>The part of the Internet that contains websites and web pages</dd>\n    <dt>HTML</dt>\n    <dd>A markup language for creating web pages</dd>\n    <dt>CSS</dt>\n    <dd>A technology to make HTML look better</dd>\n</dl>`
           }, {
-            name: 'canvas',
+            name: 'div',
             desc: '',
-            code: ``
+            code: `<div>Hello world.</div>`
           }, {
-            name: 'embed',
-            desc: '',
-            code: ``
+            name: 'dl',
+            desc: 'Defines a definition list.',
+            code: `<dl>\n    <dt>Web</dt>\n    <dd>The part of the Internet that contains websites and web pages</dd>\n    <dt>HTML</dt>\n    <dd>A markup language for creating web pages</dd>\n    <dt>CSS</dt>\n    <dd>A technology to make HTML look better</dd>\n</dl>`
+          }, {
+            name: 'dt',
+            desc: 'Defines a definition term.',
+            code: `<dl>\n    <dt>Web</dt>\n    <dd>The part of the Internet that contains websites and web pages</dd>\n    <dt>HTML</dt>\n    <dd>A markup language for creating web pages</dd>\n    <dt>CSS</dt>\n    <dd>A technology to make HTML look better</dd>\n</dl>`
+          }, {
+            name: 'figcaption',
+            desc: 'Defines the caption of a <figure>.',
+            code: `<figure>\n    <img src="https://picsum.photos/200/200" alt="Random image">\n    <figcaption>This is a random image from an API. Only you know what it is.</figcaption>\n</figure>`
           }, {
             name: 'figure',
-            desc: '',
-            code: ``
+            desc: 'Defines a single self-contained element, usually an image.',
+            code: `<figure>\n    <img src="https://picsum.photos/200/200" alt="Random image">\n</figure>`
           }, {
-            name: 'iframe',
+            name: 'hr',
             desc: '',
-            code: ``
+            code: `<hr>`
           }, {
-            name: 'img',
+            name: 'li',
+            desc: 'Defines a list item within an ordered list <ol> or unordered list <ul>.',
+            code: `<ol>\n    <li>Step one</li>\n    <li>Step two</li>\n</ol>\n\n<br>\n\n<ul>\n    <li>Milk</li>\n    <li>Eggs</li>\n</ul>`
+          }, {
+            name: 'main',
+            desc: 'Defines the main content of a web page. Can be displayed with a sidebar.',
+            code: `<main>\n    <h1>My blog post</h1>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n    <p>etc.</p>\n</main>\n<aside>\n    <h3>About the author</h3>\n    <p>Frontend Designer from Bordeaux, currently working for Improbable in sunny London.</p>\n</aside>`
+          }, {
+            name: 'ol',
+            desc: 'Defines an ordered list.',
+            code: `<ol>\n    <li>Step one</li>\n    <li>Step two</li>\n</ol>`
+          }, {
+            name: 'p',
             desc: '',
-            code: ``
+            code: `<p>Hello world.</p>`
           }, {
-            name: 'map',
+            name: 'pre',
             desc: '',
-            code: ``
+            code: `<pre>Hello world.</pre>`
           }, {
-            name: 'iframe',
-            desc: '',
-            code: ``
+            name: 'ul',
+            desc: 'Defines an unordered list.',
+            code: `<ul>\n    <li>Milk</li>\n    <li>Eggs</li>\n</ul>`
+          }
+        ]
+      }, {
+        name: 'Interactive',
+        slug: 'interactive',
+        items: [
+          {
+            name: 'details',
+            desc: 'Defines a toggable block of content with a summary and additional details.',
+            code: `<details>\n    <summary>Read more</summary>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n</details>`
           }, {
-            name: 'video',
-            desc: 'Allows to embed an video clip into a web page.',
-            code: `<video src="https://htmlreference.io/assets/HTML%205%20Video.mp4" controls></video>`
+            name: 'dialog',
+            desc: 'Defines a dialog box that can be opened and closed with JavaScript.',
+            code: `<dialog open>\n    <p>This is the dialog</p>\n    <form method="dialog">\n        <button>OK</button>\n    </form>\n</dialog>`
+          }, {
+            name: 'summary',
+            desc: 'Defines the summary of a <details> element.',
+            code: `<details>\n    <summary>Read more</summary>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n</details>`
           }
         ]
       }, {
@@ -965,6 +1080,10 @@ export const data = [
         slug: 'sections',
         items: [
           {
+            name: 'address',
+            desc: 'Defines a block for contact information.',
+            code: `<address>\n    <dd>Wealthy Corp</dd>\n    <dd>Large City Street 42</dd>\n    <dd>Somewhere, Universe</dd>\n</address>`
+          }, {
             name: 'article',
             desc: 'Defines a self-contained block of content that can exist in any context. It can have its own header, footer, sections... Useful for a list of blog posts.',
             code: `<article>\n    <header>\n        <h3>\n            <a href="/my-blog-post">My blog post</a>\n        </h3>\n    </header>\n    <section>\n        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n    </section>\n    <footer>\n        <small>\n            Posted on <time datetime="2017-04-29T19:00">Apr 29</time> in <a href="/category/code">Code</a>\n        </small>\n    </footer>\n</article>`
@@ -974,28 +1093,44 @@ export const data = [
             code: `<main>\n    <h1>My blog post</h1>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n    <p>etc.</p>\n</main>\n<aside>\n    <h3>About the author</h3>\n    <p>Frontend Designer from Bordeaux, currently working for Improbable in sunny London.</p>\n</aside>`
           }, {
             name: 'body',
-            desc: 'The container for a web page\'s content. Must be a direct child of <html>, and must be an ancestor of all HTML elements (except where noted). The body element can not currently be previewed as you can not have a body inside a body. Intraface may embed the body preview from a demo app as a workaround later.',
-            code: ``
-          }, {
-            name: 'br',
-            desc: 'Defines a line break within a text.',
-            code: `Lorem ipsum dolor sit<br>amet, consectetur adipiscing elit. Donec viverra<br>nec<br>nulla vitae mollis.`
+            desc: 'The container for a web page\'s content. Must be a direct child of <html>, and must be an ancestor of all HTML elements (except where noted).',
+            code: `<body>Hello world.</body>`
           }, {
             name: 'footer',
             desc: 'Defines the footer of a web page or section.',
             code: `<footer>\n    Intraface - A free reference to all HTML5 elements and attributes\n</footer>`
           }, {
+            name: 'h1',
+            desc: 'Defines a section heading of level one: the highest level.',
+            code: `<h1>Heading Level 1</h1>\n<p>This is a normal paragraph for scale.</p>`
+          }, {
+            name: 'h2',
+            desc: 'Defines a section heading of level two.',
+            code: `<h2>Heading Level 2</h2>\n<p>This is a normal paragraph for scale.</p>`
+          }, {
+            name: 'h3',
+            desc: 'Defines a section heading of level three.',
+            code: `<h3>Heading Level 3</h3>\n<p>This is a normal paragraph for scale.</p>`
+          }, {
+            name: 'h4',
+            desc: 'Defines a section heading of level four.',
+            code: `<h4>Heading Level 4</h4>\n<p>This is a normal paragraph for scale.</p>`
+          }, {
+            name: 'h5',
+            desc: 'Defines a section heading of level five.',
+            code: `<h5>Heading Level 5</h5>\n<p>This is a normal paragraph for scale.</p>`
+          }, {
+            name: 'h6',
+            desc: 'Defines a section heading of level six: the lowest level.',
+            code: `<h6>Heading Level 6</h6>\n<p>This is a normal paragraph for scale.</p>`
+          }, {
+            name: 'hgroup',
+            desc: 'The hgroup element represents the heading block of a section, and usually groups consecutive headings (h1 to h6). ',
+            code: `<hgroup>\n    <h1>Alien</h1>\n    <h2>In space, no one can hear you scream</h2>\n</hgroup>\n<p>The commercial vessel Nostromo receives a distress call from an unexplored planet. After searching for survivors, the crew heads home only to realize that a deadly bioform has joined them.</p>`
+          }, {
             name: 'header',
             desc: 'Defines the header of a web page or section.',
             code: `<header>\n    <h1>Intraface</h1>\n    <nav>\n        <a>Home</a>\n        <a>About</a>\n        <a>Contact</a>\n    </nav>\n</header>`
-          }, {
-            name: 'main',
-            desc: 'Defines the main content of a web page. Can be displayed with a sidebar.',
-            code: `<main>\n    <h1>My blog post</h1>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n    <p>etc.</p>\n</main>\n<aside>\n    <h3>About the author</h3>\n    <p>Frontend Designer from Bordeaux, currently working for Improbable in sunny London.</p>\n</aside>`
-          }, {
-            name: 'meter',
-            desc: 'Defines a horizontal meter.',
-            code: `<meter min="0" low="16" value="71" high="92" max="100">Alex</meter>\n<meter min="0" low="16" value="16" high="92" max="100">Brandon</meter>\n<meter min="0" low="16" value="40" high="92" max="100">Charlotte</meter>\n<meter min="0" low="16" value="92" high="92" max="100">Sam</meter>`
           }, {
             name: 'nav',
             desc: 'Defines a section with navigation links.',
@@ -1065,10 +1200,6 @@ export const data = [
             desc: 'Defines an abbreviation, and usually includes its full description.',
             code: `<abbr title="HyperText Markup Language">HTML</abbr>`
           }, {
-            name: 'address',
-            desc: 'Defines a block for contact information.',
-            code: `<address>\n    <dd>Wealthy Corp</dd>\n    <dd>Large City Street 42</dd>\n    <dd>Somewhere, Universe</dd>\n</address>`
-          }, {
             name: 'b',
             desc: 'Makes an element bold.',
             code: `Hello <b>World</b>`
@@ -1081,9 +1212,9 @@ export const data = [
             desc: 'Allows to override the direction of text.',
             code: `The word <bdo dir="rtl">Hello</bdo> is "Hello" spelled backwards.`
           }, {
-            name: 'blockquote',
-            desc: 'Defines a long quotation.',
-            code: `<blockquote cite="https://en.wikiquote.org/wiki/Marie_Curie">\n    Be less curious about people and more curious about ideas.\n</blockquote>`
+            name: 'br',
+            desc: 'Defines a line break within a text.',
+            code: `Lorem ipsum dolor sit<br>amet, consectetur adipiscing elit. Donec viverra<br>nec<br>nulla vitae mollis.`
           }, {
             name: 'cite',
             desc: 'Defines the source of a creative work.',
@@ -1097,57 +1228,57 @@ export const data = [
             desc: 'Defines content linked to machine-readable output.',
             code: `<p>Computers</p>\n<ul>\n    <li>\n        <data value="499">Mini PC</data>\n    </li>\n    <li>\n        <data value="899">Small laptop</data>\n    </li>\n    <li>\n        <data value="1399">Large laptop</data>\n    </li>\n    <li>\n        <data value="2099">Desktop PC</data>\n    </li>\n</ul>`
           }, {
-            name: 'details',
-            desc: 'Defines a toggable block of content with a summary and additional details.',
-            code: `<details>\n    <summary>Read more</summary>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n</details>`
-          }, {
             name: 'dfn',
             desc: 'Defines where a term is defined within a web page.',
             code: `The <dfn>World Wide Web</dfn> is the part of the Internet that uses the HTTP protocol.`
-          }, {
-            name: 'dialog',
-            desc: 'Defines a dialog box that can be opened and closed with JavaScript.',
-            code: `<dialog open>\n    <p>This is the dialog</p>\n    <form method="dialog">\n        <button>OK</button>\n    </form>\n</dialog>`
           }, {
             name: 'em',
             desc: 'Defines emphasis on text. Is usually rendered as italic text.',
             code: `HTML should only be used to write <em>content</em>, and keep CSS for <em>styling</em> the web page.`
           }, {
-            name: 'figcaption',
-            desc: 'Defines the caption of a <figure>.',
-            code: `<figure>\n    <img src="https://random.imagecdn.app/200/200" alt="Random image">\n    <figcaption>This is a random image from an API. Only you know what it is.</figcaption>\n</figure>`
-          }, {
-            name: 'h1',
-            desc: 'Defines a section heading of level one: the highest level.',
-            code: `<h1>Heading Level 1</h1>\n<p>This is a normal paragraph for scale.</p>`
-          }, {
-            name: 'h2',
-            desc: 'Defines a section heading of level two.',
-            code: `<h2>Heading Level 2</h2>\n<p>This is a normal paragraph for scale.</p>`
-          }, {
-            name: 'h3',
-            desc: 'Defines a section heading of level three.',
-            code: `<h3>Heading Level 3</h3>\n<p>This is a normal paragraph for scale.</p>`
-          }, {
-            name: 'h4',
-            desc: 'Defines a section heading of level four.',
-            code: `<h4>Heading Level 4</h4>\n<p>This is a normal paragraph for scale.</p>`
-          }, {
-            name: 'h5',
-            desc: 'Defines a section heading of level five.',
-            code: `<h5>Heading Level 5</h5>\n<p>This is a normal paragraph for scale.</p>`
-          }, {
-            name: 'h6',
-            desc: 'Defines a section heading of level six: the lowest level.',
-            code: `<h6>Heading Level 6</h6>\n<p>This is a normal paragraph for scale.</p>`
-          }, {
             name: 'i',
             desc: 'Makes an element italic.',
             code: `Hello <i>World</i>`
           }, {
+            name: 'kbd',
+            desc: '',
+            code: ``
+          }, {
             name: 'mark',
             desc: 'Defines highlighted text.',
             code: `We use HTML5 to write <mark>content</mark> on the Web.`
+          }, {
+            name: 'q',
+            desc: '',
+            code: ``
+          }, {
+            name: 'rp',
+            desc: '',
+            code: ``
+          }, {
+            name: 'rt',
+            desc: '',
+            code: ``
+          }, {
+            name: 'ruby',
+            desc: '',
+            code: ``
+          }, {
+            name: 's',
+            desc: '',
+            code: ``
+          }, {
+            name: 'samp',
+            desc: '',
+            code: ``
+          }, {
+            name: 'small',
+            desc: '',
+            code: ``
+          }, {
+            name: 'span',
+            desc: '',
+            code: ``
           }, {
             name: 'strong',
             desc: 'Defines strong importance on text.',
@@ -1156,10 +1287,6 @@ export const data = [
             name: 'sub',
             desc: 'Defines text that should be displayed lower.',
             code: `The formula of carbon dioxide is CO<sub>2</sub>.`
-          }, {
-            name: 'summary',
-            desc: 'Defines the summary of a <details> element.',
-            code: `<details>\n    <summary>Read more</summary>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n</details>`
           }, {
             name: 'sup',
             desc: 'Defines text that should be displayed higher.',
