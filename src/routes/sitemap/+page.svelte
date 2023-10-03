@@ -47,45 +47,48 @@
   $: searchResults = filterResults(groupedResults);
 </script>
 
-<div class="page">
-  <input type="text" placeholder="Type in whatever you need..." bind:value={searchQuery} />
-  {#each Object.keys(searchResults) as section}
-    <div class="title flex">
-      <div>{section}</div>
-    </div>
-    {#each Object.keys(searchResults[section]) as category}
-      <div class="title flex">
-        <div>{category}</div>
-      </div>
-      {#each searchResults[section][category] as item}
-        <div class="grid">
-          <a class="flex" href="{item.slug}">
-            {item.name}
-          </a>
+<div class="mw-15 mi-auto p-4">
+  <h1>Intraface Sitemap</h1>
+  <div class="grid col-1 gap-2">
+    {#each Object.keys(searchResults) as section}
+      <div>
+        <h3 class="ma-2">{section}</h3>
+        <div class="flex flex-wrap gap-2">
+          {#each Object.keys(searchResults[section]) as category}
+            <div>
+              <div class="mb-1 p-1 bg-white-3">
+                <div>{category}</div>
+              </div>
+              <div class="flex flex-wrap gap-1">
+                {#each searchResults[section][category] as item}
+                  <div class="bg-white-4">
+                    <a class="p-1 flex" href="{section.toLowerCase()}/{item.slug ?? item.name}">
+                      {item.name}
+                    </a>
+                  </div>
+                {/each}
+              </div>
+            </div>
+          {/each}
         </div>
-      {/each}
+      </div>
     {/each}
-  {/each}
+  </div>
 </div>
 
 <style>
-  .page {
-    padding: 1rem;
-  }
-  a {
+  div, a {
     position: relative;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    border-radius: 1rem;
+    justify-self: flex-start;
   }
-  input {
-    width: 100%;
-    padding: 1rem;
-    color: inherit;
-    font-size: 1.5rem;
-    border: 1px solid rgba(255,255,255,.1);
-    border-radius: 1rem;
+
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: .5rem;
+    background: var(--white-4);
   }
 </style>
