@@ -26,6 +26,7 @@
 					<hr>
 					<div class="component">
 						<h2 class="title">{v.name}</h2>
+						<p>{v.desc}</p>
 						<CodePreview>
 							{@html v.code}
 						</CodePreview>

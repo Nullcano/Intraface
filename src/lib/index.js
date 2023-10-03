@@ -158,7 +158,7 @@ export const data = [
             desc: 'Inputs.',
             variants: [
               {
-                name: 'Basic Input',
+                name: 'Text Input',
                 desc: '',
                 code: `<input type="text" placeholder="Type something...">`
               }, {
@@ -173,6 +173,21 @@ export const data = [
                 name: 'Date + Time Input',
                 desc: '',
                 code: `<input type="datetime-local" placeholder="Select Date and Time">`
+              }, {
+                name: 'Number Input',
+                desc: '',
+                code: `<input type="number" min="0" max="100">`
+              }
+            ]
+          }, {
+            name: 'Radio',
+            slug: 'radio',
+            desc: 'Radios.',
+            variants: [
+              {
+                name: 'Basic',
+                desc: '',
+                code: `<label>\n    <input type="radio" name="answer" value="yes"> Yes\n</label>\n<label>\n    <input type="radio" name="answer" value="no"> No\n</label>`
               }
             ]
           }
@@ -463,8 +478,8 @@ export const data = [
             variants: [
               {
                 name: 't-all',
-                desc: '',
-                code: ``
+                desc: 'Add transition to all properties.',
+                code: `<div class="t-all bg-black-1 bg-white-1-h white-1 black-1-h w-6 h-4 grid place-center">Hover me</div>`
               }
             ]
           }, {
@@ -489,59 +504,67 @@ export const data = [
         slug: 'background',
         items: [
           {
-            name: 'Attachment',
-            slug: 'attachment',
+            name: 'Background Attachment',
+            slug: 'background-attachment',
             desc: 'Background attachments.',
             variants: [
               {
                 name: 'bg-fixed',
-                desc: '',
-                code: ``
+                desc: 'Make a background image fixed. Whitespace is added to demonstrate the effect.',
+                code: `<div class="h-12"></div>\n<div class="bg-fixed w-12 h-12" style="background-image:url(https://picsum.photos/800/800)"></div>\n<div class="h-12"></div>`
               },
             ]
           }, {
-            name: 'Color',
+            name: 'Background Color',
             slug: 'background-color',
-            desc: 'Background colors.',
+            desc: 'Background colors. Supports hover by appending "-h" to the class name.',
             variants: [
               {
-                name: 'bg-black-1',
-                desc: '',
-                code: ``
+                name: 'bg-black-[1 to 5]',
+                desc: 'The black color palette has a blue shade.',
+                code: `<div class="bg-black-1 h-4"></div>\n<div class="bg-black-2 h-4"></div>\n<div class="bg-black-3 h-4"></div>\n<div class="bg-black-4 h-4"></div>\n<div class="bg-black-5 h-4"></div>`
+              }, {
+                name: 'bg-white-[1 to 5]',
+                desc: 'The white color palette has a blue shade.',
+                code: `<div class="bg-white-1 h-4"></div>\n<div class="bg-white-2 h-4"></div>\n<div class="bg-white-3 h-4"></div>\n<div class="bg-white-4 h-4"></div>\n<div class="bg-white-5 h-4"></div>`
+              }
+            ]
+          }, {
+            name: 'Background Position',
+            slug: 'background-position',
+            desc: 'Background positions.',
+            variants: [
+              {
+                name: 'bg-center',
+                desc: 'Center a background image.',
+                code: `<div class="bg-center w-12 h-12" style="background-image:url(https://picsum.photos/400/800)"></div>`
               },
             ]
           }, {
-            name: 'Position',
-            slug: 'line-height',
-            desc: 'Line heights.',
+            name: 'Background Repeat',
+            slug: 'background-repeat',
+            desc: 'Background repeats.',
             variants: [
               {
-                name: 'lh-0',
-                desc: '',
-                code: ``
+                name: 'no-repeat',
+                desc: 'Prevent background images from repeating.',
+                code: `<div class="no-repeat bg-white-4 w-12 h-12" style="background-image:url(https://picsum.photos/200/200)"></div>`
               },
             ]
           }, {
-            name: 'Repeat',
-            slug: 'margin',
-            desc: 'Margins.',
+            name: 'Background Size',
+            slug: 'background-size',
+            desc: 'Background sizes.',
             variants: [
               {
-                name: 'm-0',
-                desc: '',
-                code: ``
-              },
-            ]
-          }, {
-            name: 'Size',
-            slug: 'padding',
-            desc: 'Paddings.',
-            variants: [
-              {
-                name: 'p-0',
-                desc: '',
-                code: ``
-              },
+                name: 'contain',
+                desc: 'Contains the background image to fit the element.',
+                code: `<div class="bg-contain bg-center no-repeat w-12 h-12" style="background-image:url(https://picsum.photos/800/400)"></div>`
+              }, {
+                name: 'cover',
+                desc: 'Covers the element with the background image.',
+                code: `<div class="bg-cover bg-center w-12 h-12" style="background-image:url(https://picsum.photos/400/800)"></div>`
+              }
             ]
           }
         ]
@@ -555,9 +578,29 @@ export const data = [
             desc: 'Borders.',
             variants: [
               {
-                name: 'Border Width',
-                desc: '',
-                code: ``
+                name: 'bw-[0 to 3]',
+                desc: 'Border widths.',
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="bw-0 b-all b-white-1 bg-white-4 w-6 h-2"></div>\n    <div class="bw-1 b-all b-white-1 bg-white-4 w-6 h-2"></div>\n    <div class="bw-2 b-all b-white-1 bg-white-4 w-6 h-2"></div>\n    <div class="bw-3 b-all b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
+              }, {
+                name: 'b-all',
+                desc: 'Border all sides of the element.',
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-all bw-1 b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
+              }, {
+                name: 'b-left',
+                desc: 'Border left side of the element.',
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-left bw-1 b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
+              }, {
+                name: 'b-right',
+                desc: 'Border right side of the element.',
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-right bw-1 b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
+              }, {
+                name: 'b-top',
+                desc: 'Border top side of the element.',
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-top bw-1 b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
+              }, {
+                name: 'b-bottom',
+                desc: 'Border bottom side of the element.',
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-bottom bw-1 b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
               },
             ]
           }, {
@@ -567,9 +610,25 @@ export const data = [
             variants: [
               {
                 name: 'h-0',
+                desc: 'Height is 0.',
+                code: `<div class="h-0 bg-white-1"></div>`
+              }, {
+                name: 'h-1',
                 desc: '',
-                code: ``
-              },
+                code: `<div class="h-1 bg-white-1"></div>`
+              }, {
+                name: 'h-2',
+                desc: '',
+                code: `<div class="h-2 bg-white-1"></div>`
+              }, {
+                name: 'h-3',
+                desc: '',
+                code: `<div class="h-3 bg-white-1"></div>`
+              }, {
+                name: 'h-4',
+                desc: '',
+                code: `<div class="h-4 bg-white-1"></div>`
+              }, 
             ]
           }, {
             name: 'Line Height',

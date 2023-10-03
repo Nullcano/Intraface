@@ -2,18 +2,22 @@
 @import url('https://api.fontshare.com/v2/css?f[]=supreme@501,800,400,401,300,301,500,801,701,700&display=swap');
 /* Variables */
 :where(html) {
-  --black-1: hsla(0, 0%, 0%);
+  --black-1: hsla(240, 20%, 0%);
+  --black-2: hsla(240, 20%, 5%);
+  --black-3: hsla(240, 20%, 10%);
+  --black-4: hsla(240, 20%, 15%);
+  --black-5: hsla(240, 20%, 20%);
   --blue-1: hsl(240, 50%, 50%);
   --green-1: hsl(120, 100%, 25%);
   --orange-1: hsl(30, 100%, 50%);
   --pink-1: hsl(335, 50%, 50%);
   --purple-1: hsl(260, 50%, 50%);
   --red-1: hsl(0, 50%, 50%);
-  --white-1: hsl(0, 0%, 80%);
-  --white-2: hsl(0, 0%, 85%);
-  --white-3: hsl(0, 0%, 90%);
-  --white-4: hsl(0, 0%, 95%);
-  --white-5: hsl(0, 0%, 100%);
+  --white-1: hsl(240, 20%, 80%);
+  --white-2: hsl(240, 20%, 85%);
+  --white-3: hsl(240, 20%, 90%);
+  --white-4: hsl(240, 20%, 95%);
+  --white-5: hsl(240, 20%, 100%);
   --yellow-1: hsl(60, 100%, 50%);
 }
 /* Reset */
@@ -33,29 +37,43 @@ h5 { font-size: 1rem }
 h6 { font-size: .75rem }
 th, td { padding: .5rem }
 button,input,textarea{padding:.5rem;border-radius:.5rem;border:1px solid rgba(255,255,255,.1);font-size:inherit;}
-/* Attributes */
+/* Class library */
 .ar, .pos-rel { position: relative }
 .ar::before { height: 0px; content: ""; display: block }
 .ar > :not(style) { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden }
 .ar-1x1::before { padding-bottom: 100% }
 .ar-4x3::before { padding-bottom: 75% }
 .ar-16x9::before { padding-bottom: 56.25% }
-.white-1 { color: var(--white-1) }
-.white-2 { color: var(--white-2) }
-.white-3 { color: var(--white-3) }
-.white-4 { color: var(--white-4) }
-.white-5 { color: var(--white-5) }
+.black-1, .black-1-h:hover { color: var(--black-1) }
+.black-2, .black-2-h:hover { color: var(--black-2) }
+.black-3, .black-3-h:hover { color: var(--black-3) }
+.black-4, .black-4-h:hover { color: var(--black-4) }
+.black-5, .black-5-h:hover { color: var(--black-5) }
+.white-1, .white-1-h:hover { color: var(--white-1) }
+.white-2, .white-2-h:hover { color: var(--white-2) }
+.white-3, .white-3-h:hover { color: var(--white-3) }
+.white-4, .white-4-h:hover { color: var(--white-4) }
+.white-5, .white-5-h:hover { color: var(--white-5) }
 .bg-center { background-position: center }
 .bg-contain { background-size: contain }
 .bg-cover { background-size: cover }
-.bg-black-1 { background-color: var(--black-1) }
+.bg-black-1, .bg-black-1-h:hover { background-color: var(--black-1) }
+.bg-black-2, .bg-black-2-h:hover { background-color: var(--black-2) }
+.bg-black-3, .bg-black-3-h:hover { background-color: var(--black-3) }
+.bg-black-4, .bg-black-4-h:hover { background-color: var(--black-4) }
+.bg-black-5, .bg-black-5-h:hover { background-color: var(--black-5) }
 .bg-purple-1 { background-color: var(--purple-1) }
 .bg-red-1 { background-color: var(--red-1) }
-.bg-white-1 { background-color: var(--white-1) }
-.bg-white-2 { background-color: var(--white-2) }
-.bg-white-3 { background-color: var(--white-3) }
-.bg-white-4 { background-color: var(--white-4) }
-.bg-white-5 { background-color: var(--white-5) }
+.bg-white-1, .bg-white-1-h:hover { background-color: var(--white-1) }
+.bg-white-2, .bg-white-2-h:hover { background-color: var(--white-2) }
+.bg-white-3, .bg-white-3-h:hover { background-color: var(--white-3) }
+.bg-white-4, .bg-white-4-h:hover { background-color: var(--white-4) }
+.bg-white-5, .bg-white-5-h:hover { background-color: var(--white-5) }
+.bg-fixed { background-attachment: fixed }
+.bg-center { background-position: center }
+.no-repeat { background-repeat: no-repeat }
+.bg-contain { background-size: contain }
+.bg-cover { background-size: cover }
 .col-1 { grid-template-columns: 1fr }
 .col-2 { grid-template-columns: repeat(2, 1fr) }
 .col-3 { grid-template-columns: repeat(3, 1fr) }
@@ -74,6 +92,20 @@ button,input,textarea{padding:.5rem;border-radius:.5rem;border:1px solid rgba(25
 .gap-0 { gap: 0 }
 .gap-1 { gap: .5rem }
 .gap-2 { gap: 1rem }
+.b-all { border-style: solid }
+.b-left { border-left-style: solid }
+.b-right { border-right-style: solid }
+.b-top { border-top-style: solid }
+.b-bottom { border-bottom-style: solid }
+.bw-0 { border-width: 0 }
+.bw-1 { border-width: 1px }
+.bw-2 { border-width: 2px }
+.bw-3 { border-width: 4px }
+.b-white-1 { border-color: var(--white-1) }
+.b-white-2 { border-color: var(--white-2) }
+.b-white-3 { border-color: var(--white-3) }
+.b-white-4 { border-color: var(--white-4) }
+.b-white-5 { border-color: var(--white-5) }
 .ma-0 { margin: 0 }
 .ma-1 { margin: .5rem }
 .ma-2 { margin: 1rem }
@@ -125,14 +157,28 @@ button,input,textarea{padding:.5rem;border-radius:.5rem;border:1px solid rgba(25
 .w-10 { width: 16rem }
 .w-11 { width: 20rem }
 .w-12 { width: 24rem }
-.w-fill { width: 100% }.h-0 { height: 0 }
+.w-fill { width: 100% }
+.h-0 { height: 0 }
 .h-1 { height: 1rem }
 .h-2 { height: 2rem }
 .h-3 { height: 3rem }
 .h-4 { height: 4rem }
 .h-5 { height: 6rem }
 .h-6 { height: 8rem }
+.h-7 { height: 10rem }
+.h-8 { height: 12rem }
+.h-9 { height: 14rem }
+.h-10 { height: 16rem }
+.h-11 { height: 20rem }
+.h-12 { height: 24rem }
+.h-fill { height: 100% }
+.t-all { transition: all .25s linear }
+.top-0 { top: 0 }
+.top-1 { top: 1rem }
+.top-2 { top: 2rem }
+.top-3 { top: 3rem }
 .top-4 { top: 4rem }
+.top-5 { top: 5rem }
 .z-0 { z-index: 0 }
 .z-1 { z-index: 1 }
 .z-2 { z-index: 2 }
