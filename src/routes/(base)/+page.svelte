@@ -1,5 +1,5 @@
 <div class="mw-15 mi-auto p-4">
-  <h1>Empower your markup with Intraface</h1>
+  <h1>Empower your markup with Intraface</h1> 
   <br>
   <div class="grid col-2 gap-2">
     <div>
@@ -23,4 +23,7 @@
       </p>
     </div>
   </div>
+  <br>
+  <h4><mark>Test it out</mark></h4>
+  <pre><code class="p-2 bg-white-4">&lt;link href="https://cdn.jsdelivr.net/gh/Nullcano/Intraface@main/src/if.css" rel="stylesheet"&gt;</code></pre>
 </div>
