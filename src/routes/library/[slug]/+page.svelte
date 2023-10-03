@@ -1,5 +1,7 @@
 <script>
   import * as config from '$lib/config'
+	import CodeBlock from '$lib/app/CodeBlock.svelte';
+	import CodePreview from '$lib/app/CodePreview.svelte';
 
   export let data
 	$: page = data.page
@@ -24,12 +26,12 @@
 					<hr>
 					<div class="component">
 						<h2 class="title">{v.name}</h2>
-						<div class="preview">
+						<CodePreview>
 							{@html v.code}
-						</div>
-						<div class="code">
+						</CodePreview>
+						<CodeBlock>
 							<pre><code>{v.code}</code></pre>
-						</div>
+						</CodeBlock>
 					</div>
         {/each}
 			</div>
@@ -44,9 +46,6 @@
 		margin: 1rem;
 		padding: 1rem;
 	}
-	h1 {
-		font-size: 2rem;
-	}
 	p {
 		margin: 1rem 0;
 	}
@@ -58,18 +57,5 @@
 	}
 	.title {
 		margin-block: 1rem;
-		font-size: 1.25rem;
-	}
-	.preview {
-		padding: 1rem;
-		border: 1px solid #333;
-		border-radius: 1rem;
-	}
-	.code {
-		margin-top: -1px;
-		padding: 1rem;
-		border: 1px solid #333;
-		border-radius: 1rem;
-		background: #000;
 	}
 </style>

@@ -1,4 +1,4 @@
-<ul>
+<ul class="bg-white-4">
   <li>
     <a href="/">Introduction</a>
   </li>
@@ -14,17 +14,12 @@
 </ul>
 
 <style>
-  ul {
-    padding: .5rem;
-    border-radius: 1rem;
-    background: #111;
-  }
   a {
     display: block;
-    padding: .25rem .5rem;
-    color: rgba(255,255,255,.75)
+    padding: .5rem 1rem;
+    color: rgba(0,0,0,.75);
   }
   a:hover {
-    color: rgba(255,255,255,1);
+    color: rgba(0,0,0,1);
   }
 </style>

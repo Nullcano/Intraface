@@ -5,7 +5,7 @@
 
 {#each section.categories as c}
   <ul>
-    <h4>{c.name}</h4>
+    <h5 class="bg-white-4">{c.name}</h5>
     {#each c.items as i}
       <li>
         <a class="flex" href="/reference/{i.name}">
@@ -17,23 +17,22 @@
 {/each}
 
 <style>
-  h4 {
+  ul {
+    margin-top: 1rem;
+    border: 1px solid var(--white-4);
+  }
+  h5 {
     position: sticky;
     top: -1rem;
-    padding: .5rem;
-    margin-top: 1rem;
+    padding: .5rem 1rem;
     font-weight: 400;
-    text-transform: uppercase;
-    background: #111;
-    color: rgba(255,255,255,.5);
-    border-radius: .5rem;
   }
   a {
     display: block;
-    padding: .25rem .5rem;
-    color: rgba(255,255,255,.75)
+    padding: .5rem 1rem;
+    color: rgba(0,0,0,.75)
   }
   a:hover {
-    color: rgba(255,255,255,1);
+    color: rgba(0,0,0,1);
   }
 </style>

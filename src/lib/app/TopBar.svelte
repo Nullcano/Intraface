@@ -1,6 +1,6 @@
-<header class="z-1" if-header="sticky-full">
+<header class="bg-white-4 z-1" if-header="sticky-full">
   <a href="/">
-    <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="h-2" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 12C0 10.8954 0.895431 10 2 10H6C7.10457 10 8 10.8954 8 12V26C8 27.1046 7.10457 28 6 28H2C0.895431 28 0 27.1046 0 26V12Z" fill="currentColor"/>
       <path d="M0 2C0 0.895431 0.895431 0 2 0H6C7.10457 0 8 0.895431 8 2V6C8 7.10457 7.10457 8 6 8H2C0.895431 8 0 7.10457 0 6V2Z" fill="currentColor"/>
       <path d="M10 2C10 0.895431 10.8954 0 12 0H26C27.1046 0 28 0.895431 28 2V6C28 7.10457 27.1046 8 26 8H12C10.8954 8 10 7.10457 10 6V2Z" fill="currentColor"/>
@@ -13,14 +13,12 @@
 
 <style>
   header {
-    padding-inline: 1rem;
+    padding-inline: .5rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    background-color: #000;
-    border-bottom: 1px solid rgba(255,255,255,.1);
   }
   a {
     padding: .5rem;
+    display: inline-flex;
   }
 </style>

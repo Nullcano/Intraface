@@ -72,24 +72,13 @@
   .page {
     padding: 1rem;
   }
-  .grid {
-    margin-block: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    gap: 1rem;
-  }
   a {
     position: relative;
     padding: 1rem;
-    color: rgba(255,255,255,.75);
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border: 1px solid rgba(255,255,255,.1);
     border-radius: 1rem;
-  }
-  a:hover {
-    color: rgba(255,255,255,1);
   }
   input {
     width: 100%;
@@ -98,12 +87,5 @@
     font-size: 1.5rem;
     border: 1px solid rgba(255,255,255,.1);
     border-radius: 1rem;
-  }
-  .category {
-    color: rgba(255,255,255,.5);
-    text-transform: uppercase;
-  }
-  .component {
-    font-size: 1.25rem;
   }
 </style>
