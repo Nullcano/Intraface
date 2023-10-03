@@ -1,25 +1,14 @@
-<ul class="bg-white-4">
+<ul class="mt-3 pa-2 bg-white-2">
   <li>
-    <a href="/">Introduction</a>
+    <a class="block px-2 py-1" href="/">Introduction</a>
   </li>
   <li>
-    <a href="/components">Components</a>
+    <a class="block px-2 py-1" href="/components">Components</a>
   </li>
   <li>
-    <a href="/library">Library</a>
+    <a class="block px-2 py-1" href="/library">Library</a>
   </li>
   <li>
-    <a href="/reference">Reference</a>
+    <a class="block px-2 py-1" href="/reference">Reference</a>
   </li>
 </ul>
-
-<style>
-  a {
-    display: block;
-    padding: .5rem 1rem;
-    color: rgba(0,0,0,.75);
-  }
-  a:hover {
-    color: rgba(0,0,0,1);
-  }
-</style>

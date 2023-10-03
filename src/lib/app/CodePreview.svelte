@@ -1,11 +1,3 @@
-<div class="preview">
+<div class="pa-3 b-all bw-1 b-white-2 hidden">
   <slot />
 </div>
-
-<style>
-	.preview {
-		padding: 1rem;
-		border: 1px solid var(--white-4);
-		overflow: hidden;
-	}
-</style>

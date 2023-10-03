@@ -47,22 +47,22 @@
   $: searchResults = filterResults(groupedResults);
 </script>
 
-<div class="mw-15 mi-auto p-4">
+<div class="mw-15 mi-auto pa-4">
   <h1>Intraface Sitemap</h1>
   <div class="grid col-1 gap-2">
     {#each Object.keys(searchResults) as section}
       <div>
-        <h3 class="ma-2">{section}</h3>
+        <h3 class="my-2">{section}</h3>
         <div class="flex flex-wrap gap-2">
           {#each Object.keys(searchResults[section]) as category}
             <div>
-              <div class="mb-1 p-1 bg-white-3">
+              <div class="mb-2 px-2 py-1 bg-white-3">
                 <div>{category}</div>
               </div>
               <div class="flex flex-wrap gap-1">
                 {#each searchResults[section][category] as item}
-                  <div class="bg-white-4">
-                    <a class="p-1" href="{section.toLowerCase()}/{item.slug ?? item.name}">
+                  <div class="bg-white-2">
+                    <a class="block px-2 py-1" href="{section.toLowerCase()}/{item.slug ?? item.name}">
                       {item.name}
                     </a>
                   </div>
@@ -77,12 +77,8 @@
 </div>
 
 <style>
-  div, a {
-    position: relative;
-    justify-self: flex-start;
-  }
   a {
-    display: block;
+    position: relative;
   }
   a::before {
     content: '';
@@ -91,6 +87,6 @@
     left: calc(50% - 1px);
     width: 2px;
     height: .5rem;
-    background: var(--white-4);
+    background: var(--white-2);
   }
 </style>

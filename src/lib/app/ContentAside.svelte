@@ -1,9 +1,3 @@
-<aside if-sidebar="fixed-wide">
+<aside class="px-3" if-sidebar="fixed-wide">
 	<slot />
 </aside>
-
-<style>
-  aside {
-    padding: 1rem;
-  }
-</style>

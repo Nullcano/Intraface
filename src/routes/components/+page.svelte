@@ -1,4 +1,4 @@
-<div class="mw-15 mi-auto p-4">
+<div class="mw-15 mi-auto pa-4">
   <h1>Intraface Component Repository</h1>
   <br>
   <div class="grid col-2 gap-2">

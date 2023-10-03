@@ -1,10 +1,3 @@
-<div class="code bg-white-4">
+<div class="pa-3 bg-white-2 scroll">
   <pre><code><slot /></code></pre>
 </div>
-
-<style>
-	.code {
-		margin-top: -1px;
-		padding: 1rem;
-	}
-</style>

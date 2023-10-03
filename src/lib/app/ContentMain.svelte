@@ -1,14 +1,3 @@
-<main if-layout="auto-fill">
+<main class="relative my-3 ml-11 mr-3 b-all bw-1 b-white-2">
   <slot />
 </main>
-
-<style>
-	main {
-		position: relative;
-		height: calc(100vh - 2rem);
-		margin: 1rem 1rem 1rem 16rem;
-		background-position: top left;
-		border: 1px solid var(--white-4);
-		overflow-y: auto;
-	}
-</style>

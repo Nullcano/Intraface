@@ -1,13 +1,3 @@
-[if-header="fixed-full"] {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-[if-header="sticky-full"] {
-  position: sticky;
-  top: 0;
-  width: 100%;
-}
 [if-sidebar="fixed-wide"] {
   position: fixed;
   top: 0;
