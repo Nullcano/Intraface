@@ -956,7 +956,7 @@ export const data = [
         items: [
           {
             name: 'area',
-            desc: 'Defines an interactive area within a map.',
+            desc: 'Defines an interactive area within a <a href="/wiki/map">map</a>.',
             code: `<img src="https://htmlreference.io/images/world-continents.png" width="320" height="160" orgwidth="320" orgheight="160" usemap="#world-continents">\n<map name="world-continents">\n    <area title="North America" href="https://en.wikipedia.org/wiki/North_America" shape="poly" coords="48,89,67,69,77,49,140,0,68,0,6,10,4,31,16,69">\n    <area title="South America" href="https://en.wikipedia.org/wiki/South_America" shape="poly" coords="48,88,61,74,119,99,95,160,66,159">\n    <area title="Europe" href="https://en.wikipedia.org/wiki/Europe" shape="poly" coords="124,49,145,46,158,50,187,43,198,6,146,1,115,21">\n    <area title="Africa" href="https://en.wikipedia.org/wiki/Africa" shape="poly" coords="121,53,140,47,169,51,186,77,196,80,188,137,156,136,138,97,118,86">\n    <area title="Asia" href="https://en.wikipedia.org/wiki/Asia" shape="poly" coords="166,50,184,77,201,74,215,91,258,108,263,87,283,74,297,8,192,3,191,29,187,46,170,42">\n    <area title="Australia" href="https://en.wikipedia.org/wiki/Australia_(continent)" shape="poly" coords="257,107,263,85,314,89,316,137,294,151,249,132,248,114">\n</map>`
           }, {
             name: 'audio',
@@ -996,7 +996,7 @@ export const data = [
             code: ``
           }, {
             name: 'video',
-            desc: 'Allows to embed an video clip into a web page.',
+            desc: 'Allows to embed an video clip into a page.',
             code: `<video src="https://htmlreference.io/assets/HTML%205%20Video.mp4" controls></video>`
           }
         ]
@@ -1010,11 +1010,11 @@ export const data = [
             code: `<button>\n    Submit form\n</button>`
           }, {
             name: 'datalist',
-            desc: 'Defines a list of autocomplete options when using a text <input>.',
+            desc: 'Defines a list of autocomplete options when using an <a href="/wiki/input">input</a> with list type.',
             code: `<label>South American countries</label>\n<input list="countries" placeholder="Type a country">\n\n<datalist id="countries">\n    <option value="Argentina">\n    <option value="Bolivia">\n    <option value="Brazil">\n    <option value="Chile">\n    <option value="Colombia">\n    <option value="Ecuador">\n    <option value="Guyana">\n    <option value="Paraguay">\n    <option value="Peru">\n    <option value="Suriname">\n    <option value="Uruguay">\n    <option value="Venezuela">\n</datalist>`
           }, {
             name: 'fieldset',
-            desc: 'Defines a group of controls within a form.',
+            desc: 'Defines a group of controls within a <a href="/wiki/form">form</a>.',
             code: `<form action="/reference/fieldset">\n    <fieldset>\n        <legend>Subscribe to nothing</legend>\n        <input type="email" name="email">\n        <button>Ok</button>\n    </fieldset>\n</form>`
           }, {
             name: 'form',
@@ -1022,7 +1022,7 @@ export const data = [
             code: `<form action="/reference/form">\n    <fieldset>\n        <legend>Employment</legend>\n        <label>\n            <input type="radio" name="title" value="unemployed">\n            Unemployed\n        </label>\n        <label>\n            <input type="radio" name="title" value="part-time">\n            Part-time\n        </label>\n        <label>\n            <input type="radio" name="title" value="full-time">\n            Full-time\n        </label>\n    </fieldset>\n    <fieldset>\n        <legend>Contact info</legend>\n        <fieldset>\n            <label>First name</label>\n            <input type="text" name="first_name">\n            <label>Last name</label>\n            <input type="text" name="last_name">\n        </fieldset>\n        <fieldset>\n            <label>Email</label>\n            <input type="email" name="email" required>\n            <label>Phone number</label>\n            <input type="tel" name="phone">\n        </fieldset>\n        <label>Country</label>\n        <select>\n            <option>China</option>\n            <option>India</option>\n            <option>United States</option>\n            <option>Indonesia</option>\n            <option>Brazil</option>\n        </select>\n    </fieldset>\n    <fieldset>\n        <label>Password</label>\n        <input type="password" name="password">\n        <label>\n            <input type="checkbox" value="terms">\n            I have read <a href="#">the documents</a>\n        </label>\n        <fieldset>\n            <button type="submit">Sign up</button>\n            <button type="reset">Reset form</button>\n        </fieldset>\n    </fieldset>\n</form>`
           }, {
             name: 'input',
-            desc: 'Defines an interactive control within a web form.',
+            desc: 'Defines an interactive control within a <a href="/wiki/form">form</a>.',
             code: `<input type="text" placeholder="Type something..."><br>\n<input type="date" placeholder="Select Date"><br>\n<input type="time" placeholder="Select Time"><br>\n<input type="datetime-local" placeholder="Select Date and Time">`
           }, {
             name: 'label',
@@ -1058,7 +1058,7 @@ export const data = [
             code: ``
           }, {
             name: 'textarea',
-            desc: 'Defines a multi-line text control within a web form.',
+            desc: 'Defines a multi-line text control within a <a href="/wiki/form">form</a>.',
             code: `<textarea rows="3" placeholder="Type something...">`
           }
         ]
@@ -1088,11 +1088,11 @@ export const data = [
             code: `<dl>\n    <dt>Web</dt>\n    <dd>The part of the Internet that contains websites and web pages</dd>\n    <dt>HTML</dt>\n    <dd>A markup language for creating web pages</dd>\n    <dt>CSS</dt>\n    <dd>A technology to make HTML look better</dd>\n</dl>`
           }, {
             name: 'figcaption',
-            desc: 'Defines the caption of a <figure>.',
+            desc: 'Defines the caption of a <a href="/wiki/figure">figure</a>.',
             code: `<figure>\n    <img src="https://picsum.photos/200/200" alt="Random image">\n    <figcaption>This is a random image from an API. Only you know what it is.</figcaption>\n</figure>`
           }, {
             name: 'figure',
-            desc: 'Defines a single self-contained element, usually an image.',
+            desc: 'Defines a single self-contained element, usually an <a href="/wiki/img">image</a>.',
             code: `<figure>\n    <img src="https://picsum.photos/200/200" alt="Random image">\n</figure>`
           }, {
             name: 'hr',
@@ -1130,7 +1130,7 @@ export const data = [
         items: [
           {
             name: 'details',
-            desc: 'Defines a toggable block of content with a summary and additional details.',
+            desc: 'Defines a toggable block of content with a <a href="/wiki/summary">summary</a> and additional details.',
             code: `<details>\n    <summary>Read more</summary>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n</details>`
           }, {
             name: 'dialog',
@@ -1138,7 +1138,7 @@ export const data = [
             code: `<dialog open>\n    <p>This is the dialog</p>\n    <form method="dialog">\n        <button>OK</button>\n    </form>\n</dialog>`
           }, {
             name: 'summary',
-            desc: 'Defines the summary of a <details> element.',
+            desc: 'Defines the summary of the <a href="/wiki/details">details</a> element.',
             code: `<details>\n    <summary>Read more</summary>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n</details>`
           }
         ]
@@ -1160,11 +1160,11 @@ export const data = [
             code: `<main>\n    <h1>My blog post</h1>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n    <p>etc.</p>\n</main>\n<aside>\n    <h3>About the author</h3>\n    <p>Frontend Designer from Bordeaux, currently working for Improbable in sunny London.</p>\n</aside>`
           }, {
             name: 'body',
-            desc: 'The container for a web page\'s content. Must be a direct child of <html>, and must be an ancestor of all HTML elements (except where noted).',
+            desc: 'The container for a page\'s content. Must be a direct child of <html>, and must be an ancestor of all HTML elements (except where noted).',
             code: `<body>Hello world.</body>`
           }, {
             name: 'footer',
-            desc: 'Defines the footer of a web page or section.',
+            desc: 'Defines the footer of a page or section.',
             code: `<footer>\n    Intraface - A free reference to all HTML5 elements and attributes\n</footer>`
           }, {
             name: 'h1',
@@ -1196,7 +1196,7 @@ export const data = [
             code: `<hgroup>\n    <h1>Alien</h1>\n    <h2>In space, no one can hear you scream</h2>\n</hgroup>\n<p>The commercial vessel Nostromo receives a distress call from an unexplored planet. After searching for survivors, the crew heads home only to realize that a deadly bioform has joined them.</p>`
           }, {
             name: 'header',
-            desc: 'Defines the header of a web page or section.',
+            desc: 'Defines the header of a page or section.',
             code: `<header>\n    <h1>Intraface</h1>\n    <nav>\n        <a>Home</a>\n        <a>About</a>\n        <a>Contact</a>\n    </nav>\n</header>`
           }, {
             name: 'nav',
@@ -1204,7 +1204,7 @@ export const data = [
             code: `<nav>\n    <a href="/">Home</a>\n    <a href="/about">About</a>\n    <a href="/contact">Contact</a>\n</nav>`
           }, {
             name: 'section',
-            desc: 'Defines a section within a web page.',
+            desc: 'Defines a section within a page.',
             code: `<section>\n    <h2>Section title</h2>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n</section>`
           },
         ]
