@@ -1,11 +1,9 @@
 <script>
   import * as config from '$lib/config'
-	import CodeBlock from '$lib/app/CodeBlock.svelte';
-	import CodePreview from '$lib/app/CodePreview.svelte';
-
+	import CodeBlock from '$lib/app/CodeBlock.svelte'
+	import CodePreview from '$lib/app/CodePreview.svelte'
   export let data
 	$: page = data.page
-	console.log(data)
 </script>
 
 <svelte:head>

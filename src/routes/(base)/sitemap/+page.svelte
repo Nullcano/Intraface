@@ -49,7 +49,12 @@
 
 <div class="mw-16 mi-auto pa-4">
   <hgroup class="grid auto-fill ai-center gap-2">
-    <svg class="w-2" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="currentColor"></path></svg>
+    <svg class="w-2" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="16" height="4" fill="var(--light-4)"/>
+      <path d="M0 6H2V4H4V6H6V16H0V6Z" fill="var(--light-4)"/>
+      <path d="M8 6H16V10H8V9H6V7H8V6Z" fill="var(--light-4)"/>
+      <path d="M8 12H16V16H8V15H6V14V13H8V12Z" fill="var(--light-4)"/>
+    </svg>
     <h1>Sitemap</h1>
   </hgroup>
   <div class="grid col-1 gap-2">
@@ -59,12 +64,12 @@
         <div class="flex flex-wrap gap-2">
           {#each Object.keys(searchResults[section]) as category}
             <div>
-              <div class="mb-2 px-2 py-1 bg-white-1">
+              <div class="mb-2 px-2 py-1 bg-light-1">
                 <div>{category}</div>
               </div>
               <div class="flex flex-wrap gap-1">
                 {#each searchResults[section][category] as item}
-                  <div class="categories bg-white-3">
+                  <div class="categories bg-light-3">
                     <a class="block px-2 py-1" href="{section.toLowerCase()}/{item.slug ?? item.name}">
                       {item.name}
                     </a>
@@ -72,7 +77,7 @@
                   {#if item.variants}
                     <div class="flex flex-col gap-1">
                       {#each item.variants as variant}
-                        <div class="variants bg-white-4">
+                        <div class="variants bg-light-4">
                           <a class="block px-2 py-1" href="{section.toLowerCase()}/{item.slug ?? item.name}/#{variant.slug ?? variant.name}">
                             {variant.name}
                           </a>
@@ -101,7 +106,7 @@
     left: calc(50% - 1px);
     width: 2px;
     height: .5rem;
-    background: var(--white-3);
+    background: var(--light-3);
   }
   .variants a::before {
     content: '';
@@ -110,6 +115,6 @@
     top: calc(50% - 1px);
     width: .5rem;
     height: 2px;
-    background: var(--white-4);
+    background: var(--light-4);
   }
 </style>

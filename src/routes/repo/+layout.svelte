@@ -1,14 +1,14 @@
 <script>
 	import ContentAside from '$lib/app/ContentAside.svelte';
 	import NavMain from '$lib/app/NavMain.svelte';
-	import NavLibrary from '$lib/app/NavLibrary.svelte';
+	import NavRepo from '$lib/app/NavRepo.svelte';
 	import ContentMain from '$lib/app/ContentMain.svelte';
   import TopBar from '$lib/app/TopBar.svelte';
 </script>
 
 <ContentAside>
 	<NavMain />
-	<NavLibrary />
+	<NavRepo />
 </ContentAside>
 <ContentMain>
 	<TopBar />

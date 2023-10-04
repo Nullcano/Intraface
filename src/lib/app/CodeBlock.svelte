@@ -1,3 +1,3 @@
-<div class="pa-3 bg-white-1 of-scroll">
+<div class="pa-3 bg-light-1 of-scroll">
   <pre><code><slot /></code></pre>
 </div>

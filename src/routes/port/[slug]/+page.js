@@ -4,7 +4,7 @@ export async function load({ params }) {
   let component = null;
   
   data.forEach((section) => {
-    if (section.section === 'Prefab') {
+    if (section.section === 'Port') {
       section.categories.forEach((category) => {
         const foundItem = category.items.find((item) => item.slug === params.slug);
         if (foundItem) {

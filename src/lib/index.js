@@ -1,7 +1,7 @@
 export const data = [
   {
-    section: 'Prefab',
-    slug: 'components',
+    section: 'Port',
+    slug: 'port',
     categories: [
       {
         name: 'Layout',
@@ -378,9 +378,9 @@ export const data = [
             desc: '',
             variants: [
               {
-                name: '',
+                name: 'Small Avatar',
                 desc: '',
-                code: ``
+                code: `<div class="w-3 h-3 bg-center bg-cover" style="background-image:url(https://placehold.co/400x400?text=IF)"></div>`
               }
             ]
           }, {
@@ -428,7 +428,7 @@ export const data = [
     ],
   }, {
     section: 'Repo',
-    slug: 'library',
+    slug: 'repo',
     categories: [
       {
         name: 'Animation',
@@ -948,7 +948,7 @@ export const data = [
     ]
   }, {
     section: 'Wiki',
-    slug: 'reference',
+    slug: 'wiki',
     categories: [
       {
         name: 'Embedding',
