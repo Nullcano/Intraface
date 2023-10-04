@@ -18,20 +18,22 @@
 			<h1>{page.name}</h1>
 			<p>{page.desc}</p>
 		</div>
-		{#each page.variants as v}
-			<div>
-				<h2 class="pt-6 pb-2" id="{v.name}">{v.name}</h2>
-				{#if v.desc}
-					<p class="mb-3">{@html v.desc}</p>
-				{/if}
-				<CodePreview>
-					{@html v.code}
-				</CodePreview>
-				<CodeBlock>
-					<pre><code>{v.code}</code></pre>
-				</CodeBlock>
-			</div>
-		{/each}
+		<div class="grid col-{page.columns} gap-3">
+			{#each page.variants as v}
+				<div>
+					<h2 class="pt-6 pb-2" id="{v.name}">{v.name}</h2>
+					{#if v.desc}
+						<p class="mb-3">{@html v.desc}</p>
+					{/if}
+					<CodePreview>
+						{@html v.code}
+					</CodePreview>
+					<CodeBlock>
+						<pre><code>{v.code}</code></pre>
+					</CodeBlock>
+				</div>
+			{/each}
+		</div>
 		{#if page.refLibrary}
 			<h3 class="mt-3">CSS collections used</h3>
 			<div class="my-3 flex flex-wrap gap-1">

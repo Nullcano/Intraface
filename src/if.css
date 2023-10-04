@@ -121,7 +121,8 @@ h4 { font-size: 1.2rem }
 h5 { font-size: 1rem }
 h6 { font-size: .8rem }
 th, td { padding: .5rem }
-button, input, textarea { padding:.5rem;border-radius:.5rem;border:1px solid var(--white-3);font-size:inherit }
+button, input, textarea { padding:.5rem;border-radius:.5rem;border:1px solid var(--black-5);font-size:inherit }
+pre { white-space: pre-wrap; word-wrap: break-word; max-width: 100% }
 code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 /* Class Library */
 .ar, .relative { position: relative }

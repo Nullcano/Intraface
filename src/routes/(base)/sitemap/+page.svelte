@@ -70,7 +70,7 @@
               <div class="flex flex-wrap gap-1">
                 {#each searchResults[section][category] as item}
                   <div class="categories bg-light-3">
-                    <a class="block px-2 py-1" href="{section.toLowerCase()}/{item.slug ?? item.name}">
+                    <a class="block px-2 py-1 u-0" href="{section.toLowerCase()}/{item.slug ?? item.name}">
                       {item.name}
                     </a>
                   </div>
@@ -78,7 +78,7 @@
                     <div class="flex flex-col gap-1">
                       {#each item.variants as variant}
                         <div class="variants bg-light-4">
-                          <a class="block px-2 py-1" href="{section.toLowerCase()}/{item.slug ?? item.name}/#{variant.slug ?? variant.name}">
+                          <a class="block px-2 py-1 u-0" href="{section.toLowerCase()}/{item.slug ?? item.name}/#{variant.slug ?? variant.name}">
                             {variant.name}
                           </a>
                         </div>

@@ -12,8 +12,26 @@
     </svg>
     <h1>CSS Repo</h1>
   </hgroup>
-  <div class="mt-4 mw-13">
+  <div class="my-4 mw-13">
     <p>At the core, Intraface is an extensive CSS class library, with its utility classes taking the spotlight. These utility classes are meticulously designed on the bedrock of standardized variables, default resets, and semantic enhancements, forming the backbone of your design toolkit.</p>
     <p class="mt-2">They provide you with an unparalleled degree of flexibility and efficiency, reducing markup clutter and eliminating the need for additional CSS. With this robust CSS class library, you can effortlessly customize and streamline your design work, making it a powerful asset for your projects.</p>
+  </div>
+  <hgroup class="flex flex-col gap-2">
+    <h2>Built with Intraface</h2>
+    <p>These applications are utilizing Intraface.</p>
+  </hgroup>
+  <div class="mt-3 grid col-3 gap-2">
+    <a class="u-0" href="https://github.com/Nullcano/Intraface/issues" target="_blank">
+      <div class="h-10 b-all bw-2 b-light-3 grid place-center br-3">
+        <strong>Built something with Intraface?</strong>
+        <p>Submit it here to get showcased!</p>
+      </div>
+    </a>
+    <a class="u-0" href="/">
+      <div class="h-10 b-all bw-2 b-light-3 grid place-center br-3">
+        <h3>Intraface.io</h3>
+        <p>Documentation site for Intraface.</p>
+      </div>
+    </a>
   </div>
 </div>

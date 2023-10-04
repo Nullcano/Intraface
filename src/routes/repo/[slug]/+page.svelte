@@ -20,10 +20,9 @@
 			<h1>{page.name}</h1>
 			<p>{page.desc}</p>
 		</div>
-		<div class="stack">
+		<div class="grid col-{page.columns} gap-3">
 			{#each page.variants as v}
-				<hr>
-				<div class="component">
+				<div>
 					<h2 class="pt-6 pb-2">{v.name}</h2>
 					{#if v.desc}
 						<p class="mb-3">{@html v.desc}</p>

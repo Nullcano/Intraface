@@ -11,6 +11,7 @@ export const data = [
             name: 'Aspect Ratio',
             slug: 'aspect-ratio',
             desc: 'Fixed and responsive resolutions for media and other elements.',
+            columns: '2',
             variants: [
               {
                 name: '1x1',
@@ -34,7 +35,7 @@ export const data = [
               {
                 name: 'Centered content',
                 desc: '',
-                code: `<div class="grid place-center h-8 bg-white-1">The center of the universe</div>`
+                code: `<div class="grid place-center h-8 bg-light-1">The center of the universe</div>`
               }, {
                 name: 'Centered icon',
                 desc: 'Centering an icon',
@@ -49,11 +50,11 @@ export const data = [
               {
                 name: 'Contain Page',
                 desc: 'Contain a section with a max width.',
-                code: `<div>\n    <div class="mw-14 mi-auto pa-4 bg-white-1">\n        <h1>Welcome to this contained page.</h1>\n    </div>\n</div>`
+                code: `<div>\n    <div class="mw-14 mi-auto pa-4 bg-light-1">\n        <h1>Welcome to this contained page.</h1>\n    </div>\n</div>`
               }, {
                 name: 'Contain Elements',
                 desc: 'Contain a section with a max width.',
-                code: `<div class="p-4 bg-white-1">\n    <div class="mw-13 mi-auto">\n        <img class="w-fill" src="https://picsum.photos/300/200">\n    </div>\n    <div class="mw-12 mi-auto">\n        <p>There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production.</p>\n    </div>\n</div>`
+                code: `<div class="p-4 bg-light-1">\n    <div class="mw-13 mi-auto">\n        <img class="w-fill" src="https://picsum.photos/300/200">\n    </div>\n    <div class="mw-12 mi-auto">\n        <p>There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production.</p>\n    </div>\n</div>`
               }, 
             ],
             refLibrary: [ { name: 'Width', slug: 'width' }, { name: 'Margin', slug: 'margin' }, { name: 'Padding', slug: 'padding' }, { name: 'Background', slug: 'background' } ],
@@ -66,15 +67,15 @@ export const data = [
               {
                 name: 'Column',
                 desc: 'Stack the children.',
-                code: `<div class="flex flex-col gap-2">\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n</div>`
+                code: `<div class="flex flex-col gap-2">\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n</div>`
               }, {
                 name: 'Row',
                 desc: 'Row is the default flex direction but you may also use the class "flex-row" in some circumstances.',
-                code: `<div class="flex gap-2 mw-8">\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n</div>`
+                code: `<div class="flex gap-2 mw-8">\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n</div>`
               }, {
                 name: 'Wrap',
                 desc: 'Starts a new row when the children overflows the flexbox width.',
-                code: `<div class="flex flex-wrap gap-2 mw-8">\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n    <div class="h-2 w-2 bg-white-1"></div>\n</div>`
+                code: `<div class="flex flex-wrap gap-2 mw-8">\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n</div>`
               }
             ]
           }, {
@@ -85,35 +86,35 @@ export const data = [
               {
                 name: '1 column',
                 desc: '',
-                code: `<div class="grid col-1">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
+                code: `<div class="grid col-1">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
               }, {
                 name: '2 columns',
                 desc: '',
-                code: `<div class="grid col-2">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
+                code: `<div class="grid col-2">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
               }, {
                 name: '3 columns',
                 desc: '',
-                code: `<div class="grid col-3">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
+                code: `<div class="grid col-3">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
               }, {
                 name: '4 columns',
                 desc: '',
-                code: `<div class="grid col-4">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
+                code: `<div class="grid col-4">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
               }, {
                 name: '5 columns',
                 desc: '',
-                code: `<div class="grid col-5">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
+                code: `<div class="grid col-5">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
               }, {
                 name: '6 columns',
                 desc: '',
-                code: `<div class="grid col-6">\n    <div class="bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n    <div class="bg-white-1">Item 3</div>\n    <div class="bg-white-3">Item 4</div>\n    <div class="bg-white-1">Item 5</div>\n    <div class="bg-white-3">Item 6</div>\n</div>`
+                code: `<div class="grid col-6">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
               }, {
                 name: 'Auto - fill',
                 desc: 'First child will take up its own width and give the rest of the width to last child.',
-                code: `<div class="grid auto-fill">\n    <div class="w-10 bg-white-1">Item 1</div>\n    <div class="bg-white-3">Item 2</div>\n</div>`
+                code: `<div class="grid auto-fill">\n    <div class="w-10 bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n</div>`
               }, {
                 name: 'Fill - auto',
                 desc: 'Last child will take up its own width and give the rest of the width to first child.',
-                code: `<div class="grid fill-auto">\n    <div class="bg-white-3">Item 1</div>\n    <div class="w-10 bg-white-1">Item 2</div>\n</div>`
+                code: `<div class="grid fill-auto">\n    <div class="bg-light-3">Item 1</div>\n    <div class="w-10 bg-light-1">Item 2</div>\n</div>`
               }
             ]
           },
@@ -126,19 +127,20 @@ export const data = [
             name: 'Button',
             slug: 'button',
             desc: 'Buttons.',
+            columns: '3',
             variants: [
               {
                 name: 'Text Button',
                 desc: '',
-                code: `<button class="p-2 bg-white-4">Intraface</button>`
+                code: `<button class="p-2 bg-light-1">Intraface</button>`
               }, {
                 name: 'Icon Button',
                 desc: '',
-                code: `<button class="w-3 h-3 grid place-center bg-white-4">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="black" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n</button>`
+                code: `<button class="w-3 h-3 grid place-center bg-light-1">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="currentColor" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n</button>`
               }, {
                 name: 'Icon + Text Button',
                 desc: '',
-                code: `<button class="p-2 grid auto-fill ai-center gap-1 bg-white-4">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="black" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n    <span>Intraface</span>\n</button>`
+                code: `<button class="p-2 grid auto-fill ai-center gap-1 bg-light-1">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="currentColor" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n    <span>Intraface</span>\n</button>`
               }
             ]
           }, {
@@ -208,11 +210,11 @@ export const data = [
               }, {
                 name: 'Outline',
                 desc: 'Background, border and text has a color theme.',
-                code: `<span class="px-1 white-5 b-all bw-1 b-white-5">Basic</span>`
+                code: `<span class="px-1 light-5 b-all bw-1 b-light-5">Basic</span>`
               }, {
                 name: 'Compositions',
                 desc: 'Example usage of badges.',
-                code: `<div class="grid auto-fill gap-2">\n    <div class="w-4 h-4 bg-white-1"></div>\n    <div class="flex flex-col">\n        <div class="if ai-center gap-2">\n            <h4>Product Name</h4>\n            <span class="px-1 white-5 b-all bw-1 b-white-5">In Stock</span>\n        </div>\n    <p>Buy this product today and our company will earn money.</p>\n</div>\n</div>`
+                code: `<div class="grid auto-fill gap-2">\n    <div class="w-4 h-4 bg-light-1"></div>\n    <div class="flex flex-col">\n        <div class="if ai-center gap-2">\n            <h4>Product Name</h4>\n            <span class="px-1 light-5 b-all bw-1 b-light-5">In Stock</span>\n        </div>\n    <p>Buy this product today and our company will earn money.</p>\n</div>\n</div>`
               }
             ]
           }, {
@@ -442,11 +444,11 @@ export const data = [
               {
                 name: 'forwards',
                 desc: '',
-                code: `<div class="fade-in forwards w-5 h-5 bg-white-1"></div>`
+                code: `<div class="fade-in forwards w-5 h-5 bg-light-1"></div>`
               }, {
                 name: 'infinite',
                 desc: '',
-                code: `<div class="fade-in infinite w-5 h-5 bg-white-1"></div>`
+                code: `<div class="fade-in infinite w-5 h-5 bg-light-1"></div>`
               },
             ]
           }, {
@@ -457,11 +459,11 @@ export const data = [
               {
                 name: 'fade-in',
                 desc: '',
-                code: `<div class="fade-in infinite w-5 h-5 bg-white-1"></div>`
+                code: `<div class="fade-in infinite w-5 h-5 bg-light-1"></div>`
               }, {
                 name: 'fade-out',
                 desc: '',
-                code: `<div class="fade-out infinite w-5 h-5 bg-white-1"></div>`
+                code: `<div class="fade-out infinite w-5 h-5 bg-light-1"></div>`
               },
             ]
           }, {
@@ -472,11 +474,11 @@ export const data = [
               {
                 name: 'grow',
                 desc: '',
-                code: `<div class="grow infinite w-5 h-5 bg-white-1"></div>`
+                code: `<div class="grow infinite w-5 h-5 bg-light-1"></div>`
               }, {
                 name: 'shrink',
                 desc: '',
-                code: `<div class="shrink infinite w-5 h-5 bg-white-1"></div>`
+                code: `<div class="shrink infinite w-5 h-5 bg-light-1"></div>`
               },
             ]
           }, {
@@ -487,7 +489,7 @@ export const data = [
               {
                 name: 't-all',
                 desc: 'Add transition to all properties.',
-                code: `<div class="t-all bg-black-1 bg-white-1-h white-1 black-1-h w-6 h-4 grid place-center">Hover me</div>`
+                code: `<div class="t-all bg-black-1 bg-light-1-h light-1 black-1-h w-6 h-4 grid place-center">Hover me</div>`
               }
             ]
           }, {
@@ -498,11 +500,11 @@ export const data = [
               {
                 name: 'ascend',
                 desc: '',
-                code: `<div class="ascend infinite w-5 h-5 bg-white-1"></div>`
+                code: `<div class="ascend infinite w-5 h-5 bg-light-1"></div>`
               }, {
                 name: 'descend',
                 desc: '',
-                code: `<div class="descend infinite w-5 h-5 bg-white-1"></div>`
+                code: `<div class="descend infinite w-5 h-5 bg-light-1"></div>`
               }, 
             ]
           }
@@ -526,6 +528,7 @@ export const data = [
             name: 'Background Color',
             slug: 'background-color',
             desc: 'Background colors. Supports hover by appending "-h" to the class name.',
+            columns: '2',
             variants: [
               {
                 name: 'bg-black-[1 to 5]',
@@ -556,7 +559,7 @@ export const data = [
               {
                 name: 'no-repeat',
                 desc: 'Prevent background images from repeating.',
-                code: `<div class="no-repeat bg-white-4 w-12 h-12" style="background-image:url(https://picsum.photos/200/200)"></div>`
+                code: `<div class="no-repeat bg-light-4 w-12 h-12" style="background-image:url(https://picsum.photos/200/200)"></div>`
               },
             ]
           }, {
@@ -588,54 +591,55 @@ export const data = [
               {
                 name: 'bw-[0 to 3]',
                 desc: 'Border widths.',
-                code: `<div class="flex flex-wrap gap-2">\n    <div class="bw-0 b-all b-white-1 bg-white-4 w-6 h-2"></div>\n    <div class="bw-1 b-all b-white-1 bg-white-4 w-6 h-2"></div>\n    <div class="bw-2 b-all b-white-1 bg-white-4 w-6 h-2"></div>\n    <div class="bw-3 b-all b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="bw-0 b-all b-light-1 bg-light-4 w-6 h-2"></div>\n    <div class="bw-1 b-all b-light-1 bg-light-4 w-6 h-2"></div>\n    <div class="bw-2 b-all b-light-1 bg-light-4 w-6 h-2"></div>\n    <div class="bw-3 b-all b-light-1 bg-light-4 w-6 h-2"></div>\n</div>`
               }, {
                 name: 'b-all',
                 desc: 'Border all sides of the element.',
-                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-all bw-1 b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-all bw-1 b-light-1 bg-light-4 w-6 h-2"></div>\n</div>`
               }, {
                 name: 'b-left',
                 desc: 'Border left side of the element.',
-                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-left bw-1 b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-left bw-1 b-light-1 bg-light-4 w-6 h-2"></div>\n</div>`
               }, {
                 name: 'b-right',
                 desc: 'Border right side of the element.',
-                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-right bw-1 b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-right bw-1 b-light-1 bg-light-4 w-6 h-2"></div>\n</div>`
               }, {
                 name: 'b-top',
                 desc: 'Border top side of the element.',
-                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-top bw-1 b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-top bw-1 b-light-1 bg-light-4 w-6 h-2"></div>\n</div>`
               }, {
                 name: 'b-bottom',
                 desc: 'Border bottom side of the element.',
-                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-bottom bw-1 b-white-1 bg-white-4 w-6 h-2"></div>\n</div>`
+                code: `<div class="flex flex-wrap gap-2">\n    <div class="b-bottom bw-1 b-light-1 bg-light-4 w-6 h-2"></div>\n</div>`
               },
             ]
           }, {
             name: 'Height',
             slug: 'height',
             desc: 'Heights.',
+            columns: '3',
             variants: [
               {
                 name: 'h-0',
                 desc: 'Height is 0.',
-                code: `<div class="h-0 bg-white-1"></div>`
+                code: `<div class="h-0 bg-light-1"></div>`
               }, {
                 name: 'h-1',
                 desc: '',
-                code: `<div class="h-1 bg-white-1"></div>`
+                code: `<div class="h-1 bg-light-1"></div>`
               }, {
                 name: 'h-2',
                 desc: '',
-                code: `<div class="h-2 bg-white-1"></div>`
+                code: `<div class="h-2 bg-light-1"></div>`
               }, {
                 name: 'h-3',
                 desc: '',
-                code: `<div class="h-3 bg-white-1"></div>`
+                code: `<div class="h-3 bg-light-1"></div>`
               }, {
                 name: 'h-4',
                 desc: '',
-                code: `<div class="h-4 bg-white-1"></div>`
+                code: `<div class="h-4 bg-light-1"></div>`
               }, 
             ]
           }, {
@@ -956,7 +960,7 @@ export const data = [
         items: [
           {
             name: 'area',
-            desc: 'Defines an interactive area within a <a href="/wiki/map">map</a>.',
+            desc: 'The area element defines sections in an image map. Image maps let you create clickable links within an image.',
             code: `<img src="https://htmlreference.io/images/world-continents.png" width="320" height="160" orgwidth="320" orgheight="160" usemap="#world-continents">\n<map name="world-continents">\n    <area title="North America" href="https://en.wikipedia.org/wiki/North_America" shape="poly" coords="48,89,67,69,77,49,140,0,68,0,6,10,4,31,16,69">\n    <area title="South America" href="https://en.wikipedia.org/wiki/South_America" shape="poly" coords="48,88,61,74,119,99,95,160,66,159">\n    <area title="Europe" href="https://en.wikipedia.org/wiki/Europe" shape="poly" coords="124,49,145,46,158,50,187,43,198,6,146,1,115,21">\n    <area title="Africa" href="https://en.wikipedia.org/wiki/Africa" shape="poly" coords="121,53,140,47,169,51,186,77,196,80,188,137,156,136,138,97,118,86">\n    <area title="Asia" href="https://en.wikipedia.org/wiki/Asia" shape="poly" coords="166,50,184,77,201,74,215,91,258,108,263,87,283,74,297,8,192,3,191,29,187,46,170,42">\n    <area title="Australia" href="https://en.wikipedia.org/wiki/Australia_(continent)" shape="poly" coords="257,107,263,85,314,89,316,137,294,151,249,132,248,114">\n</map>`
           }, {
             name: 'audio',
@@ -981,7 +985,7 @@ export const data = [
           }, {
             name: 'map',
             desc: '',
-            code: ``
+            code: `<img src="https://htmlreference.io/images/world-continents.png" width="320" height="160" orgwidth="320" orgheight="160" usemap="#world-continents">\n<map name="world-continents">\n    <area title="North America" href="https://en.wikipedia.org/wiki/North_America" shape="poly" coords="48,89,67,69,77,49,140,0,68,0,6,10,4,31,16,69">\n    <area title="South America" href="https://en.wikipedia.org/wiki/South_America" shape="poly" coords="48,88,61,74,119,99,95,160,66,159">\n    <area title="Europe" href="https://en.wikipedia.org/wiki/Europe" shape="poly" coords="124,49,145,46,158,50,187,43,198,6,146,1,115,21">\n    <area title="Africa" href="https://en.wikipedia.org/wiki/Africa" shape="poly" coords="121,53,140,47,169,51,186,77,196,80,188,137,156,136,138,97,118,86">\n    <area title="Asia" href="https://en.wikipedia.org/wiki/Asia" shape="poly" coords="166,50,184,77,201,74,215,91,258,108,263,87,283,74,297,8,192,3,191,29,187,46,170,42">\n    <area title="Australia" href="https://en.wikipedia.org/wiki/Australia_(continent)" shape="poly" coords="257,107,263,85,314,89,316,137,294,151,249,132,248,114">\n</map>`
           }, {
             name: 'object',
             desc: '',
