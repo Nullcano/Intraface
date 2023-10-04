@@ -5,7 +5,7 @@
 
   export let data
 	$: page = data.page
-	console.log(page)
+	console.log(data)
 </script>
 
 <svelte:head>
@@ -14,33 +14,30 @@
   <meta property="og:title" content="{page?.name} - {config.title}" />
 </svelte:head>
 
-<article>
+<article class="pa-4">
 	{#if page}
 		<div>
-			<div>
-				<h1>{page.name}</h1>
-				<p>{page.desc}</p>
-			</div>
-			<div class="component">
-				<CodePreview>
-					{@html page.code}
-				</CodePreview>
-				<CodeBlock>
-					<pre><code>{page.code}</code></pre>
-				</CodeBlock>
-			</div>
+			<h1>{page.name}</h1>
+			<p>{page.desc}</p>
+		</div>
+		<div class="stack">
+			{#each page.variants as v}
+				<hr>
+				<div class="component">
+					<h2 class="pt-6 pb-2">{v.name}</h2>
+					{#if v.desc}
+						<p class="mb-3">{@html v.desc}</p>
+					{/if}
+					<CodePreview>
+						{@html v.code}
+					</CodePreview>
+					<CodeBlock>
+						<pre><code>{v.code}</code></pre>
+					</CodeBlock>
+				</div>
+			{/each}
 		</div>
 		{:else}
 		<p>Loading...</p>
 	{/if}
 </article>
-
-<style>
-	article {
-		margin: 1rem;
-		padding: 1rem;
-	}
-	p {
-		margin: 1rem 0;
-	}
-</style>

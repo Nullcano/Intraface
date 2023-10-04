@@ -1,6 +1,6 @@
 export const data = [
   {
-    section: 'Components',
+    section: 'Prefab',
     slug: 'components',
     categories: [
       {
@@ -32,13 +32,13 @@ export const data = [
             desc: 'Centers child elements within itself.',
             variants: [
               {
-                name: 'Centered text content',
+                name: 'Centered content',
                 desc: '',
-                code: `<div class="grid place-center h-5 bg-white-4">The center of the universe</div>`
+                code: `<div class="grid place-center h-8 bg-white-1">The center of the universe</div>`
               }, {
                 name: 'Centered icon',
                 desc: 'Centering an icon',
-                code: `<div class="grid place-center bg-red-1 h-3 w-3">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2H2V14H14V2ZM0 0V16H16V0H0Z" fill="white"/>\n        <path d="M4 4H12V12H4V4Z" fill="white"/>\n    </svg>\n</div>`
+                code: `<div class="grid place-center bg-red-3 h-3 w-3">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2H2V14H14V2ZM0 0V16H16V0H0Z" fill="white"/>\n        <path d="M4 4H12V12H4V4Z" fill="white"/>\n    </svg>\n</div>`
               }
             ]
           }, {
@@ -49,11 +49,11 @@ export const data = [
               {
                 name: 'Contain Page',
                 desc: 'Contain a section with a max width.',
-                code: `<div>\n    <div class="mw-14 mi-auto p-4 bg-white-4">\n        <h1>Welcome to this contained page.</h1>\n    </div>\n</div>`
+                code: `<div>\n    <div class="mw-14 mi-auto pa-4 bg-white-1">\n        <h1>Welcome to this contained page.</h1>\n    </div>\n</div>`
               }, {
                 name: 'Contain Elements',
                 desc: 'Contain a section with a max width.',
-                code: `<div class="p-4 bg-white-4">\n    <div class="mw-13 mi-auto">\n        <img class="w-fill" src="https://picsum.photos/300/200">\n    </div>\n    <div class="mw-12 mi-auto">\n        <p>There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production.</p>\n    </div>\n</div>`
+                code: `<div class="p-4 bg-white-1">\n    <div class="mw-13 mi-auto">\n        <img class="w-fill" src="https://picsum.photos/300/200">\n    </div>\n    <div class="mw-12 mi-auto">\n        <p>There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production.</p>\n    </div>\n</div>`
               }, 
             ],
             refLibrary: [ { name: 'Width', slug: 'width' }, { name: 'Margin', slug: 'margin' }, { name: 'Padding', slug: 'padding' }, { name: 'Background', slug: 'background' } ],
@@ -187,7 +187,7 @@ export const data = [
               {
                 name: 'Basic',
                 desc: '',
-                code: `<label>\n    <input type="radio" name="answer" value="yes"> Yes\n</label>\n<label>\n    <input type="radio" name="answer" value="no"> No\n</label>`
+                code: `<fieldset class="flex gap-2">\n    <label>\n        <input type="radio" name="answer" value="yes"> Yes\n    </label>\n    <label>\n        <input type="radio" name="answer" value="no"> No\n    </label>\n</fieldset>`
               }
             ]
           }
@@ -202,9 +202,17 @@ export const data = [
             desc: '',
             variants: [
               {
-                name: '',
-                desc: '',
-                code: ``
+                name: 'Solid',
+                desc: 'Background, border and text has a color theme.',
+                code: `<span class="px-1 bg-red-5 red-1">Try again</span>`
+              }, {
+                name: 'Outline',
+                desc: 'Background, border and text has a color theme.',
+                code: `<span class="px-1 white-5 b-all bw-1 b-white-5">Basic</span>`
+              }, {
+                name: 'Compositions',
+                desc: 'Example usage of badges.',
+                code: `<div class="grid auto-fill gap-2">\n    <div class="w-4 h-4 bg-white-1"></div>\n    <div class="flex flex-col">\n        <div class="if ai-center gap-2">\n            <h4>Product Name</h4>\n            <span class="px-1 white-5 b-all bw-1 b-white-5">In Stock</span>\n        </div>\n    <p>Buy this product today and our company will earn money.</p>\n</div>\n</div>`
               }
             ]
           }, {
@@ -419,7 +427,7 @@ export const data = [
       }
     ],
   }, {
-    section: 'Library',
+    section: 'Repo',
     slug: 'library',
     categories: [
       {
@@ -521,11 +529,11 @@ export const data = [
             variants: [
               {
                 name: 'bg-black-[1 to 5]',
-                desc: 'The black color palette has a blue shade.',
+                desc: '',
                 code: `<div class="bg-black-1 h-4"></div>\n<div class="bg-black-2 h-4"></div>\n<div class="bg-black-3 h-4"></div>\n<div class="bg-black-4 h-4"></div>\n<div class="bg-black-5 h-4"></div>`
               }, {
                 name: 'bg-white-[1 to 5]',
-                desc: 'The white color palette has a blue shade.',
+                desc: '',
                 code: `<div class="bg-white-1 h-4"></div>\n<div class="bg-white-2 h-4"></div>\n<div class="bg-white-3 h-4"></div>\n<div class="bg-white-4 h-4"></div>\n<div class="bg-white-5 h-4"></div>`
               }
             ]
@@ -714,7 +722,7 @@ export const data = [
             desc: '',
             variants: [
               {
-                name: '0.25 Seconds',
+                name: '',
                 desc: '',
                 code: ``
               }
@@ -725,7 +733,7 @@ export const data = [
             desc: '',
             variants: [
               {
-                name: '0.25 Seconds',
+                name: '',
                 desc: '',
                 code: ``
               }
@@ -736,7 +744,7 @@ export const data = [
             desc: '',
             variants: [
               {
-                name: '0.25 Seconds',
+                name: '',
                 desc: '',
                 code: ``
               }
@@ -747,7 +755,7 @@ export const data = [
             desc: '',
             variants: [
               {
-                name: '0.25 Seconds',
+                name: '',
                 desc: '',
                 code: ``
               }
@@ -758,7 +766,7 @@ export const data = [
             desc: '',
             variants: [
               {
-                name: '0.25 Seconds',
+                name: '',
                 desc: '',
                 code: ``
               }
@@ -769,7 +777,7 @@ export const data = [
             desc: '',
             variants: [
               {
-                name: '0.25 Seconds',
+                name: '',
                 desc: '',
                 code: ``
               }
@@ -780,7 +788,7 @@ export const data = [
             desc: '',
             variants: [
               {
-                name: '0.25 Seconds',
+                name: '',
                 desc: '',
                 code: ``
               }
@@ -791,7 +799,7 @@ export const data = [
             desc: '',
             variants: [
               {
-                name: '0.25 Seconds',
+                name: '',
                 desc: '',
                 code: ``
               }
@@ -830,7 +838,7 @@ export const data = [
             desc: 'Font sizes.',
             variants: [
               {
-                name: 'Absolute',
+                name: '',
                 desc: '',
                 code: ``
               },
@@ -841,7 +849,7 @@ export const data = [
             desc: 'Font styles.',
             variants: [
               {
-                name: 'Absolute',
+                name: '',
                 desc: '',
                 code: ``
               },
@@ -852,7 +860,7 @@ export const data = [
             desc: 'Font weights.',
             variants: [
               {
-                name: 'Absolute',
+                name: '',
                 desc: '',
                 code: ``
               },
@@ -863,7 +871,7 @@ export const data = [
             desc: 'Letter spacings.',
             variants: [
               {
-                name: 'Absolute',
+                name: '',
                 desc: '',
                 code: ``
               },
@@ -874,7 +882,7 @@ export const data = [
             desc: 'Text aligning.',
             variants: [
               {
-                name: 'Absolute',
+                name: '',
                 desc: '',
                 code: ``
               },
@@ -885,7 +893,7 @@ export const data = [
             desc: 'Text decorations.',
             variants: [
               {
-                name: 'Absolute',
+                name: '',
                 desc: '',
                 code: ``
               },
@@ -896,7 +904,7 @@ export const data = [
             desc: 'Text shadows.',
             variants: [
               {
-                name: 'Absolute',
+                name: '',
                 desc: '',
                 code: ``
               },
@@ -907,7 +915,7 @@ export const data = [
             desc: 'Text transforms.',
             variants: [
               {
-                name: 'Absolute',
+                name: '',
                 desc: '',
                 code: ``
               },
@@ -918,7 +926,7 @@ export const data = [
             desc: 'Modify white space.',
             variants: [
               {
-                name: 'Absolute',
+                name: '',
                 desc: '',
                 code: ``
               },
@@ -929,7 +937,7 @@ export const data = [
             desc: 'Word breaks.',
             variants: [
               {
-                name: 'Absolute',
+                name: '',
                 desc: '',
                 code: ``
               },
@@ -939,7 +947,7 @@ export const data = [
       }
     ]
   }, {
-    section: 'Reference',
+    section: 'Wiki',
     slug: 'reference',
     categories: [
       {

@@ -5,7 +5,6 @@
 
   export let data
 	$: page = data.page
-	console.log(data)
 </script>
 
 <svelte:head>
@@ -19,22 +18,15 @@
 		<div>
 			<div>
 				<h1>{page.name}</h1>
-				<p>{page.desc}</p>
+				<p>{@html page.desc}</p>
 			</div>
-			<div class="stack">
-				{#each page.variants as v}
-					<hr>
-					<div class="component">
-						<h2 class="title">{v.name}</h2>
-						<p>{v.desc}</p>
-						<CodePreview>
-							{@html v.code}
-						</CodePreview>
-						<CodeBlock>
-							<pre><code>{v.code}</code></pre>
-						</CodeBlock>
-					</div>
-        {/each}
+			<div class="component">
+				<CodePreview>
+					{@html page.code}
+				</CodePreview>
+				<CodeBlock>
+					<pre><code>{page.code}</code></pre>
+				</CodeBlock>
 			</div>
 		</div>
 		{:else}
@@ -49,14 +41,5 @@
 	}
 	p {
 		margin: 1rem 0;
-	}
-	.stack {
-		margin: 1rem 0;
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-	}
-	.title {
-		margin-block: 1rem;
 	}
 </style>

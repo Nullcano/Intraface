@@ -1,17 +1,21 @@
 <script>
   import { data } from '$lib/index'
-  const section = data.find(i => i.section === 'Components')
+  import { page } from '$app/stores'
+  $: currentPath = $page.url.pathname
+  const section = data.find(i => i.section === 'Prefab')
 </script>
 
 {#each section.categories as c}
-  <ul class="mt-3 b-all bw-1 b-white-2">
-    <h5 class="sticky top-0 px-2 py-1 bg-white-2">{c.name}</h5>
-    {#each c.items as i}
-      <li>
-        <a class="block px-2 py-1" href="/components/{i.slug}">
-          {i.name}
-        </a>
-      </li>
-    {/each}
-  </ul>
+  <div class="mt-3 pt-2 bg-white-1 br-3">
+    <h5 class="sticky top-0 mx-2 pa-2 bg-white-2 br-2">{c.name}</h5>
+    <ul class="pa-2">
+      {#each c.items as i}
+        <li>
+          <a class="block pa-2 black-1 black-5-h t-all br-2 {currentPath === '/prefab/' + i.slug ? 'bg-white-2' : ''}" href="/prefab/{i.slug}">
+            {i.name}
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </div>
 {/each}
