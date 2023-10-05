@@ -7,9 +7,9 @@
 </script>
 
 <svelte:head>
-  <title>{page?.name} - {config.title}</title>
+  <title>{page?.name} &middot; Prefab Port &middot; {config.title}</title>
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="{page?.name} - {config.title}" />
+  <meta property="og:title" content="{page?.name} &middot; Prefab Port &middot; {config.title}" />
 </svelte:head>
 
 <article class="mw-16 mi-auto pa-4">

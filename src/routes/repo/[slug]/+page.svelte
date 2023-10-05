@@ -1,17 +1,15 @@
 <script>
   import * as config from '$lib/config'
-	import CodeBlock from '$lib/app/CodeBlock.svelte';
-	import CodePreview from '$lib/app/CodePreview.svelte';
-
+	import CodeBlock from '$lib/app/CodeBlock.svelte'
+	import CodePreview from '$lib/app/CodePreview.svelte'
   export let data
 	$: page = data.page
-	console.log(data)
 </script>
 
 <svelte:head>
-  <title>{page?.name} - {config.title}</title>
+  <title>{page?.name} &middot; CSS Repo &middot; {config.title}</title>
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="{page?.name} - {config.title}" />
+  <meta property="og:title" content="{page?.name} &middot; CSS Repo &middot; {config.title}" />
 </svelte:head>
 
 <article class="pa-4">

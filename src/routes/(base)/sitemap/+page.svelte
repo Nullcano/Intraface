@@ -1,8 +1,7 @@
 <script>
-  import { data } from '$lib/index';
-  let searchQuery = '';
+  import { data } from '$lib/index'
+  let searchQuery = ''
 
-  // Flatten the data structure into an array of items
   const allItems = data.flatMap(section =>
     section.categories.flatMap(category =>
       category.items.map(item => ({
@@ -13,24 +12,22 @@
     )
   );
 
-  // Function to group items by section and category
   function groupItems(items) {
-    const grouped = {};
+    const grouped = {}
     items.forEach(item => {
       if (!grouped[item.section]) {
-        grouped[item.section] = {};
+        grouped[item.section] = {}
       }
       if (!grouped[item.section][item.category]) {
-        grouped[item.section][item.category] = [];
+        grouped[item.section][item.category] = []
       }
-      grouped[item.section][item.category].push(item);
+      grouped[item.section][item.category].push(item)
     });
-    return grouped;
+    return grouped
   }
 
   $: groupedResults = groupItems(allItems);
 
-  // Function to filter results by search query
   function filterResults(results) {
     const filtered = {};
     for (const section in results) {
@@ -41,11 +38,15 @@
         );
       }
     }
-    return filtered;
+    return filtered
   }
 
-  $: searchResults = filterResults(groupedResults);
+  $: searchResults = filterResults(groupedResults)
 </script>
+
+<svelte:head>
+	<title>Sitemap &middot; Intraface</title>
+</svelte:head>
 
 <div class="mw-16 mi-auto pa-4">
   <hgroup class="grid auto-fill ai-center gap-2">

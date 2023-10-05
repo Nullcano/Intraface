@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Color Grid &middot; Intraface</title>
+</svelte:head>
+
 <article class="mw-16 mi-auto pa-4">
   <hgroup class="grid auto-fill ai-center gap-2">
     <svg class="w-2" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -571,16 +571,76 @@ export const data = [
             name: 'Background Color',
             slug: 'background-color',
             desc: 'Background colors. Supports hover by appending "-h" to the class name.',
-            columns: '2',
+            columns: '3',
             variants: [
               {
+                name: 'bg-black and bg-white',
+                desc: 'Not affected by theme change, unlike the other black and white variants.',
+                code: `<div class="bg-black h-3"></div>\n<div class="bg-white h-3"></div>`
+              }, {
                 name: 'bg-black-[1 to 5]',
                 desc: '',
-                code: `<div class="bg-black-1 h-4"></div>\n<div class="bg-black-2 h-4"></div>\n<div class="bg-black-3 h-4"></div>\n<div class="bg-black-4 h-4"></div>\n<div class="bg-black-5 h-4"></div>`
+                code: `<div class="bg-black-1 h-3"></div>\n<div class="bg-black-2 h-3"></div>\n<div class="bg-black-3 h-3"></div>\n<div class="bg-black-4 h-3"></div>\n<div class="bg-black-5 h-3"></div>`
+              }, {
+                name: 'bg-blue-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-blue-1 h-3"></div>\n<div class="bg-blue-2 h-3"></div>\n<div class="bg-blue-3 h-3"></div>\n<div class="bg-blue-4 h-3"></div>\n<div class="bg-blue-5 h-3"></div>`
+              }, {
+                name: 'bg-cyan-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-cyan-1 h-3"></div>\n<div class="bg-cyan-2 h-3"></div>\n<div class="bg-cyan-3 h-3"></div>\n<div class="bg-cyan-4 h-3"></div>\n<div class="bg-cyan-5 h-3"></div>`
+              }, {
+                name: 'bg-dark-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-dark-1 h-3"></div>\n<div class="bg-dark-2 h-3"></div>\n<div class="bg-dark-3 h-3"></div>\n<div class="bg-dark-4 h-3"></div>\n<div class="bg-dark-5 h-3"></div>`
+              }, {
+                name: 'bg-grape-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-grape-1 h-3"></div>\n<div class="bg-grape-2 h-3"></div>\n<div class="bg-grape-3 h-3"></div>\n<div class="bg-grape-4 h-3"></div>\n<div class="bg-grape-5 h-3"></div>`
+              }, {
+                name: 'bg-green-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-green-1 h-3"></div>\n<div class="bg-green-2 h-3"></div>\n<div class="bg-green-3 h-3"></div>\n<div class="bg-green-4 h-3"></div>\n<div class="bg-green-5 h-3"></div>`
+              }, {
+                name: 'bg-indigo-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-indigo-1 h-3"></div>\n<div class="bg-indigo-2 h-3"></div>\n<div class="bg-indigo-3 h-3"></div>\n<div class="bg-indigo-4 h-3"></div>\n<div class="bg-indigo-5 h-3"></div>`
+              }, {
+                name: 'bg-light-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-light-1 h-3"></div>\n<div class="bg-light-2 h-3"></div>\n<div class="bg-light-3 h-3"></div>\n<div class="bg-light-4 h-3"></div>\n<div class="bg-light-5 h-3"></div>`
+              }, {
+                name: 'bg-lime-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-lime-1 h-3"></div>\n<div class="bg-lime-2 h-3"></div>\n<div class="bg-lime-3 h-3"></div>\n<div class="bg-lime-4 h-3"></div>\n<div class="bg-lime-5 h-3"></div>`
+              }, {
+                name: 'bg-orange-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-orange-1 h-3"></div>\n<div class="bg-orange-2 h-3"></div>\n<div class="bg-orange-3 h-3"></div>\n<div class="bg-orange-4 h-3"></div>\n<div class="bg-orange-5 h-3"></div>`
+              }, {
+                name: 'bg-pink-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-pink-1 h-3"></div>\n<div class="bg-pink-2 h-3"></div>\n<div class="bg-pink-3 h-3"></div>\n<div class="bg-pink-4 h-3"></div>\n<div class="bg-pink-5 h-3"></div>`
+              }, {
+                name: 'bg-red-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-red-1 h-3"></div>\n<div class="bg-red-2 h-3"></div>\n<div class="bg-red-3 h-3"></div>\n<div class="bg-red-4 h-3"></div>\n<div class="bg-red-5 h-3"></div>`
+              }, {
+                name: 'bg-teal-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-teal-1 h-3"></div>\n<div class="bg-teal-2 h-3"></div>\n<div class="bg-teal-3 h-3"></div>\n<div class="bg-teal-4 h-3"></div>\n<div class="bg-teal-5 h-3"></div>`
+              }, {
+                name: 'bg-violet-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-violet-1 h-3"></div>\n<div class="bg-violet-2 h-3"></div>\n<div class="bg-violet-3 h-3"></div>\n<div class="bg-violet-4 h-3"></div>\n<div class="bg-violet-5 h-3"></div>`
               }, {
                 name: 'bg-white-[1 to 5]',
                 desc: '',
-                code: `<div class="bg-white-1 h-4"></div>\n<div class="bg-white-2 h-4"></div>\n<div class="bg-white-3 h-4"></div>\n<div class="bg-white-4 h-4"></div>\n<div class="bg-white-5 h-4"></div>`
+                code: `<div class="bg-white-1 h-3"></div>\n<div class="bg-white-2 h-3"></div>\n<div class="bg-white-3 h-3"></div>\n<div class="bg-white-4 h-3"></div>\n<div class="bg-white-5 h-3"></div>`
+              }, {
+                name: 'bg-yellow-[1 to 5]',
+                desc: '',
+                code: `<div class="bg-yellow-1 h-3"></div>\n<div class="bg-yellow-2 h-3"></div>\n<div class="bg-yellow-3 h-3"></div>\n<div class="bg-yellow-4 h-3"></div>\n<div class="bg-yellow-5 h-3"></div>`
               }
             ]
           }, {

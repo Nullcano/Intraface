@@ -1,6 +1,6 @@
 <script>
-	import '../if.css';
-	import '../app.css';
+	import '../if.css'
+	import '../app.css'
 </script>
 
 <svelte:head>
