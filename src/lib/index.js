@@ -15,16 +15,16 @@ export const data = [
             variants: [
               {
                 name: '1x1',
-                desc: '',
+                desc: 'This element will have equal sides regardless of parent\'s or children\'s box model.',
                 code: `<div class="ar ar-1x1 mw-10">\n    <img class="of-cov" src="https://picsum.photos/100/200">\n</div>`
               }, {
                 name: '4x3',
-                desc: '',
-                code: `<div class="ar ar-4x3 mw-11">\n    <img class="of-cov" src="https://picsum.photos/200/200">\n</div>`
+                desc: 'This element will have a 4:3 ratio regardless of parent\'s or children\'s box model.',
+                code: `<div class="ar ar-4x3 mw-12 bg-black">\n    <embed src="https://giphy.com/embed/kLm8orAKvYgkR1mB0l">\n</div>`
               }, {
                 name: '16x9',
-                desc: '',
-                code: `<div class="ar ar-16x9 mw-12">\n    <img class="of-cov" src="https://picsum.photos/300/200">\n</div>`
+                desc: 'This element will have a 16:9 ratio regardless of parent\'s or children\'s box model.',
+                code: `<div class="ar ar-16x9 mw-14">\n    <video src="http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm" controls></video>\n</div>`
               }
             ]
           }, {
@@ -227,14 +227,51 @@ export const data = [
             name: 'Card',
             slug: 'card',
             desc: '',
+            columns: '2',
             variants: [
               {
-                name: '',
+                name: 'Basic Card',
                 desc: '',
-                code: ``
+                code: `<div class="pa-3 br-2 bg-light-1">Welcome to internet.com. Please <a href="#">sign in</a>.</a>`
+              }, {
+                name: 'Product Card',
+                desc: '',
+                code: `<div class="pa-3 br-2 bg-light-1 stack gap-1 mw-11">\n    <div class="h-7 bg-center bg-cover br-2" style="background-image:url(https://placehold.co/400x400?text=Product)"></div>\n    <h4>Product Name</h4>\n    <p>Great product description here.</p>\n</div>`
               }
             ]
-          }
+          }, {
+            name: 'Code',
+            slug: 'code',
+            desc: '',
+            columns: '2',
+            variants: [
+              {
+                name: 'Inline Code',
+                desc: '',
+                code: `<p>Install your dependencies by entering <code class="pa-1 br-1 bg-light-4">npm install</code> in your terminal.`
+              }, {
+                name: 'Code Block',
+                desc: '',
+                code: `<div class="pa-2 br-2 bg-black red-1">\n    <pre><code>@import url('https://intraface.io/if.min.css');\n/* Custom styles */</code></pre>\n</div>`
+              }
+            ]
+          }, {
+            name: 'Divider',
+            slug: 'divider',
+            desc: '',
+            columns: '2',
+            variants: [
+              {
+                name: 'Horizontal',
+                desc: '',
+                code: `<div class="stack gap-1">\n    <div>Intraface</div>\n    <div class="w-fill h-0 b-bottom bw-1 b-light-5"></div>\n    <div>Your new design tool</div>\n</div>`
+              }, {
+                name: 'Vertical',
+                desc: '',
+                code: `<div class="flex ai-center gap-2">\n    <div>Intraface</div>\n    <div class="w-0 h-3 b-right bw-1 b-light-5"></div>\n    <div>Your new design tool</div>\n</div>`
+              }
+            ]
+          }, 
         ]
       }, {
         name: 'Feedback',
@@ -1007,7 +1044,7 @@ export const data = [
           }, {
             name: 'video',
             desc: 'Allows to embed an video clip into a page.',
-            code: `<video src="https://htmlreference.io/assets/HTML%205%20Video.mp4" controls></video>`
+            code: `<video src="http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm" controls></video>`
           }
         ]
       }, {

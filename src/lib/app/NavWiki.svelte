@@ -1,8 +1,10 @@
 <script>
   import { data } from '$lib/index'
-  import { page } from '$app/stores';  
-  $: currentPath = $page.url.pathname;
+  import { page } from '$app/stores'  
+  $: currentPath = $page.url.pathname
   const section = data.find(i => i.section === 'Wiki')
+  const randomItem = (arr) => arr[(Math.random() * arr.length) | 0]
+  const colors = ['blue', 'cyan', 'grape', 'green', 'indigo', 'lime', 'orange', 'pink', 'red', 'teal', 'violet', 'yellow']
 </script>
 
 {#each section.categories as c}
@@ -11,8 +13,11 @@
     <ul class="pa-2">
       {#each c.items as i}
         <li>
-          <a class="block pa-2 black-3 black-1-h t-all br-2 u-0 {currentPath === '/wiki/' + i.name ? 'bg-light-2' : ''}" href="/wiki/{i.name}">
-            {i.name}
+          <a class="block px-2 py-1 grid auto-fill gap-1 ai-center black-3 black-1-h bg-light-2-h t-all br-2 u-0 {currentPath === '/wiki/' + i.name ? 'bg-light-2' : ''}" href="/wiki/{i.name}">
+            <svg class="br-circle" width="8" height="8" xmlns="http://www.w3.org/2000/svg">
+              <rect width="8" height="8" fill="var(--{randomItem(colors)}-1)" />
+            </svg>
+            <span>{i.name}</span>
           </a>
         </li>
       {/each}
