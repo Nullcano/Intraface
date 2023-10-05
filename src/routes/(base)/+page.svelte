@@ -25,7 +25,7 @@
     <div class="pa-3 br-3 yellow-5 bg-yellow-1">
       <h3>Experimental</h3>
       <div class="mt-2 pa-2 bg-yellow-2 of-scroll-x br-2">
-        <code>&lt;link href="https://cdn.jsdelivr.net/gh/Nullcano/Intraface@main/src/if.css" rel="stylesheet"&gt;</code>
+        <code>&lt;link href="https://intraface.io/if.min.css" rel="stylesheet"&gt;</code>
       </div>
     </div>
     <div class="pa-3 br-3 red-5 bg-red-1">
