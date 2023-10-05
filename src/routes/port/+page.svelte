@@ -5,18 +5,23 @@
     </svg>
     <h1>Prefab Port</h1>
   </hgroup>
-  <div class="mt-4 mw-13">
-    <p class="mb-2">
-      Scout through our ever-expanding cargo of pre-fabricated web components, designed to be shipped directly to your application.
-    </p>
-    <p class="mb-2">
-      We've meticulously styled each component, ensuring they are not only responsive but also accessible, ready to be unloaded onto your web app with ease.
-    </p>
-    <p class="mb-2">
-      Recognizing that every project embarks on its unique design journey, we empower you with the tools to seamlessly customize components. <a href="/repo">Navigate our extensive CSS class library</a> to pinpoint the right coordinates and align them with your vision's destination.
-    </p>
-    <p>
-      The web component ocean is ever-changing. Our crew is constantly at work, updating and expanding our component inventory to adapt to the shifting tides of web design and development.
-    </p>
+  <div class="mt-4 grid col-2 gap-3">
+    <div>
+      <p class="mb-2">
+        Scout through our ever-expanding cargo of pre-fabricated web components, designed to be shipped directly to your application.
+      </p>
+      <p class="mb-2">
+        We've meticulously styled each component, ensuring they are not only responsive but also accessible, ready to be unloaded onto your web app with ease.
+      </p>
+      <p class="mb-2">
+        Recognizing that every project embarks on its unique design journey, we empower you with the tools to seamlessly customize components. <a href="/repo">Navigate our extensive CSS class library</a> to pinpoint the right coordinates and align them with your vision's destination.
+      </p>
+      <p>
+        The web component ocean is ever-changing. Our crew is constantly at work, updating and expanding our component inventory to adapt to the shifting tides of web design and development.
+      </p>
+    </div>
+    <figure>
+      <img class="br-2" src="/port.webp" alt="Port">
+    </figure>
   </div>
 </div>

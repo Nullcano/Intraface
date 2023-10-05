@@ -158,6 +158,7 @@ export const data = [
             name: 'Input',
             slug: 'input',
             desc: 'Inputs.',
+            columns: '3',
             variants: [
               {
                 name: 'Text Input',
@@ -202,19 +203,24 @@ export const data = [
             name: 'Badge',
             slug: 'badge',
             desc: '',
+            columns: '2',
             variants: [
               {
                 name: 'Solid',
                 desc: 'Background, border and text has a color theme.',
-                code: `<span class="px-1 bg-red-5 red-1">Try again</span>`
+                code: `<span class="ib px-1 bg-red-1 red-5">Try again</span>`
               }, {
                 name: 'Outline',
                 desc: 'Background, border and text has a color theme.',
-                code: `<span class="px-1 light-5 b-all bw-1 b-light-5">Basic</span>`
+                code: `<span class="ib px-1 black-4 b-all bw-1 b-black-4 br-2">Basic</span>`
+              }, {
+                name: 'Icon Badge',
+                desc: 'Stylize an icon to look like a badge.',
+                code: '<span class="ib w-2 h-2 br-circle bg-blue-2 grid place-center">\n    <svg class="w-1" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M22 2.08006L8.21742 16L0 7.70069L2.1244 5.62063L8.21742 11.7744L19.8756 0L22 2.08006Z" fill="white"/>\n    </svg>\n</span>'
               }, {
                 name: 'Compositions',
                 desc: 'Example usage of badges.',
-                code: `<div class="grid auto-fill gap-2">\n    <div class="w-4 h-4 bg-light-1"></div>\n    <div class="flex flex-col">\n        <div class="if ai-center gap-2">\n            <h4>Product Name</h4>\n            <span class="px-1 light-5 b-all bw-1 b-light-5">In Stock</span>\n        </div>\n    <p>Buy this product today and our company will earn money.</p>\n</div>\n</div>`
+                code: `<div class="grid auto-fill gap-2">\n    <div class="w-4 h-4 bg-light-1"></div>\n    <div class="flex flex-col">\n        <div class="if ai-center gap-2">\n            <h4>Product Name</h4>\n            <span class="ib px-1 black-4 b-all bw-1 b-black-4">In Stock</span>\n        </div>\n    <p>Buy this product today and our company will earn money.</p>\n</div>\n</div>`
               }
             ]
           }, {
