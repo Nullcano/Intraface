@@ -3,7 +3,7 @@
     <svg class="w-2" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 14L2 16L8 7L12 5.5L13.5 4L14 6L16 0L10 2L12 2.5L10 4L6 5L0 14Z" fill="var(--light-4)"/>
     </svg>
-    <h1>Elevated Web Development</h1>  
+    <h1>Elevated Web Development</h1>
   </hgroup>
   <div class="my-3 grid col-2 gap-2">
     <div class="pa-3 br-3 bg-light-1">
