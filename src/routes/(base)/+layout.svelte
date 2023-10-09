@@ -1,18 +1,19 @@
 <script>
+	import { base } from '$lib/base'
 	import ContentAside from '$lib/app/ContentAside.svelte'
-	import NavMain from '$lib/app/NavMain.svelte'
+  import NavBase from '$lib/app/NavBase.svelte'
 	import ContentMain from '$lib/app/ContentMain.svelte'
   import TopBar from '$lib/app/TopBar.svelte'
 </script>
 
 <svelte:head>
-	<title>Intraface</title>
+	<title>{base.name}</title>
 </svelte:head>
 
+<TopBar />
 <ContentAside>
-	<NavMain />
+	<NavBase />
 </ContentAside>
 <ContentMain>
-	<TopBar />
 	<slot />
 </ContentMain>

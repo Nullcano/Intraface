@@ -151,11 +151,11 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .green-3 { color: var(--green-3) }
 .green-4 { color: var(--green-4) }
 .green-5 { color: var(--green-5) }
-.light-1 { color: var(--light-1) }
-.light-2 { color: var(--light-2) }
-.light-3 { color: var(--light-3) }
-.light-4 { color: var(--light-4) }
-.light-5 { color: var(--light-5) }
+.light-1, .light-1-h:hover { color: var(--light-1) }
+.light-2, .light-2-h:hover { color: var(--light-2) }
+.light-3, .light-3-h:hover { color: var(--light-3) }
+.light-4, .light-4-h:hover { color: var(--light-4) }
+.light-5, .light-5-h:hover { color: var(--light-5) }
 .red-1 { color: var(--red-1) }
 .red-2 { color: var(--red-2) }
 .red-3 { color: var(--red-3) }
@@ -303,6 +303,7 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .b-right { border-right-style: solid }
 .b-top { border-top-style: solid }
 .b-bottom { border-bottom-style: solid }
+.b-dashed { border-style: dashed }
 .bw-0 { border-width: 0 }
 .bw-1 { border-width: 1px }
 .bw-2 { border-width: 2px }
@@ -490,6 +491,7 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .top-3 { top: 3rem }
 .top-4 { top: 4rem }
 .top-5 { top: 5rem }
+.left-0 { left: 0 }
 .of-hidden { overflow: hidden }
 .of-visible { overflow: visible }
 .of-scroll { overflow: auto }

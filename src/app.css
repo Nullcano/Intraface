@@ -1,8 +1,7 @@
 [if-sidebar="fixed-wide"] {
   position: fixed;
-  top: 0;
   width: 16rem;
-  height: 100vh;
+  height: calc(100vh - 3rem);
   overflow-y: auto;
 }
 [if-icon] {
