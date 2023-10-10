@@ -1,11 +1,10 @@
 <script>
-	import { base } from '$lib/base'
 	import ContentMain from '$lib/app/ContentMain.svelte'
   import TopBar from '$lib/app/TopBar.svelte'
 </script>
 
 <svelte:head>
-	<title>{base.name}</title>
+	<title>CSS Repo &middot; Intraface</title>
 </svelte:head>
 
 <TopBar />

@@ -3,10 +3,6 @@ export const wiki = {
   slug: 'wiki',
   categories: [
     {
-      name: 'Overview',
-      slug: '',
-      items: []
-    }, {
       name: 'Embedding',
       slug: 'embedding',
       items: [

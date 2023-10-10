@@ -4,16 +4,12 @@ export const port = {
   desc: 'Intraface component library.',
   categories: [
     {
-      name: 'Overview',
-      slug: 'port',
-      items: []
-    }, {
       name: 'Layout',
-      slug: 'port/layout',
+      slug: 'layout',
       items: [
         {
           name: 'Aspect Ratio',
-          slug: 'port/aspect-ratio',
+          slug: 'aspect-ratio',
           desc: 'Fixed and responsive resolutions for media and other elements.',
           columns: '2',
           variants: [
@@ -33,7 +29,7 @@ export const port = {
           ]
         }, {
           name: 'Center',
-          slug: 'port/center',
+          slug: 'center',
           desc: 'Centers child elements within itself.',
           variants: [
             {
@@ -48,7 +44,7 @@ export const port = {
           ]
         }, {
           name: 'Container',
-          slug: 'port/container',
+          slug: 'container',
           desc: 'Containers are used to constrain a content\'s width, while keeping it fluid. Usually achieved by setting a max width (mw-[size]) and the inline margin to auto (mi-auto).',
           variants: [
             {
@@ -61,11 +57,11 @@ export const port = {
               code: `<div class="p-4 bg-light-1">\n    <div class="mw-13 mi-auto">\n        <img class="w-fill" src="https://picsum.photos/300/200">\n    </div>\n    <div class="mw-12 mi-auto">\n        <p>There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production.</p>\n    </div>\n</div>`
             }, 
           ],
-          refLibrary: [ { name: 'Width', slug: 'port/width' }, { name: 'Margin', slug: 'port/margin' }, { name: 'Padding', slug: 'port/padding' }, { name: 'Background', slug: 'port/background' } ],
-          refReference: [ { name: 'h1', slug: 'port/h1' }, { name: 'img', slug: 'port/img' }, { name: 'p', slug: 'port/p' } ],
+          refLibrary: [ { name: 'Width', slug: 'width' }, { name: 'Margin', slug: 'margin' }, { name: 'Padding', slug: 'padding' }, { name: 'Background', slug: 'background' } ],
+          refReference: [ { name: 'h1', slug: 'h1' }, { name: 'img', slug: 'img' }, { name: 'p', slug: 'p' } ],
         }, {
           name: 'Flex',
-          slug: 'port/flex',
+          slug: 'flex',
           desc: 'Flexboxes.',
           variants: [
             {
@@ -84,7 +80,7 @@ export const port = {
           ]
         }, {
           name: 'Grid',
-          slug: 'port/grid',
+          slug: 'grid',
           desc: 'Create various grid layouts with ease.',
           variants: [
             {
@@ -125,11 +121,11 @@ export const port = {
       ]
     }, {
       name: 'Forms',
-      slug: 'port/forms',
+      slug: 'forms',
       items: [
         {
           name: 'Button',
-          slug: 'port/button',
+          slug: 'button',
           desc: 'Buttons.',
           columns: '3',
           variants: [
@@ -149,7 +145,7 @@ export const port = {
           ]
         }, {
           name: 'Checkbox',
-          slug: 'port/checkbox',
+          slug: 'checkbox',
           desc: 'Checkboxes.',
           variants: [
             {
@@ -160,7 +156,7 @@ export const port = {
           ]
         }, {
           name: 'Input',
-          slug: 'port/input',
+          slug: 'input',
           desc: 'Inputs.',
           columns: '3',
           variants: [
@@ -188,7 +184,7 @@ export const port = {
           ]
         }, {
           name: 'Radio',
-          slug: 'port/radio',
+          slug: 'radio',
           desc: 'Radios.',
           variants: [
             {
@@ -201,11 +197,11 @@ export const port = {
       ]
     }, {
       name: 'Data Display',
-      slug: 'port/data-display',
+      slug: 'data-display',
       items: [
         {
           name: 'Badge',
-          slug: 'port/badge',
+          slug: 'badge',
           desc: '',
           columns: '2',
           variants: [
@@ -229,7 +225,7 @@ export const port = {
           ]
         }, {
           name: 'Card',
-          slug: 'port/card',
+          slug: 'card',
           desc: '',
           columns: '2',
           variants: [
@@ -245,7 +241,7 @@ export const port = {
           ]
         }, {
           name: 'Code',
-          slug: 'port/code',
+          slug: 'code',
           desc: '',
           columns: '2',
           variants: [
@@ -261,7 +257,7 @@ export const port = {
           ]
         }, {
           name: 'Divider',
-          slug: 'port/divider',
+          slug: 'divider',
           desc: '',
           columns: '2',
           variants: [
@@ -279,11 +275,11 @@ export const port = {
       ]
     }, {
       name: 'Feedback',
-      slug: 'port/feedback',
+      slug: 'feedback',
       items: [
         {
           name: 'Alert',
-          slug: 'port/alert',
+          slug: 'alert',
           desc: '',
           variants: [
             {
@@ -294,7 +290,7 @@ export const port = {
           ]
         }, {
           name: 'Progress',
-          slug: 'port/progress',
+          slug: 'progress',
           desc: '',
           variants: [
             {
@@ -307,11 +303,11 @@ export const port = {
       ]
     }, {
       name: 'Typography',
-      slug: 'port/typography',
+      slug: 'typography',
       items: [
         {
           name: 'Text',
-          slug: 'port/text',
+          slug: 'text',
           desc: '',
           variants: [
             {
@@ -322,7 +318,7 @@ export const port = {
           ]
         }, {
           name: 'Heading',
-          slug: 'port/heading',
+          slug: 'heading',
           desc: '',
           variants: [
             {
@@ -335,11 +331,11 @@ export const port = {
       ]
     }, {
       name: 'Overlay',
-      slug: 'port/overlay',
+      slug: 'overlay',
       items: [
         {
           name: 'Alert Dialog',
-          slug: 'port/alert-dialog',
+          slug: 'alert-dialog',
           desc: '',
           variants: [
             {
@@ -350,7 +346,7 @@ export const port = {
           ]
         }, {
           name: 'Drawer',
-          slug: 'port/drawer',
+          slug: 'drawer',
           desc: '',
           variants: [
             {
@@ -363,11 +359,11 @@ export const port = {
       ]
     }, {
       name: 'Disclosure',
-      slug: 'port/disclosure',
+      slug: 'disclosure',
       items: [
         {
           name: 'Accordion',
-          slug: 'port/accordion',
+          slug: 'accordion',
           desc: '',
           variants: [
             {
@@ -378,7 +374,7 @@ export const port = {
           ]
         }, {
           name: 'Tabs',
-          slug: 'port/tabs',
+          slug: 'tabs',
           desc: '',
           variants: [
             {
@@ -391,11 +387,11 @@ export const port = {
       ]    
     }, {
       name: 'Navigation',
-      slug: 'port/navigation',
+      slug: 'navigation',
       items: [
         {
           name: 'Breadcrumb',
-          slug: 'port/breadcrumb',
+          slug: 'breadcrumb',
           desc: '',
           variants: [
             {
@@ -406,7 +402,7 @@ export const port = {
           ]
         }, {
           name: 'Link',
-          slug: 'port/link',
+          slug: 'link',
           desc: '',
           variants: [
             {
@@ -419,11 +415,11 @@ export const port = {
       ]
     }, {
       name: 'Media',
-      slug: 'port/media',
+      slug: 'media',
       items: [
         {
           name: 'Avatar',
-          slug: 'port/avatar',
+          slug: 'avatar',
           desc: '',
           variants: [
             {
@@ -434,7 +430,7 @@ export const port = {
           ]
         }, {
           name: 'Icon',
-          slug: 'port/icon',
+          slug: 'icon',
           desc: '',
           variants: [
             {
@@ -447,11 +443,11 @@ export const port = {
       ]    
     }, {
       name: 'Other',
-      slug: 'port/other',
+      slug: 'other',
       items: [
         {
           name: 'Animation',
-          slug: 'port/animation',
+          slug: 'animation',
           desc: '',
           variants: [
             {
@@ -462,7 +458,7 @@ export const port = {
           ]
         }, {
           name: 'Transition',
-          slug: 'port/transition',
+          slug: 'transition',
           desc: '',
           variants: [
             {

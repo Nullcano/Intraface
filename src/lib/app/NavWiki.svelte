@@ -1,6 +1,6 @@
 <script>
   import { wiki } from '$lib/wiki'
-  import { page } from '$app/stores'  
+  import { page } from '$app/stores'
   $: currentPath = $page.url.pathname
   const randomItem = (arr) => arr[(Math.random() * arr.length) | 0]
   const colors = ['blue', 'cyan', 'grape', 'green', 'indigo', 'lime', 'orange', 'pink', 'red', 'teal', 'violet', 'yellow']
