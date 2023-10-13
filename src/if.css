@@ -122,7 +122,7 @@ h5 { font-size: 1rem }
 h6 { font-size: .8rem }
 th, td { padding: .5rem }
 button, input, textarea { padding:.5rem;border-radius:.5rem;border:1px solid var(--black-5);font-size:inherit }
-pre { white-space: pre-wrap; word-wrap: break-word; max-width: 100% }
+pre { word-wrap: break-word; max-width: 100%; overflow: auto; }
 code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 /* Class Library */
 .point { cursor: pointer; user-select: none }
@@ -283,6 +283,7 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .flex-row { flex-direction: row }
 .flex-wrap { flex-wrap: wrap }
 .ai-center { align-items: center }
+.pc-center { place-content: center }
 .spacer { flex: 1 1 0%; place-self: stretch }
 .stack { display: flex; flex-direction: column }
 .grid { display: grid }
@@ -308,6 +309,11 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .bw-1 { border-width: 1px }
 .bw-2 { border-width: 2px }
 .bw-3 { border-width: 4px }
+.b-black-1 { border-color: var(--black-1) }
+.b-black-2 { border-color: var(--black-2) }
+.b-black-3 { border-color: var(--black-3) }
+.b-black-4 { border-color: var(--black-4) }
+.b-black-5 { border-color: var(--black-5) }
 .b-light-1 { border-color: var(--light-1) }
 .b-light-2 { border-color: var(--light-2) }
 .b-light-3 { border-color: var(--light-3) }
@@ -482,6 +488,14 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .h-10 { height: 16rem }
 .h-11 { height: 20rem }
 .h-12 { height: 24rem }
+.vh-1 { height: 10vh }
+.vh-2 { height: 25vh }
+.vh-3 { height: 33.333vh }
+.vh-4 { height: 50vh }
+.vh-5 { height: 66.333vh }
+.vh-6 { height: 75vh }
+.vh-7 { height: 90vh }
+.vh-8 { height: 100vh }
 .h-fill { height: 100% }
 .u-0 { text-decoration: none }
 .t-all { transition: all .25s linear }
@@ -491,7 +505,24 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .top-3 { top: 3rem }
 .top-4 { top: 4rem }
 .top-5 { top: 5rem }
+.right-0 { right: 0 }
+.right-1 { right: 1rem }
+.right-2 { right: 2rem }
+.right-3 { right: 3rem }
+.right-4 { right: 4rem }
+.right-5 { right: 5rem }
+.bottom-0 { bottom: 0 }
+.bottom-1 { bottom: 1rem }
+.bottom-2 { bottom: 2rem }
+.bottom-3 { bottom: 3rem }
+.bottom-4 { bottom: 4rem }
+.bottom-5 { bottom: 5rem }
 .left-0 { left: 0 }
+.left-1 { left: 1rem }
+.left-2 { left: 2rem }
+.left-3 { left: 3rem }
+.left-4 { left: 4rem }
+.left-5 { left: 5rem }
 .of-hidden { overflow: hidden }
 .of-visible { overflow: visible }
 .of-scroll { overflow: auto }

@@ -1,35 +1,22 @@
-<div class="mw-16 mi-auto pa-4">
-  <hgroup class="grid auto-fill ai-center gap-2">
+<div class="w-fill vh-8 mw-13 pa-3 mi-auto flex flex-col ai-center pc-center gap-3">
+  <div class="grid auto-fill ai-center gap-2">
     <svg class="w-2" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 14L2 16L8 7L12 5.5L13.5 4L14 6L16 0L10 2L12 2.5L10 4L6 5L0 14Z" fill="var(--light-4)"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="currentColor"/>
     </svg>
-    <h1>Elevated Web Development</h1>
-  </hgroup>
-  <div class="my-3 grid col-2 gap-2">
-    <div class="pa-3 br-3 bg-light-1">
-      <h3>Effortless Scaffolding</h3>
-      <p>Gain access to a continuously expanding library of layouts and components in various shapes and sizes. Our pre-designed components streamline frontend development, saving you valuable time and effort.</p>
-    </div>
-    <div class="pa-3 br-3 bg-light-1">
-      <h3>Flexible Customization</h3>
-      <p>Tailor components precisely to your vision. Whether you prefer using our ready-made components or fine-tuning them using our CSS utility classes, we offer the flexibility you need without the hassle of extra CSS files.</p>
-    </div>
-    <div class="pa-3 br-3 bg-light-1">
-      <h3>Master Semantics</h3>
-      <p>Discover the intricacies of semantic HTML effortlessly with Intraface. Our comprehensive HTML reference wiki simplifies the process of learning about various elements and their appearance when integrated with Intraface.</p>  
-    </div>
-    <div class="pa-3 br-3 green-5 bg-green-1">
-      <h3>Dreams and Ambitions</h3>
-      <p>We're always working on Intraface to make frontend development, web design, and using frontend tools like this one easier, all while keeping our bundle size small.</p>  
-    </div>
-    <div class="pa-3 br-3 yellow-5 bg-yellow-1">
-      <h3>Experimental</h3>
-      <div class="mt-2 pa-2 bg-yellow-2 of-scroll-x br-2">
-        <code>&lt;link href="https://intraface.io/if.min.css" rel="stylesheet"&gt;</code>
-      </div>
-    </div>
-    <div class="pa-3 br-3 red-5 bg-red-1">
-      <p>Intraface is currently in early development, and it has not yet been officially released. During this phase, we are actively refining naming conventions and other aspects. Please note that updates to Intraface may introduce breaking changes.</p>
-    </div>
+    <h1>Intraface</h1>
+  </div>
+  <input class="w-fill pa-3 br-pill bg-light-3" type="search" placeholder="Find a component, class or HTML element..." value="">
+  <span class="block mv-3">... but first you should have grabbed one of these:</span>
+  <div class="flex gap-3 ai-center">
+    <pre class="mw-8 px-3 py-2 br-2 bg-light-3 b-all bw-1 b-black-5"><code>&lt;link href="https://intraface.io/if.min.css" rel="stylesheet"&gt;</code></pre>
+    <span>or</span>
+    <a class="px-3 py-2 br-2 bg-blue-4 white u-0" href="../if.min.css">Download</a>
+  </div>
+  <div class="pa-3 flex flex-wrap gap-2">
+    <a href="/port">Prefab Port</a>
+    <a href="/repo">CSS Repo</a>
+    <a href="/wiki">HTML Wiki</a>
+    <a href="/colors">Color Grid</a>
+    <a href="/sitemap">Sitemap</a>
   </div>
 </div>

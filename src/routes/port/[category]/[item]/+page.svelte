@@ -18,12 +18,16 @@
   <meta property="og:title" content="{item?.name} &middot; Prefab Port &middot; {base.title}" />
 </svelte:head>
 
-<article class="mw-16 mi-auto pa-4">
-	{#if item}
-		<div>
+{#if item}
+	<header class="w-fill bg-light-3">
+		<hgroup class="mw-16 mi-auto pa-3">
 			<h1>{item.name}</h1>
-			<p>{item.desc}</p>
-		</div>
+			{#if item.desc}
+				<p>{item.desc}</p>
+			{/if}
+		</hgroup>
+	</header>
+	<article class="mw-16 mi-auto pa-4">
 		{#if item.variants}
 			<div class="mt-4 stack gap-3">
 				{#each item.variants as v}
@@ -36,7 +40,7 @@
 				{/each}
 			</div>
 		{/if}
-		{:else}
-		<p>No document for this route.</p>
-	{/if}
-</article>
+	</article>
+	{:else}
+	<p>No document for this route.</p>
+{/if}

@@ -1,14 +1,15 @@
 <script>
 	import { base } from '$lib/base'
 	import ContentMain from '$lib/app/ContentMain.svelte'
-  import TopBar from '$lib/app/TopBar.svelte'
+	import DarkModeButton from '$lib/app/DarkModeButton.svelte'
 </script>
 
 <svelte:head>
 	<title>{base.name}</title>
 </svelte:head>
 
-<TopBar />
 <ContentMain>
 	<slot />
 </ContentMain>
+
+<DarkModeButton />
