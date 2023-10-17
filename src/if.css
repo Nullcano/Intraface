@@ -283,6 +283,7 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .flex-row { flex-direction: row }
 .flex-wrap { flex-wrap: wrap }
 .ai-center { align-items: center }
+.jc-between { justify-content: space-between }
 .pc-center { place-content: center }
 .spacer { flex: 1 1 0%; place-self: stretch }
 .stack { display: flex; flex-direction: column }
