@@ -1,6 +1,6 @@
-export const port = {
-  name: 'Prefab Port',
-  slug: 'port',
+export const plugins = {
+  name: 'Plugins',
+  slug: 'plugins',
   desc: 'Intraface component library.',
   categories: [
     {
