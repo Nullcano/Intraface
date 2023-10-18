@@ -1,21 +1,20 @@
 <script>
-  import { data } from '$lib/index'
+  import { port } from '$lib/port'
   import { page } from '$app/stores'
   $: currentPath = $page.url.pathname
-  const section = data.find(i => i.section === 'Port')
 </script>
 
-{#each section.categories as c}
-  <div class="mt-3 pt-2 bg-light-1 br-3">
-    <h5 class="sticky top-0 mx-2 pa-2 bg-light-2 br-2">{c.name}</h5>
-    <ul class="pa-2">
+<nav class="stack gap-2">
+  {#each port.categories as c}
+    <ul class="stack gap-1">
+      <li class="sticky top-0">
+        <a class="block px-2 py-1 bg-light-2 black-3 black-1-h t-all br-2 u-0 {currentPath === c.slug ? 'bg-light-2' : ''}" href={c.slug}>{c.name}</a>
+      </li>
       {#each c.items as i}
         <li>
-          <a class="block pa-2 black-3 black-1-h t-all br-2 u-0 {currentPath === '/port/' + i.slug ? 'bg-light-2' : ''}" href="/port/{i.slug}">
-            {i.name}
-          </a>
+          <a class="block px-2 py-1 black-3 black-1-h t-all br-2 u-0 {currentPath === i.slug ? 'bg-light-2' : ''}" href={i.slug}>{i.name}</a>
         </li>
       {/each}
     </ul>
-  </div>
-{/each}
+  {/each}
+</nav>

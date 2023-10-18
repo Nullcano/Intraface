@@ -111,7 +111,7 @@
 /* Reset */
 a,button,input,select,textarea{background:0 0;border:none;padding:0;font-family:inherit;color:inherit;cursor:pointer}*,::after,::before,html{box-sizing:border-box}*,::after,::before{margin:0;padding:0;border:0}ol,ul{list-style:none}blockquote,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}a,button,input,select,textarea{margin:0;text-decoration:none}body{line-height:1.5}a{text-decoration:none}table{border-collapse:collapse;border-spacing:0}input,select,textarea{outline:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}img,video,iframe{max-width:100%}sub,sup{vertical-align:baseline}:after,:before,html *{box-sizing:inherit}
 /* Global */
-body { background-color: var(--light-2); color: var(--black-2); font-family: 'Supreme', Segoe UI, Tahoma, Geneva, Verdana, sans-serif; font-size: 16px; line-height: 1.5 }
+body { background-color: var(--white-1); color: var(--black-2); font-family: 'Supreme', Segoe UI, Tahoma, Geneva, Verdana, sans-serif; font-size: 16px; line-height: 1.5 }
 a { color: var(--black-3); text-decoration: underline }
 a:hover { color: var(--black-2) }
 h1 { font-size: 2rem }
@@ -122,7 +122,7 @@ h5 { font-size: 1rem }
 h6 { font-size: .8rem }
 th, td { padding: .5rem }
 button, input, textarea { padding:.5rem;border-radius:.5rem;border:1px solid var(--black-5);font-size:inherit }
-pre { white-space: pre-wrap; word-wrap: break-word; max-width: 100% }
+pre { word-wrap: break-word; max-width: 100%; overflow: auto; }
 code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 /* Class Library */
 .point { cursor: pointer; user-select: none }
@@ -135,6 +135,20 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .ar-1x1::before { padding-bottom: 100% }
 .ar-4x3::before { padding-bottom: 75% }
 .ar-16x9::before { padding-bottom: 56.25% }
+.lh-0 { line-height: 0 }
+.lh-1 { line-height: 1 }
+.lh-2 { line-height: 1.25 }
+.lh-3 { line-height: 1.5 }
+.lh-4 { line-height: 2 }
+.fs-1 { font-size: .8rem }
+.fs-2 { font-size: 1rem }
+.fs-3 { font-size: 1.2rem }
+.fs-4 { font-size: 1.4rem }
+.fs-5 { font-size: 1.6rem }
+.fs-6 { font-size: 2rem }
+.fs-7 { font-size: 4rem }
+.fs-8 { font-size: 6rem }
+.fs-9 { font-size: 8rem }
 .black, .black-h:hover { color: var(--black) }
 .black-1, .black-1-h:hover { color: var(--black-1) }
 .black-2, .black-2-h:hover { color: var(--black-2) }
@@ -151,11 +165,11 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .green-3 { color: var(--green-3) }
 .green-4 { color: var(--green-4) }
 .green-5 { color: var(--green-5) }
-.light-1 { color: var(--light-1) }
-.light-2 { color: var(--light-2) }
-.light-3 { color: var(--light-3) }
-.light-4 { color: var(--light-4) }
-.light-5 { color: var(--light-5) }
+.light-1, .light-1-h:hover { color: var(--light-1) }
+.light-2, .light-2-h:hover { color: var(--light-2) }
+.light-3, .light-3-h:hover { color: var(--light-3) }
+.light-4, .light-4-h:hover { color: var(--light-4) }
+.light-5, .light-5-h:hover { color: var(--light-5) }
 .red-1 { color: var(--red-1) }
 .red-2 { color: var(--red-2) }
 .red-3 { color: var(--red-3) }
@@ -283,6 +297,8 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .flex-row { flex-direction: row }
 .flex-wrap { flex-wrap: wrap }
 .ai-center { align-items: center }
+.jc-between { justify-content: space-between }
+.pc-center { place-content: center }
 .spacer { flex: 1 1 0%; place-self: stretch }
 .stack { display: flex; flex-direction: column }
 .grid { display: grid }
@@ -303,10 +319,16 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .b-right { border-right-style: solid }
 .b-top { border-top-style: solid }
 .b-bottom { border-bottom-style: solid }
+.b-dashed { border-style: dashed }
 .bw-0 { border-width: 0 }
 .bw-1 { border-width: 1px }
 .bw-2 { border-width: 2px }
 .bw-3 { border-width: 4px }
+.b-black-1 { border-color: var(--black-1) }
+.b-black-2 { border-color: var(--black-2) }
+.b-black-3 { border-color: var(--black-3) }
+.b-black-4 { border-color: var(--black-4) }
+.b-black-5 { border-color: var(--black-5) }
 .b-light-1 { border-color: var(--light-1) }
 .b-light-2 { border-color: var(--light-2) }
 .b-light-3 { border-color: var(--light-3) }
@@ -353,6 +375,8 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .mt-5 { margin-top: 2rem }
 .mt-6 { margin-top: 3rem }
 .mt-7 { margin-top: 4rem }
+.mt-8 { margin-top: 5rem }
+.mt-9 { margin-top: 6rem }
 .mb-0 { margin-bottom: 0 }
 .mb-1 { margin-bottom: .25rem }
 .mb-2 { margin-bottom: .5rem }
@@ -481,6 +505,14 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .h-10 { height: 16rem }
 .h-11 { height: 20rem }
 .h-12 { height: 24rem }
+.vh-1 { height: 10vh }
+.vh-2 { height: 25vh }
+.vh-3 { height: 33.333vh }
+.vh-4 { height: 50vh }
+.vh-5 { height: 66.333vh }
+.vh-6 { height: 75vh }
+.vh-7 { height: 90vh }
+.vh-8 { height: 100vh }
 .h-fill { height: 100% }
 .u-0 { text-decoration: none }
 .t-all { transition: all .25s linear }
@@ -490,6 +522,33 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .top-3 { top: 3rem }
 .top-4 { top: 4rem }
 .top-5 { top: 5rem }
+.top-6 { top: 6rem }
+.top-7 { top: 7rem }
+.top-8 { top: 8rem }
+.top-50 { top: 50% }
+.right-0 { right: 0 }
+.right-1 { right: 1rem }
+.right-2 { right: 2rem }
+.right-3 { right: 3rem }
+.right-4 { right: 4rem }
+.right-5 { right: 5rem }
+.bottom-0 { bottom: 0 }
+.bottom-1 { bottom: 1rem }
+.bottom-2 { bottom: 2rem }
+.bottom-3 { bottom: 3rem }
+.bottom-4 { bottom: 4rem }
+.bottom-5 { bottom: 5rem }
+.left-0 { left: 0 }
+.left-1 { left: 1rem }
+.left-2 { left: 2rem }
+.left-3 { left: 3rem }
+.left-4 { left: 4rem }
+.left-5 { left: 5rem }
+.left-50 { left: 50% }
+.left-100 { left: 100% }
+.X-center { transform: translate(-50%, 0%) }
+.y-center { transform: translate(0%, -50%) }
+.Xy-center { transform: translate(-50%, -50%) }
 .of-hidden { overflow: hidden }
 .of-visible { overflow: visible }
 .of-scroll { overflow: auto }
