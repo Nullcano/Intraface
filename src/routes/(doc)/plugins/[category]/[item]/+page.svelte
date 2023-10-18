@@ -29,8 +29,8 @@
 {#if item}
 	<header>
 		<hgroup>
-			<a class="px-2 py-1 br-pill b-all bw-1 ba-light-4 u-0" href="/plugins">Plugins</a>
-			<a class="px-2 py-1 br-pill b-all bw-1 ba-light-4 u-0" href="/plugins/{categorySlug}">{categoryName}</a>
+			<a class="px-2 py-1 br-pill b-all bw-1 b-light-4 bg-light-2 u-0" href="/plugins">Plugins</a>
+			<a class="px-2 py-1 br-pill b-all bw-1 b-light-4 bg-light-2 u-0" href="/plugins/{categorySlug}">{categoryName}</a>
 			<h1 class="mt-2">{item.name}</h1>
 			{#if item.desc}
 				<p>{item.desc}</p>

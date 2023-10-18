@@ -11,7 +11,7 @@
       <path d="M6 8L0 11L12 17L24 11L18 8V10C18 11.6569 15.3137 13 12 13C8.68629 13 6 11.6569 6 10V8Z" fill="currentColor"/>
       <path d="M17 9.5C17 10.8807 14.7614 12 12 12C9.23858 12 7 10.8807 7 9.5V5.5H17V9.5Z" fill="currentColor" fill-opacity="0.5"/>
       <path d="M17 5.5C17 6.88071 14.7614 8 12 8C9.23858 8 7 6.88071 7 5.5C7 4.11929 9.23858 3 12 3C14.7614 3 17 4.11929 17 5.5Z" fill="currentColor"/>
-    </svg> 
+    </svg>
     <span class="absolute top-50 y-center left-100 ml-3 pa-3 br-2 white bg-violet-3 none">Plugins</span>
   </a>
   <a role="menuitem" href="/theming" class="{currentPath.includes('theming') ? `${cssString} bg-violet-3` : cssString}" tabindex="0">
