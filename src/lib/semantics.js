@@ -1,6 +1,9 @@
-export const wiki = {
-  name: 'Wiki',
-  slug: 'wiki',
+export const semantics = {
+  name: 'Semantics',
+  slug: 'semantics',
+  desc: `
+    <p class="mw-13">In the digital realm, appearances can be deceiving. That's why at Intraface, we've taken the lead in normalizing and enhancing semantic HTML elements for the demands of the modern web.</p>
+  `,
   categories: [
     {
       name: 'Embedding',
@@ -62,11 +65,11 @@ export const wiki = {
           code: `<button>\n    Submit form\n</button>`
         }, {
           name: 'datalist',
-          desc: 'Defines a list of autocomplete options when using an <a href="/wiki/input">input</a> with list type.',
+          desc: 'Defines a list of autocomplete options when using an <a href="/semantics/forms/input">input</a> with list type.',
           code: `<label>South American countries</label>\n<input list="countries" placeholder="Type a country">\n\n<datalist id="countries">\n    <option value="Argentina">\n    <option value="Bolivia">\n    <option value="Brazil">\n    <option value="Chile">\n    <option value="Colombia">\n    <option value="Ecuador">\n    <option value="Guyana">\n    <option value="Paraguay">\n    <option value="Peru">\n    <option value="Suriname">\n    <option value="Uruguay">\n    <option value="Venezuela">\n</datalist>`
         }, {
           name: 'fieldset',
-          desc: 'Defines a group of controls within a <a href="/wiki/form">form</a>.',
+          desc: 'Defines a group of controls within a <a href="/semantics/forms/form">form</a>.',
           code: `<form action="/reference/fieldset">\n    <fieldset>\n        <legend>Subscribe to nothing</legend>\n        <input type="email" name="email">\n        <button>Ok</button>\n    </fieldset>\n</form>`
         }, {
           name: 'form',
@@ -74,7 +77,7 @@ export const wiki = {
           code: `<form action="/reference/form">\n    <fieldset>\n        <legend>Employment</legend>\n        <label>\n            <input type="radio" name="title" value="unemployed">\n            Unemployed\n        </label>\n        <label>\n            <input type="radio" name="title" value="part-time">\n            Part-time\n        </label>\n        <label>\n            <input type="radio" name="title" value="full-time">\n            Full-time\n        </label>\n    </fieldset>\n    <fieldset>\n        <legend>Contact info</legend>\n        <fieldset>\n            <label>First name</label>\n            <input type="text" name="first_name">\n            <label>Last name</label>\n            <input type="text" name="last_name">\n        </fieldset>\n        <fieldset>\n            <label>Email</label>\n            <input type="email" name="email" required>\n            <label>Phone number</label>\n            <input type="tel" name="phone">\n        </fieldset>\n        <label>Country</label>\n        <select>\n            <option>China</option>\n            <option>India</option>\n            <option>United States</option>\n            <option>Indonesia</option>\n            <option>Brazil</option>\n        </select>\n    </fieldset>\n    <fieldset>\n        <label>Password</label>\n        <input type="password" name="password">\n        <label>\n            <input type="checkbox" value="terms">\n            I have read <a href="#">the documents</a>\n        </label>\n        <fieldset>\n            <button type="submit">Sign up</button>\n            <button type="reset">Reset form</button>\n        </fieldset>\n    </fieldset>\n</form>`
         }, {
           name: 'input',
-          desc: 'Defines an interactive control within a <a href="/wiki/form">form</a>.',
+          desc: 'Defines an interactive control within a <a href="/semantics/forms/form">form</a>.',
           code: `<input type="text" placeholder="Type something..."><br>\n<input type="date" placeholder="Select Date"><br>\n<input type="time" placeholder="Select Time"><br>\n<input type="datetime-local" placeholder="Select Date and Time">`
         }, {
           name: 'label',
@@ -110,7 +113,7 @@ export const wiki = {
           code: ``
         }, {
           name: 'textarea',
-          desc: 'Defines a multi-line text control within a <a href="/wiki/form">form</a>.',
+          desc: 'Defines a multi-line text control within a <a href="/semantics/forms/form">form</a>.',
           code: `<textarea rows="3" placeholder="Type something...">`
         }
       ]

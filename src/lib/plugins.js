@@ -1,7 +1,10 @@
 export const plugins = {
   name: 'Plugins',
   slug: 'plugins',
-  desc: 'Intraface component library.',
+  desc: `
+    <p>Intraface plugins are web components and elements primed for seamless integration.</p>
+    <p>These collections will continually evolve and expand.</p>
+  `,
   categories: [
     {
       name: 'Layout',

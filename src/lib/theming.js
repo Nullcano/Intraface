@@ -1,6 +1,10 @@
-export const repo = {
-  name: 'Repo',
-  slug: 'repo',
+export const theming = {
+  name: 'Theming',
+  slug: 'theming',
+  desc: `
+    <p>Theming is the backbone of Intraface, comprising a comprehensive collection of CSS utility classes.</p>
+    <p>Explore the endless possibilities and bring your web components to life with the art of theming in Intraface.</p>
+  `,
   categories: [
     {
       name: 'Animation',

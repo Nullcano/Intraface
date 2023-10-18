@@ -1,14 +1,14 @@
 <script>
   import { base } from '$lib/base'
-	import { plugins } from '$lib/plugins'
+	import { semantics } from '$lib/semantics'
 	import CategoryCard from '$lib/app/CategoryCard.svelte'
-	$: page = plugins
+	$: page = semantics
 </script>
 
 <svelte:head>
   <title>{page?.name} &middot; {base.name}</title>
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="{page?.name} &middot; Prefab Port &middot; {base.title}" />
+  <meta property="og:title" content="{page?.name} &middot; Semantics &middot; {base.title}" />
 </svelte:head>
 
 {#if page}
@@ -25,7 +25,7 @@
 	{#if page.categories}
 		<div class="mt-4 grid col-4 gap-2">
 			{#each page.categories as c}
-				<CategoryCard route="/plugins/{c.slug}" title={c.name} items={c.items.length} />
+				<CategoryCard route="/semantics/{c.slug}" title={c.name} items={c.items.length} />
 			{/each}
 		</div>
 	{/if}

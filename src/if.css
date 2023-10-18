@@ -135,14 +135,20 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .ar-1x1::before { padding-bottom: 100% }
 .ar-4x3::before { padding-bottom: 75% }
 .ar-16x9::before { padding-bottom: 56.25% }
+.lh-0 { line-height: 0 }
+.lh-1 { line-height: 1 }
+.lh-2 { line-height: 1.25 }
+.lh-3 { line-height: 1.5 }
+.lh-4 { line-height: 2 }
 .fs-1 { font-size: .8rem }
 .fs-2 { font-size: 1rem }
 .fs-3 { font-size: 1.2rem }
 .fs-4 { font-size: 1.4rem }
 .fs-5 { font-size: 1.6rem }
 .fs-6 { font-size: 2rem }
-.fs-7 { font-size: 2.5rem }
-.fs-8 { font-size: 5rem }
+.fs-7 { font-size: 4rem }
+.fs-8 { font-size: 6rem }
+.fs-9 { font-size: 8rem }
 .black, .black-h:hover { color: var(--black) }
 .black-1, .black-1-h:hover { color: var(--black-1) }
 .black-2, .black-2-h:hover { color: var(--black-2) }

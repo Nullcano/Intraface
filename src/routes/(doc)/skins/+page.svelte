@@ -4,13 +4,14 @@
 
 <article class="mw-16 mi-auto pa-4">
   <hgroup class="grid auto-fill ai-center gap-2">
-    <svg class="w-2" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0.5" y="0.5" width="7" height="7" rx="1.5" fill="var(--light-4)" stroke="var(--light-4)"/>
-      <rect x="8.5" y="8.5" width="7" height="7" rx="1.5" fill="var(--light-4)" stroke="var(--light-4)"/>
-      <rect x="0.5" y="8.5" width="7" height="7" rx="1.5" stroke="var(--light-4)"/>
-      <rect x="8.5" y="0.5" width="7" height="7" rx="1.5" stroke="var(--light-4)"/>
+    <svg class="w-2 h-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1179 19.6138C16.0762 17.6103 14.9173 15.3812 16.6805 14C24.9781 8 22.8067 0 15.4039 0C8.00113 0 2 5.37258 2 12C2 18.6274 8.00113 24 15.4039 24C19.3984 24 18.3387 21.9619 17.1179 19.6138ZM15 2C13.3431 2 12 3.34315 12 5C12 6.65685 13.3431 8 15 8C16.6569 8 18 6.65685 18 5C18 3.34315 16.6569 2 15 2ZM7.5 6C6.11929 6 5 7.11929 5 8.5C5 9.88071 6.11929 11 7.5 11C8.88071 11 10 9.88071 10 8.5C10 7.11929 8.88071 6 7.5 6ZM5 15C5 13.8954 5.89543 13 7 13C8.10457 13 9 13.8954 9 15C9 16.1046 8.10457 17 7 17C5.89543 17 5 16.1046 5 15ZM11.5 18C10.6716 18 10 18.6716 10 19.5C10 20.3284 10.6716 21 11.5 21C12.3284 21 13 20.3284 13 19.5C13 18.6716 12.3284 18 11.5 18Z" fill="currentColor"/>
+      <rect x="5" y="6" width="5" height="5" rx="2.5" fill="#D9D9D9" fill-opacity="0.5"/>
+      <rect x="12" y="2" width="6" height="6" rx="3" fill="#D9D9D9" fill-opacity="0.5"/>
+      <rect x="5" y="13" width="4" height="4" rx="2" fill="#D9D9D9" fill-opacity="0.5"/>
+      <rect x="10" y="18" width="3" height="3" rx="1.5" fill="#D9D9D9" fill-opacity="0.5"/>
     </svg>
-    <h1>Color Grid</h1>
+    <h1>Skins</h1>
   </hgroup>
 
   <h2 class="mt-4 mb-2">Coloring in Intraface</h2>

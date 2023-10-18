@@ -1,37 +1,29 @@
 <script>
   import { base } from '$lib/base'
-	import { plugins } from '$lib/plugins'
+	import { theming } from '$lib/theming'
   import { page } from '$app/stores'
 	import CodePreview from '$lib/app/CodePreview.svelte'
 	import CodeBlock from '$lib/app/CodeBlock.svelte'
-	
-  let categoryName, categorySlug;
-
-  $: item = plugins.categories.reduce((foundItem, category) => {
+  $: item = theming.categories.reduce((foundItem, category) => {
     if (!foundItem) {
-      const itemInCategory = category.items.find(item => `/plugins/${category.slug}/${item.slug}` === $page.url.pathname);
-      if (itemInCategory) {
-        categoryName = category.name;
-        categorySlug = category.slug;
-        return itemInCategory;
-      }
+      const itemInCategory = category.items.find(item => `/theming/${category.slug}/${item.slug}` === $page.url.pathname);
+      if (itemInCategory) return itemInCategory;
     }
     return foundItem;
   }, null);
+  console.log(item)
 </script>
 
 <svelte:head>
-  <title>{item?.name} &middot; Plugins &middot; {base.name}</title>
+  <title>{item?.name} &middot; Theming &middot; {base.name}</title>
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="{item?.name} &middot; Plugins &middot; {base.title}" />
+  <meta property="og:title" content="{item?.name} &middot; Theming &middot; {base.title}" />
 </svelte:head>
 
 {#if item}
 	<header>
 		<hgroup>
-			<a class="px-2 py-1 br-pill b-all bw-1 ba-light-4 u-0" href="/plugins">Plugins</a>
-			<a class="px-2 py-1 br-pill b-all bw-1 ba-light-4 u-0" href="/plugins/{categorySlug}">{categoryName}</a>
-			<h1 class="mt-2">{item.name}</h1>
+			<h1>{item.name}</h1>
 			{#if item.desc}
 				<p>{item.desc}</p>
 			{/if}
