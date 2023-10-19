@@ -1,12 +1,36 @@
-<article class="mw-13 stack gap-2">
-  <h1>Intraface</h1>
-  <p>Hey there, meet Intraface, the design system that's shaking things up on the web. We've taken the good old semantic HTML and introduced it to the modern web, making it look and work better than ever.</p>
-  <p>In our plugins-section, you'll find an ever-growing collection of handy components ready for you to use. In parallell we will continually extend our theme-section of CSS classes and attributes to keep you at the forefront of frontend.</p>
-  <p>And here's something extra - our semantic HTML wiki. It's like your cheat sheet to Intraface, where you can see it in its raw form without any extra styling. You'll also get some basic knowledge on HTML elements, which is always handy.</p>
-</article>
-<article class="mt-4 mw-13 stack gap-2">
-  <h2>Author</h2>
-  <p>Hey, I'm just a regular web enthusiast who's been glued to screens since the early 2000s. Web interfaces of all shapes, sizes, and colors have always fascinated me. I've dabbled in building web apps for both fun and work, but I've got a confession to make. I've steered clear of CSS toolkits and frameworks, from the days of Bootstrap to the Tailwind craze we're in now. It's just my quirky preference. I've always had this weird love for writing HTML and CSS from scratch.</p>
-  <p>Sure, I've used Tachyons as a "little booster" in the past, but my heart has always belonged to my custom CSS codebase. With Intraface, I'm taking a shot at simplifying your life. My aim? To make sure you don't have to drown in endless custom CSS. I'm introducing nifty shortcuts and clever dynamic solutions to streamline your web development.</p>
-  <p>I hope Intraface strikes a chord with both me and folks like you, who are looking to make web development a breeze. Let's take this journey together, and maybe, just maybe, we'll create something awesome!</p>
-</article>
+<div class="grid fill-auto gap-2">
+  <div>
+    <article class="mw-13 stack gap-2">
+      <h1>Intraface</h1>
+      <p>Meet Intraface, the modern design system reinventing semantic HTML for the web. Our goal is to make it look and function better than ever.</p>
+      <p>In <a href="/plugins">our plugins-section</a>, you'll discover an ever-expanding collection of components. Simultaneously, <a href="/theming">our theme-section</a> is continuously growing with CSS classes and attributes, ensuring you're always at the cutting edge of frontend design.</p>
+      <p>And there's more: <a href="/semantics">our semantic HTML wiki</a>, your go-to reference to experience Intraface in its raw form, stripped of extra styling. It's also a handy guide to essential HTML elements.</p>
+    </article>
+    <article class="mt-4 mw-13 stack gap-2">
+      <h2>Author</h2>
+      <p>I'm a web enthusiast who's been captivated by digital interfaces since the early 2000s. I've always had a soft spot for crafting HTML and CSS from scratch, avoiding popular CSS toolkits and frameworks.</p>
+      <p>While I've dabbled with Tachyons in the past, Intraface is my attempt to simplify web development. My aim is to spare you from drowning in endless custom CSS, introducing shortcuts and dynamic solutions to streamline your workflow.</p>
+      <p>I hope Intraface resonates with both me and fellow developers seeking a smoother web development journey. Let's embark on this adventure together and maybe, just maybe, create something amazing!</p>
+    </article>
+  </div>
+  <div class="mw-12 pa-3 br-3 bg-light-2 stack gap-2">
+    <hgroup>
+      <h3>What's Coming Next</h3>
+      <i class="fs-1">Upcoming features lined up to enhance your Intraface experience.</i>
+    </hgroup>
+    <div class="stack gap-2">
+      <div class="pa-2 br-2 bg-light-1">
+        <strong>Shorthand Classes</strong>
+        <p>Say goodbye to writing lengthy combinations of CSS properties. Intraface is introducing shorthand classes that make styling a breeze. For instance, use <code>&lt;div class="stack"&gt;</code>, and it's equivalent to <code>&lt;div class="flex flex-col"&gt;</code>.</p>
+      </div>
+      <div class="pa-2 br-2 bg-light-1">
+        <strong>Component Classes</strong>
+        <p>Building complex components is about to get a whole lot easier. Intraface will offer specialized classes designed for crafting components without the need for an extensive array of classes in your markup. Just <code>&lt;div class="card"&gt;</code>, and you've got yourself a pre-styled box.</p>
+      </div>
+      <div class="pa-2 br-2 bg-light-1">
+        <strong>Module Bundles</strong>
+        <p>No need to load the entire system when you only require specific functionality. Intraface is rolling out module bundles, providing subsets of CSS tailored for specific uses. For instance, load <code>if.colors.min.css</code> to access only the coloring utilities you need.</p>
+      </div>
+    </div>
+  </div>
+</div>

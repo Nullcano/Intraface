@@ -25,7 +25,7 @@
         });
       });
     });
-
+    console.log(results)
     return results;
   }
 
@@ -33,14 +33,14 @@
 </script>
 
 <div class="relative">
-  <input class="w-12 pa-2 br-pill bg-white-2" type="search" placeholder="Find component, property, or element..." bind:value={searchValue}>
+  <input class="w-12 px-3 py-2 br-pill bg-white-2" type="search" placeholder="Find component, property, or element..." bind:value={searchValue}>
   {#if searchValue.length > 0}
-    <div class="absolute top-100 tack gap-2">
+    <div class="pa-2 absolute top-100 stack gap-2 br-2 bg-white-2">
       {#if results.length > 0}
         {#each results as result, index (result.slug || result.name || index)}
-          <div>
+          <a href="{result.slug}">
             {result.name}
-          </div>
+          </a>
         {/each}
       {:else}
         <p>No results found.</p>
