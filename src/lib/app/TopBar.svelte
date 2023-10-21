@@ -4,9 +4,9 @@
   import MegaMenu from '$lib/app/MegaMenu.svelte';
 </script>
 
-<header class="fixed top-0 w-fill px-4 py-3 flex ai-center gap-1 z-1">
+<header class="fixed top-0 w-fill px-3 py-2 flex ai-center gap-1 z-1">
   <div class="grid fill-auto ai-center gap-2">
-    <a class="grid auto-fill ai-center gap-2 u-0" href="/">
+    <a class="black-1 grid auto-fill ai-center gap-2 u-0" href="/">
       <svg class="w-2 h-2" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M34.2857 17.1429C34.2857 26.6106 26.6106 34.2857 17.1429 34.2857C7.67512 34.2857 0 26.6106 0 17.1429C0 7.67512 7.67512 0 17.1429 0C26.6106 0 34.2857 7.67512 34.2857 17.1429Z" fill="url(#paint0_linear_5_127)"/>
         <path d="M42.8571 8.57143C42.8571 3.83756 46.6947 0 51.4286 0H111.429C116.162 0 120 3.83756 120 8.57143V25.7143C120 30.4482 116.162 34.2857 111.429 34.2857H51.4286C46.6947 34.2857 42.8571 30.4482 42.8571 25.7143V8.57143Z" fill="url(#paint1_linear_5_127)"/>

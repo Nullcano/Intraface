@@ -2,16 +2,23 @@
   import { base } from '$lib/base'
 	import { theming } from '$lib/theming'
   import { page } from '$app/stores'
+	import Breadcrumb from '$lib/app/Breadcrumb.svelte'
 	import CodePreview from '$lib/app/CodePreview.svelte'
 	import CodeBlock from '$lib/app/CodeBlock.svelte'
+
+	let categoryName, categorySlug
+
   $: item = theming.categories.reduce((foundItem, category) => {
     if (!foundItem) {
-      const itemInCategory = category.items.find(item => `/theming/${category.slug}/${item.slug}` === $page.url.pathname);
-      if (itemInCategory) return itemInCategory;
+      const itemInCategory = category.items.find(item => `/theming/${category.slug}/${item.slug}` === $page.url.pathname)
+      if (itemInCategory) {
+				categoryName = category.name
+				categorySlug = category.slug
+				return itemInCategory
+			}
     }
-    return foundItem;
-  }, null);
-  console.log(item)
+    return foundItem
+  }, null)
 </script>
 
 <svelte:head>
@@ -23,7 +30,9 @@
 {#if item}
 	<header>
 		<hgroup>
-			<h1>{item.name}</h1>
+			<Breadcrumb slug="/theming" text="Theming" />
+			<Breadcrumb slug="/theming/{categorySlug}" text="{categoryName}" />
+			<h1 class="mt-3">{item.name}</h1>
 			{#if item.desc}
 				<p>{item.desc}</p>
 			{/if}

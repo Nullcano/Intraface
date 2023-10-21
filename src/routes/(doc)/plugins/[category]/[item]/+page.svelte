@@ -2,22 +2,23 @@
   import { base } from '$lib/base'
 	import { plugins } from '$lib/plugins'
   import { page } from '$app/stores'
+	import Breadcrumb from '$lib/app/Breadcrumb.svelte'
 	import CodePreview from '$lib/app/CodePreview.svelte'
 	import CodeBlock from '$lib/app/CodeBlock.svelte'
 	
-  let categoryName, categorySlug;
+  let categoryName, categorySlug
 
   $: item = plugins.categories.reduce((foundItem, category) => {
     if (!foundItem) {
-      const itemInCategory = category.items.find(item => `/plugins/${category.slug}/${item.slug}` === $page.url.pathname);
+      const itemInCategory = category.items.find(item => `/plugins/${category.slug}/${item.slug}` === $page.url.pathname)
       if (itemInCategory) {
-        categoryName = category.name;
-        categorySlug = category.slug;
-        return itemInCategory;
+        categoryName = category.name
+        categorySlug = category.slug
+        return itemInCategory
       }
     }
-    return foundItem;
-  }, null);
+    return foundItem
+  }, null)
 </script>
 
 <svelte:head>
@@ -29,9 +30,9 @@
 {#if item}
 	<header>
 		<hgroup>
-			<a class="px-2 py-1 br-pill b-all bw-1 b-light-4 bg-light-2 u-0" href="/plugins">Plugins</a>
-			<a class="px-2 py-1 br-pill b-all bw-1 b-light-4 bg-light-2 u-0" href="/plugins/{categorySlug}">{categoryName}</a>
-			<h1 class="mt-2">{item.name}</h1>
+			<Breadcrumb slug="/plugins" text="Plugins" />
+			<Breadcrumb slug="/plugins/{categorySlug}" text="{categoryName}" />
+			<h1 class="mt-3">{item.name}</h1>
 			{#if item.desc}
 				<p>{item.desc}</p>
 			{/if}

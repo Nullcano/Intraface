@@ -38,7 +38,7 @@ export const plugins = {
             {
               name: 'Centered content',
               desc: '',
-              code: `<div class="grid place-center h-8 bg-light-1">The center of the universe</div>`
+              code: `<div class="grid place-center h-8 bg-light-3">The center of the universe</div>`
             }, {
               name: 'Centered icon',
               desc: 'Centering an icon',
@@ -53,11 +53,11 @@ export const plugins = {
             {
               name: 'Contain Page',
               desc: 'Contain a section with a max width.',
-              code: `<div>\n    <div class="mw-14 mi-auto pa-4 bg-light-1">\n        <h1>Welcome to this contained page.</h1>\n    </div>\n</div>`
+              code: `<div>\n    <div class="mw-14 mi-auto pa-4 bg-light-3">\n        <h1>Welcome to this contained page.</h1>\n    </div>\n</div>`
             }, {
               name: 'Contain Elements',
               desc: 'Contain a section with a max width.',
-              code: `<div class="p-4 bg-light-1">\n    <div class="mw-13 mi-auto">\n        <img class="w-fill" src="https://picsum.photos/300/200">\n    </div>\n    <div class="mw-12 mi-auto">\n        <p>There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production.</p>\n    </div>\n</div>`
+              code: `<div class="p-4 bg-light-3">\n    <div class="mw-13 mi-auto">\n        <img class="w-fill" src="https://picsum.photos/300/200">\n    </div>\n    <div class="mw-12 mi-auto">\n        <p>There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production.</p>\n    </div>\n</div>`
             }, 
           ],
           refLibrary: [ { name: 'Width', slug: 'width' }, { name: 'Margin', slug: 'margin' }, { name: 'Padding', slug: 'padding' }, { name: 'Background', slug: 'background' } ],
@@ -70,15 +70,15 @@ export const plugins = {
             {
               name: 'Column',
               desc: 'Stack the children.',
-              code: `<div class="flex flex-col gap-2">\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n</div>`
+              code: `<div class="flex flex-col gap-2">\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n</div>`
             }, {
               name: 'Row',
               desc: 'Row is the default flex direction but you may also use the class "flex-row" in some circumstances.',
-              code: `<div class="flex gap-2 mw-8">\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n</div>`
+              code: `<div class="flex gap-2 mw-8">\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n</div>`
             }, {
               name: 'Wrap',
               desc: 'Starts a new row when the children overflows the flexbox width.',
-              code: `<div class="flex flex-wrap gap-2 mw-8">\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n    <div class="h-2 w-2 bg-light-1"></div>\n</div>`
+              code: `<div class="flex flex-wrap gap-2 mw-8">\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n    <div class="h-2 w-2 bg-light-3"></div>\n</div>`
             }
           ]
         }, {
@@ -89,35 +89,35 @@ export const plugins = {
             {
               name: '1 column',
               desc: '',
-              code: `<div class="grid col-1">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
+              code: `<div class="grid col-1">\n    <div class="bg-light-3">Item 1</div>\n    <div class="bg-light-5">Item 2</div>\n    <div class="bg-light-3">Item 3</div>\n    <div class="bg-light-5">Item 4</div>\n    <div class="bg-light-3">Item 5</div>\n    <div class="bg-light-5">Item 6</div>\n</div>`
             }, {
               name: '2 columns',
               desc: '',
-              code: `<div class="grid col-2">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
+              code: `<div class="grid col-2">\n    <div class="bg-light-3">Item 1</div>\n    <div class="bg-light-5">Item 2</div>\n    <div class="bg-light-3">Item 3</div>\n    <div class="bg-light-5">Item 4</div>\n    <div class="bg-light-3">Item 5</div>\n    <div class="bg-light-5">Item 6</div>\n</div>`
             }, {
               name: '3 columns',
               desc: '',
-              code: `<div class="grid col-3">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
+              code: `<div class="grid col-3">\n    <div class="bg-light-3">Item 1</div>\n    <div class="bg-light-5">Item 2</div>\n    <div class="bg-light-3">Item 3</div>\n    <div class="bg-light-5">Item 4</div>\n    <div class="bg-light-3">Item 5</div>\n    <div class="bg-light-5">Item 6</div>\n</div>`
             }, {
               name: '4 columns',
               desc: '',
-              code: `<div class="grid col-4">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
+              code: `<div class="grid col-4">\n    <div class="bg-light-3">Item 1</div>\n    <div class="bg-light-5">Item 2</div>\n    <div class="bg-light-3">Item 3</div>\n    <div class="bg-light-5">Item 4</div>\n    <div class="bg-light-3">Item 5</div>\n    <div class="bg-light-5">Item 6</div>\n</div>`
             }, {
               name: '5 columns',
               desc: '',
-              code: `<div class="grid col-5">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
+              code: `<div class="grid col-5">\n    <div class="bg-light-3">Item 1</div>\n    <div class="bg-light-5">Item 2</div>\n    <div class="bg-light-3">Item 3</div>\n    <div class="bg-light-5">Item 4</div>\n    <div class="bg-light-3">Item 5</div>\n    <div class="bg-light-5">Item 6</div>\n</div>`
             }, {
               name: '6 columns',
               desc: '',
-              code: `<div class="grid col-6">\n    <div class="bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n    <div class="bg-light-1">Item 3</div>\n    <div class="bg-light-3">Item 4</div>\n    <div class="bg-light-1">Item 5</div>\n    <div class="bg-light-3">Item 6</div>\n</div>`
+              code: `<div class="grid col-6">\n    <div class="bg-light-3">Item 1</div>\n    <div class="bg-light-5">Item 2</div>\n    <div class="bg-light-3">Item 3</div>\n    <div class="bg-light-5">Item 4</div>\n    <div class="bg-light-3">Item 5</div>\n    <div class="bg-light-5">Item 6</div>\n</div>`
             }, {
               name: 'Auto - fill',
               desc: 'First child will take up its own width and give the rest of the width to last child.',
-              code: `<div class="grid auto-fill">\n    <div class="w-10 bg-light-1">Item 1</div>\n    <div class="bg-light-3">Item 2</div>\n</div>`
+              code: `<div class="grid auto-fill">\n    <div class="w-10 bg-light-3">Item 1</div>\n    <div class="bg-light-5">Item 2</div>\n</div>`
             }, {
               name: 'Fill - auto',
               desc: 'Last child will take up its own width and give the rest of the width to first child.',
-              code: `<div class="grid fill-auto">\n    <div class="bg-light-3">Item 1</div>\n    <div class="w-10 bg-light-1">Item 2</div>\n</div>`
+              code: `<div class="grid fill-auto">\n    <div class="bg-light-5">Item 1</div>\n    <div class="w-10 bg-light-3">Item 2</div>\n</div>`
             }
           ]
         },
@@ -135,15 +135,15 @@ export const plugins = {
             {
               name: 'Text Button',
               desc: '',
-              code: `<button class="p-2 bg-light-1">Intraface</button>`
+              code: `<button class="p-2 bg-light-3">Intraface</button>`
             }, {
               name: 'Icon Button',
               desc: '',
-              code: `<button class="w-3 h-3 grid place-center bg-light-1">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="currentColor" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n</button>`
+              code: `<button class="w-3 h-3 grid place-center bg-light-3">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="currentColor" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n</button>`
             }, {
               name: 'Icon + Text Button',
               desc: '',
-              code: `<button class="p-2 grid auto-fill ai-center gap-1 bg-light-1">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="currentColor" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n    <span>Intraface</span>\n</button>`
+              code: `<button class="p-2 grid auto-fill ai-center gap-1 bg-light-3">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="currentColor" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n    <span>Intraface</span>\n</button>`
             }
           ]
         }, {
@@ -223,7 +223,7 @@ export const plugins = {
             }, {
               name: 'Compositions',
               desc: 'Example usage of badges.',
-              code: `<div class="grid auto-fill gap-2">\n    <div class="w-4 h-4 bg-light-1"></div>\n    <div class="flex flex-col">\n        <div class="if ai-center gap-2">\n            <h4>Product Name</h4>\n            <span class="ib px-1 black-4 b-all bw-1 b-black-4">In Stock</span>\n        </div>\n    <p>Buy this product today and our company will earn money.</p>\n</div>\n</div>`
+              code: `<div class="grid auto-fill gap-2">\n    <div class="w-4 h-4 bg-light-3"></div>\n    <div class="flex flex-col">\n        <div class="if ai-center gap-2">\n            <h4>Product Name</h4>\n            <span class="ib px-1 black-4 b-all bw-1 b-black-4">In Stock</span>\n        </div>\n    <p>Buy this product today and our company will earn money.</p>\n</div>\n</div>`
             }
           ]
         }, {
@@ -235,11 +235,11 @@ export const plugins = {
             {
               name: 'Basic Card',
               desc: '',
-              code: `<div class="pa-3 br-2 bg-light-1">Welcome to internet.com. Please <a href="#">sign in</a>.</a>`
+              code: `<div class="pa-3 br-2 bg-light-3">Welcome to internet.com. Please <a href="#">sign in</a>.</a>`
             }, {
               name: 'Product Card',
               desc: '',
-              code: `<div class="pa-3 br-2 bg-light-1 stack gap-1 mw-11">\n    <div class="h-7 bg-center bg-cover br-2" style="background-image:url(https://placehold.co/400x400?text=Product)"></div>\n    <h4>Product Name</h4>\n    <p>Great product description here.</p>\n</div>`
+              code: `<div class="pa-3 br-2 bg-light-3 stack gap-1 mw-11">\n    <div class="h-7 bg-center bg-cover br-2" style="background-image:url(https://placehold.co/400x400?text=Product)"></div>\n    <h4>Product Name</h4>\n    <p>Great product description here.</p>\n</div>`
             }
           ]
         }, {

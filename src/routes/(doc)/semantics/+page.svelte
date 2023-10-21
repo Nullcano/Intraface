@@ -1,7 +1,7 @@
 <script>
   import { base } from '$lib/base'
 	import { semantics } from '$lib/semantics'
-	import CategoryCard from '$lib/app/CategoryCard.svelte'
+	import IndexCard from '$lib/app/IndexCard.svelte'
 	$: page = semantics
 </script>
 
@@ -14,10 +14,9 @@
 {#if page}
 	<hgroup class="grid auto-fill ai-center gap-2">
 		<svg class="w-2 h-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 11V15L12 21L24 15V11L12 17L0 11Z" fill="currentColor" fill-opacity="0.5"/>
-      <path d="M6 8L0 11L12 17L24 11L18 8V10C18 11.6569 15.3137 13 12 13C8.68629 13 6 11.6569 6 10V8Z" fill="currentColor"/>
-      <path d="M17 9.5C17 10.8807 14.7614 12 12 12C9.23858 12 7 10.8807 7 9.5V5.5H17V9.5Z" fill="currentColor" fill-opacity="0.5"/>
-      <path d="M17 5.5C17 6.88071 14.7614 8 12 8C9.23858 8 7 6.88071 7 5.5C7 4.11929 9.23858 3 12 3C14.7614 3 17 4.11929 17 5.5Z" fill="currentColor"/>
+      <path d="M0 13.8613V11.1207L7.76179 7.71778V10.5954L2.81678 12.4682L2.90024 12.3312V12.6509L2.81678 12.5139L7.76179 14.3866V17.2643L0 13.8613Z" fill="var(--blue-3)"/>
+      <path d="M14.942 5L11.4992 19H9.05803L12.5008 5H14.942Z" fill="var(--pink-3)"/>
+      <path d="M24 13.8613L16.2382 17.2643V14.3866L21.1832 12.5139L21.0998 12.6509V12.3312L21.1832 12.4682L16.2382 10.5954V7.71778L24 11.1207V13.8613Z" fill="var(--blue-3)"/>
     </svg>
 		<h1>{page.name}</h1>
 	</hgroup>
@@ -25,7 +24,7 @@
 	{#if page.categories}
 		<div class="mt-4 grid col-4 gap-2">
 			{#each page.categories as c}
-				<CategoryCard route="/semantics/{c.slug}" title={c.name} items={c.items.length} />
+				<IndexCard route="/semantics/{c.slug}" title={c.name} items={c.items.length} type={c.items.length === 1 ? "element" : "elements"} />
 			{/each}
 		</div>
 	{/if}

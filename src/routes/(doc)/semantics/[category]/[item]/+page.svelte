@@ -2,22 +2,23 @@
   import { base } from '$lib/base'
 	import { semantics } from '$lib/semantics'
   import { page } from '$app/stores'
+	import Breadcrumb from '$lib/app/Breadcrumb.svelte'
 	import CodePreview from '$lib/app/CodePreview.svelte'
 	import CodeBlock from '$lib/app/CodeBlock.svelte'
 	
-  let categoryName, categorySlug;
+  let categoryName, categorySlug
 
   $: item = semantics.categories.reduce((foundItem, category) => {
     if (!foundItem) {
-      const itemInCategory = category.items.find(item => `/semantics/${category.slug}/${item.name}` === $page.url.pathname);
+      const itemInCategory = category.items.find(item => `/semantics/${category.slug}/${item.name}` === $page.url.pathname)
       if (itemInCategory) {
-        categoryName = category.name;
-        categorySlug = category.name;
-        return itemInCategory;
+        categoryName = category.name
+        categorySlug = category.slug
+        return itemInCategory
       }
     }
-    return foundItem;
-  }, null);
+    return foundItem
+  }, null)
 </script>
 
 <svelte:head>
@@ -29,9 +30,9 @@
 {#if item}
 	<header>
 		<hgroup>
-			<a class="px-2 py-1 br-pill b-all bw-1 ba-light-4 u-0" href="/semantics">Semantics</a>
-			<a class="px-2 py-1 br-pill b-all bw-1 ba-light-4 u-0" href="/semantics/{categorySlug}">{categoryName}</a>
-			<h1 class="mt-2">{item.name}</h1>
+			<Breadcrumb slug="/semantics" text="Semantics" />
+			<Breadcrumb slug="/semantics/{categorySlug}" text="{categoryName}" />
+			<h1 class="mt-3">{item.name}</h1>
 			{#if item.desc}
 				<div>
 					{@html item.desc}

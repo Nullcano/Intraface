@@ -1,10 +1,10 @@
 <script>
   import { page } from '$app/stores'
   $: currentPath = $page.url.pathname
-  const cssString = "relative pa-2 br-3 u-0 point"
+  const cssString = "relative pa-1 br-2 u-0 point"
 </script>
 
-<nav class="fixed ml-2 pa-2 br-3 bg-light-2 b-all bw-1 b-light-3 top-50 left-0 y-center flex flex-col ai-center gap-1">
+<nav class="fixed ml-2 pa-1 br-3 bg-light-2 b-all bw-1 b-light-3 top-50 left-0 y-center flex flex-col ai-center gap-1">
   <a role="menuitem" href="/plugins" class="{currentPath.includes('plugins') ? `${cssString} bg-light-3` : cssString}" tabindex="0">
     <svg class="w-2 h-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 11V15L12 21L24 15V11L12 17L0 11Z" fill="var(--blue-3)" fill-opacity="0.5"/>

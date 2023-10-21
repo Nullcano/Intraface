@@ -2,7 +2,8 @@
   import { base } from '$lib/base'
 	import { semantics } from '$lib/semantics'
   import { page } from '$app/stores'
-	import ComponentCard from '$lib/app/ComponentCard.svelte'
+	import Breadcrumb from '$lib/app/Breadcrumb.svelte'
+	import IndexCard from '$lib/app/IndexCard.svelte'
 	$: category = semantics.categories.find(c => `/semantics/${c.slug}` === $page.url.pathname)
 </script>
 
@@ -14,8 +15,8 @@
 
 {#if category}
 	<hgroup>
-		<a class="px-2 py-1 br-pill b-all bw-1 ba-light-4 u-0" href="/semantics">Semantics</a>
-		<h1 class="mt-2">{category.name}</h1>
+		<Breadcrumb slug="/semantics" text="Semantics" />
+		<h1 class="mt-3">{category.name}</h1>
 		{#if category.desc}
 			<p>{category.desc}</p>
 		{/if}
@@ -24,7 +25,7 @@
 		{#if category.items}
 			<div class="mt-4 grid col-4 gap-2">
 				{#each category.items as i}
-					<ComponentCard route="/semantics/{category.slug}/{i.name}" title={i.name} items={0} />
+					<IndexCard route="/semantics/{category.slug}/{i.name}" title={i.name} />
 				{/each}
 			</div>
 		{/if}

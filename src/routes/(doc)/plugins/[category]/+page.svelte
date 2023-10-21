@@ -2,7 +2,8 @@
   import { base } from '$lib/base'
 	import { plugins } from '$lib/plugins'
   import { page } from '$app/stores'
-	import ComponentCard from '$lib/app/ComponentCard.svelte'
+	import Breadcrumb from '$lib/app/Breadcrumb.svelte'
+	import IndexCard from '$lib/app/IndexCard.svelte'
 	$: category = plugins.categories.find(c => `/plugins/${c.slug}` === $page.url.pathname)
 </script>
 
@@ -14,8 +15,8 @@
 
 {#if category}
 	<hgroup>
-		<a class="px-2 py-1 br-pill b-all bw-1 b-light-4 bg-light-2 u-0" href="/plugins">Plugins</a>
-		<h1 class="mt-2">{category.name}</h1>
+		<Breadcrumb slug="/plugins" text="Plugins" />
+		<h1 class="mt-3">{category.name}</h1>
 		{#if category.desc}
 			<p>{category.desc}</p>
 		{/if}
@@ -24,7 +25,7 @@
 		{#if category.items}
 			<div class="mt-4 grid col-4 gap-2">
 				{#each category.items as i}
-					<ComponentCard route="/plugins/{category.slug}/{i.slug}" title={i.name} items={i.variants.length} />
+					<IndexCard route="/plugins/{category.slug}/{i.slug}" title={i.name} items={i.variants.length} type={i.variants.length === 1 ? "variant" : "variants"} />
 				{/each}
 			</div>
 		{/if}

@@ -315,6 +315,8 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .ai-center { align-items: center }
 .jc-between { justify-content: space-between }
 .pc-center { place-content: center }
+.obj-contain { object-fit: contain }
+.obj-cover { object-fit: cover }
 .spacer { flex: 1 1 0%; place-self: stretch }
 .stack { display: flex; flex-direction: column }
 .grid { display: grid }
@@ -474,6 +476,23 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .py-5 { padding-block: 2rem }
 .py-6 { padding-block: 3rem }
 .py-7 { padding-block: 4rem }
+.mh-0 { max-height: 0 }
+.mh-1 { max-height: 1rem }
+.mh-2 { max-height: 2rem }
+.mh-3 { max-height: 3rem }
+.mh-4 { max-height: 4rem }
+.mh-5 { max-height: 6rem }
+.mh-6 { max-height: 8rem }
+.mh-7 { max-height: 10rem }
+.mh-8 { max-height: 12rem }
+.mh-9 { max-height: 14rem }
+.mh-10 { max-height: 16rem }
+.mh-11 { max-height: 20rem }
+.mh-12 { max-height: 24rem }
+.mh-13 { max-height: 30rem }
+.mh-14 { max-height: 45rem }
+.mh-15 { max-height: 60rem }
+.mh-16 { max-height: 90rem }
 .mw-0 { max-width: 0 }
 .mw-1 { max-width: 1rem }
 .mw-2 { max-width: 2rem }
@@ -491,9 +510,6 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .mw-14 { max-width: 45rem }
 .mw-15 { max-width: 60rem }
 .mw-16 { max-width: 90rem }
-.obj-contain { object-fit: contain }
-.obj-cover { object-fit: cover }
-.place-center { place-content: center }
 .w-0 { width: 0 }
 .w-1 { width: 1rem }
 .w-2 { width: 2rem }
@@ -562,9 +578,9 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .left-5 { left: 5rem }
 .left-50 { left: 50% }
 .left-100 { left: 100% }
-.X-center { transform: translate(-50%, 0%) }
+.x-center { transform: translate(-50%, 0%) }
 .y-center { transform: translate(0%, -50%) }
-.Xy-center { transform: translate(-50%, -50%) }
+.xy-center { transform: translate(-50%, -50%) }
 .of-hidden { overflow: hidden }
 .of-visible { overflow: visible }
 .of-scroll { overflow: auto }

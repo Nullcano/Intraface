@@ -2,7 +2,8 @@
   import { base } from '$lib/base'
 	import { theming } from '$lib/theming'
   import { page } from '$app/stores'
-	import ComponentCard from '$lib/app/ComponentCard.svelte'
+	import Breadcrumb from '$lib/app/Breadcrumb.svelte'
+	import IndexCard from '$lib/app/IndexCard.svelte'
 	$: category = theming.categories.find(c => `/theming/${c.slug}` === $page.url.pathname)
 </script>
 
@@ -14,7 +15,8 @@
 
 {#if category}
 	<hgroup>
-		<h1>{category.name}</h1>
+		<Breadcrumb slug="/theming" text="Theming" />
+		<h1 class="mt-3">{category.name}</h1>
 		{#if category.desc}
 			<p>{category.desc}</p>
 		{/if}
@@ -23,7 +25,7 @@
 		{#if category.items}
 			<div class="mt-4 grid col-4 gap-2">
 				{#each category.items as i}
-					<ComponentCard route="/theming/{category.slug}/{i.slug}" title={i.name} items={i.variants.length} />
+					<IndexCard route="/theming/{category.slug}/{i.slug}" title={i.name} items={i.variants.length} type={i.variants.length === 1 ? "class" : "classes"} />
 				{/each}
 			</div>
 		{/if}
