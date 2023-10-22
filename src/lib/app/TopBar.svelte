@@ -4,7 +4,7 @@
   import MegaMenu from '$lib/app/MegaMenu.svelte';
 </script>
 
-<header class="fixed top-0 w-fill px-3 py-2 flex ai-center gap-1 z-1">
+<header class="fixed top-0 w-fill px-3 py-2 flex ai-center gap-1 z-2">
   <div class="grid fill-auto ai-center gap-2">
     <a class="black-1 grid auto-fill ai-center gap-2 u-0" href="/">
       <svg class="w-2 h-2" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">

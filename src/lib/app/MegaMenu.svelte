@@ -41,7 +41,7 @@
 </button>
 
 {#if menuIsOpen}
-  <div role="tab" class="fixed top-0 left-0 w-fill vh-8 point z-2" on:click={toggleMegaMenu} on:keydown={toggleMegaMenu} tabindex="0">
+  <div role="tab" class="fixed top-0 left-0 w-fill vh-8 point z-3" on:click={toggleMegaMenu} on:keydown={toggleMegaMenu} tabindex="0">
     <div class="ma-3 pa-4 vh-5 bg-light-1 b-all bw-1 b-light-4 br-3">
       <h2 class="mb-3">Explore Intraface</h2>
       <div class="flex">

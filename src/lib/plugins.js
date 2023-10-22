@@ -38,11 +38,11 @@ export const plugins = {
             {
               name: 'Centered content',
               desc: '',
-              code: `<div class="grid place-center h-8 bg-light-3">The center of the universe</div>`
+              code: `<div class="grid pc-center h-8 bg-light-3">The center of the universe</div>`
             }, {
               name: 'Centered icon',
               desc: 'Centering an icon',
-              code: `<div class="grid place-center bg-red-3 h-3 w-3">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2H2V14H14V2ZM0 0V16H16V0H0Z" fill="white"/>\n        <path d="M4 4H12V12H4V4Z" fill="white"/>\n    </svg>\n</div>`
+              code: `<div class="grid pc-center bg-red-3 h-3 w-3">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2H2V14H14V2ZM0 0V16H16V0H0Z" fill="white"/>\n        <path d="M4 4H12V12H4V4Z" fill="white"/>\n    </svg>\n</div>`
             }
           ]
         }, {
@@ -57,7 +57,7 @@ export const plugins = {
             }, {
               name: 'Contain Elements',
               desc: 'Contain a section with a max width.',
-              code: `<div class="p-4 bg-light-3">\n    <div class="mw-13 mi-auto">\n        <img class="w-fill" src="https://picsum.photos/300/200">\n    </div>\n    <div class="mw-12 mi-auto">\n        <p>There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production.</p>\n    </div>\n</div>`
+              code: `<div class="pa-4 bg-light-3">\n    <div class="mw-13 mi-auto">\n        <img class="w-fill" src="https://picsum.photos/300/200">\n    </div>\n    <div class="mw-12 mi-auto">\n        <p>There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production.</p>\n    </div>\n</div>`
             }, 
           ],
           refLibrary: [ { name: 'Width', slug: 'width' }, { name: 'Margin', slug: 'margin' }, { name: 'Padding', slug: 'padding' }, { name: 'Background', slug: 'background' } ],
@@ -139,7 +139,7 @@ export const plugins = {
             }, {
               name: 'Icon Button',
               desc: '',
-              code: `<button class="w-3 h-3 grid place-center bg-light-3">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="currentColor" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n</button>`
+              code: `<button class="w-3 h-3 grid pc-center bg-light-3">\n    <svg class="w-1" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-3RdnpmjWHLNK">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H8V9H16V0ZM7 1H1V4H7V1ZM7 5H1V15H7V5ZM8 5H15V8H8V5ZM15 1H8V4H15V1Z" fill="currentColor" class="s-3RdnpmjWHLNK"></path>\n    </svg>\n</button>`
             }, {
               name: 'Icon + Text Button',
               desc: '',
@@ -219,7 +219,7 @@ export const plugins = {
             }, {
               name: 'Icon Badge',
               desc: 'Stylize an icon to look like a badge.',
-              code: '<span class="ib w-2 h-2 br-circle bg-blue-2 grid place-center">\n    <svg class="w-1" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M22 2.08006L8.21742 16L0 7.70069L2.1244 5.62063L8.21742 11.7744L19.8756 0L22 2.08006Z" fill="white"/>\n    </svg>\n</span>'
+              code: '<span class="ib w-2 h-2 br-circle bg-blue-2 grid pc-center">\n    <svg class="w-1" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n        <path fill-rule="evenodd" clip-rule="evenodd" d="M22 2.08006L8.21742 16L0 7.70069L2.1244 5.62063L8.21742 11.7744L19.8756 0L22 2.08006Z" fill="white"/>\n    </svg>\n</span>'
             }, {
               name: 'Compositions',
               desc: 'Example usage of badges.',

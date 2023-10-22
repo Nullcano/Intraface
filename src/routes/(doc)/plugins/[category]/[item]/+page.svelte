@@ -44,6 +44,9 @@
 				{#each item.variants as v}
 					<div class="mb-3 stack gap-2">
 						<h2 class="w-10" id="{v.name}">{v.name}</h2>
+						{#if v.desc}
+							<p>{@html v.desc}</p>
+						{/if}
 						<div>
 							<CodePreview>
 								{@html v.code}
@@ -52,9 +55,6 @@
 								{v.code}
 							</CodeBlock>
 						</div>
-						{#if v.desc}
-							<p class="w-12">{@html v.desc}</p>
-						{/if}
 					</div>
 				{/each}
 			</div>

@@ -9,8 +9,8 @@
 	<title>{base.name}</title>
 </svelte:head>
 
+<TopBar />
+<NavMain />
 <ContentMain>
 	<slot />
 </ContentMain>
-<TopBar />
-<NavMain />

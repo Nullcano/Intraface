@@ -2,7 +2,7 @@ export const semantics = {
   name: 'Semantics',
   slug: 'semantics',
   desc: `
-    <p class="mw-13">In the digital realm, appearances can be deceiving. That's why at Intraface, we've taken the lead in normalizing and enhancing semantic HTML elements for the demands of the modern web.</p>
+    <p>In the digital realm, appearances can be deceiving. That's why at Intraface, we've taken the lead in normalizing and enhancing semantic HTML elements for the demands of the modern web.</p>
   `,
   categories: [
     {

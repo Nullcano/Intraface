@@ -18,11 +18,11 @@ export const theming = {
             {
               name: 'forwards',
               desc: '',
-              code: `<div class="fade-in forwards w-5 h-5 bg-light-1"></div>`
+              code: `<div class="fade-in forwards w-5 h-5 bg-light-3"></div>`
             }, {
               name: 'infinite',
               desc: '',
-              code: `<div class="fade-in infinite w-5 h-5 bg-light-1"></div>`
+              code: `<div class="fade-in infinite w-5 h-5 bg-light-3"></div>`
             },
           ]
         }, {
@@ -33,11 +33,11 @@ export const theming = {
             {
               name: 'fade-in',
               desc: '',
-              code: `<div class="fade-in infinite w-5 h-5 bg-light-1"></div>`
+              code: `<div class="fade-in infinite w-5 h-5 bg-light-3"></div>`
             }, {
               name: 'fade-out',
               desc: '',
-              code: `<div class="fade-out infinite w-5 h-5 bg-light-1"></div>`
+              code: `<div class="fade-out infinite w-5 h-5 bg-light-3"></div>`
             },
           ]
         }, {
@@ -48,11 +48,11 @@ export const theming = {
             {
               name: 'grow',
               desc: '',
-              code: `<div class="grow infinite w-5 h-5 bg-light-1"></div>`
+              code: `<div class="grow infinite w-5 h-5 bg-light-3"></div>`
             }, {
               name: 'shrink',
               desc: '',
-              code: `<div class="shrink infinite w-5 h-5 bg-light-1"></div>`
+              code: `<div class="shrink infinite w-5 h-5 bg-light-3"></div>`
             },
           ]
         }, {
@@ -63,7 +63,7 @@ export const theming = {
             {
               name: 't-all',
               desc: 'Add transition to all properties.',
-              code: `<div class="t-all bg-black-1 bg-light-1-h light-1 black-1-h w-6 h-4 grid place-center">Hover me</div>`
+              code: `<div class="t-all bg-black-1 bg-light-3-h light-3 black-1-h w-6 h-4 grid pc-center">Hover me</div>`
             }
           ]
         }, {
@@ -74,11 +74,11 @@ export const theming = {
             {
               name: 'ascend',
               desc: '',
-              code: `<div class="ascend infinite w-5 h-5 bg-light-1"></div>`
+              code: `<div class="ascend infinite w-5 h-5 bg-light-3"></div>`
             }, {
               name: 'descend',
               desc: '',
-              code: `<div class="descend infinite w-5 h-5 bg-light-1"></div>`
+              code: `<div class="descend infinite w-5 h-5 bg-light-3"></div>`
             }, 
           ]
         }

@@ -4,7 +4,7 @@
   const cssString = "relative pa-1 br-2 u-0 point"
 </script>
 
-<nav class="fixed ml-2 pa-1 br-3 bg-light-2 b-all bw-1 b-light-3 top-50 left-0 y-center flex flex-col ai-center gap-1">
+<nav class="fixed ml-2 pa-1 br-3 bg-light-2 b-all bw-1 b-light-3 top-50 left-0 y-center flex flex-col ai-center gap-1 z-1">
   <a role="menuitem" href="/plugins" class="{currentPath.includes('plugins') ? `${cssString} bg-light-3` : cssString}" tabindex="0">
     <svg class="w-2 h-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 11V15L12 21L24 15V11L12 17L0 11Z" fill="var(--blue-3)" fill-opacity="0.5"/>
@@ -12,7 +12,7 @@
       <path d="M17 9.5C17 10.8807 14.7614 12 12 12C9.23858 12 7 10.8807 7 9.5V5.5H17V9.5Z" fill="var(--pink-3)" fill-opacity="0.5"/>
       <path d="M17 5.5C17 6.88071 14.7614 8 12 8C9.23858 8 7 6.88071 7 5.5C7 4.11929 9.23858 3 12 3C14.7614 3 17 4.11929 17 5.5Z" fill="var(--pink-3)"/>
     </svg>
-    <span class="absolute top-50 y-center left-100 ml-3 pa-3 br-2 bg-light-3 none">Plugins</span>
+    <span class="absolute top-50 y-center left-100 ml-3 pa-3 br-2 bg-light-2 none">Plugins</span>
   </a>
   <a role="menuitem" href="/theming" class="{currentPath.includes('theming') ? `${cssString} bg-light-3` : cssString}" tabindex="0">
     <svg class="w-2 h-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,7 +20,7 @@
       <path d="M19 24H17C16.4477 24 16 23.5523 16 23V13C16 12.4477 16.4477 12 17 12H19C19.5523 12 20 12.4477 20 13V23C20 23.5523 19.5523 24 19 24Z" fill="var(--pink-3)"/>
       <path d="M13 7C13 9.3891 15 11 17 11H19C21 11 23 9 23 7C23 5 21.7187 5.2678 20 4C18.2813 2.7322 18 2 18 0L17.3117 0.9177C15.8095 2.9206 13 4.4964 13 7Z" fill="var(--pink-3)"/>
     </svg>
-    <span class="absolute top-50 y-center left-100 ml-3 pa-3 br-2 bg-light-3 none">Theming</span>
+    <span class="absolute top-50 y-center left-100 ml-3 pa-3 br-2 bg-light-2 none">Theming</span>
   </a>
   <a role="menuitem" href="/semantics" class="{currentPath.includes('semantics') ? `${cssString} bg-light-3` : cssString}" tabindex="0">
     <svg class="w-2 h-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@
       <path d="M14.942 5L11.4992 19H9.05803L12.5008 5H14.942Z" fill="var(--pink-3)"/>
       <path d="M24 13.8613L16.2382 17.2643V14.3866L21.1832 12.5139L21.0998 12.6509V12.3312L21.1832 12.4682L16.2382 10.5954V7.71778L24 11.1207V13.8613Z" fill="var(--blue-3)"/>
     </svg>
-    <span class="absolute top-50 y-center left-100 ml-3 pa-3 br-2 bg-light-3 none">Semantics</span>
+    <span class="absolute top-50 y-center left-100 ml-3 pa-3 br-2 bg-light-2 none">Semantics</span>
   </a>
   <a role="menuitem" href="/skins" class="{currentPath.includes('skins') ? `${cssString} bg-light-3` : cssString}" tabindex="0">
     <svg class="w-2 h-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,16 +38,13 @@
       <rect x="5" y="13" width="4" height="4" rx="2" fill="var(--green-3)"/>
       <rect x="10" y="18" width="3" height="3" rx="1.5" fill="var(--blue-3)"/>
     </svg>
-    <span class="absolute top-50 y-center left-100 ml-3 pa-3 br-2 bg-light-3 none">Skins</span>
+    <span class="absolute top-50 y-center left-100 ml-3 pa-3 br-2 bg-light-2 none">Skins</span>
   </a>
 </nav>
 
 <style>
   a {
     line-height: 0;
-  }
-  a:hover > div {
-    background-color: var(--black-2);
   }
   a:hover > span {
     display: inline-block;

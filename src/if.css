@@ -570,6 +570,9 @@ code, .code{ font-family: 'JetBrains Mono', monospace; font-size: small }
 .bottom-3 { bottom: 3rem }
 .bottom-4 { bottom: 4rem }
 .bottom-5 { bottom: 5rem }
+.bottom-6 { bottom: 6rem }
+.bottom-7 { bottom: 7rem }
+.bottom-8 { bottom: 8rem }
 .left-0 { left: 0 }
 .left-1 { left: 1rem }
 .left-2 { left: 2rem }
